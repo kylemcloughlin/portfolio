@@ -24,7 +24,7 @@ function Contact() {
     'gmail',
     process.env.REACT_APP_EMAIL_TEMPLATE,
     templateParams,
-     process.env.REACT_APP_USER_ID
+    process.env.REACT_APP_USER_ID
   )
 
 }

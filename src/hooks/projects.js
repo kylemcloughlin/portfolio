@@ -19,7 +19,8 @@ function Projects() {
           <div>
             <h1>{website.name}</h1>
             <p>{website.discription}</p>
-            <li>{website.keyFeatures}  </li>
+            <li>{website.keyFeatures}  </li> 
+            {/* gon have to map key features  */}
             <button>{website.linkToProject}</button>
             <button>{website.linkToProjectsCode}</button>
 
