@@ -4,7 +4,7 @@ import React, { useState} from 'react';
 function About() {
   return ( 
   <div className = "about"> 
-  About test
+ blah blah blah here
     </div>
   );
 }

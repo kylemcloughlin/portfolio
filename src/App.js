@@ -9,6 +9,8 @@ function App() {
   return (
     <div className="App">
        <header className="App-header">
+       <h1>Kyle McLoughlin</h1>
+       <h3>Full Stack Web Developer</h3>
         <nav>
           <button onClick={() => setPage(Contact)}>Contact</button>
           <button onClick={() => setPage(Projects)}>projects</button>
