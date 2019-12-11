@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,  { useState }from 'react';
+import About from './hooks/about.js';
+import Contact from './hooks/contact.js';
+import Projects from './hooks/projects.js';
+// import './App.css';
 
 function App() {
+  const [page, setPage] = useState(About);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <header className="App-header">
+        <nav>
+          <button onClick={() => setPage(Contact)}>Contact</button>
+          <button onClick={() => setPage(Projects)}>projects</button>
+          <button onClick={() => setPage(About)}>about</button>
+        </nav>
+      </header> 
+      <body>
+        {page}
+      </body>
     </div>
   );
 }
