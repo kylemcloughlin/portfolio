@@ -12,9 +12,9 @@ function App() {
        <h1>Kyle McLoughlin</h1>
        <h3>Full Stack Web Developer</h3>
         <nav>
-          <button onClick={() => setPage(<Contact/>)}>Contact</button>
-          <button onClick={() => setPage(<Projects/>)}>projects</button>
           <button onClick={() => setPage(<About/>)}>about</button>
+          <button onClick={() => setPage(<Projects/>)}>projects</button>
+          <button onClick={() => setPage(<Contact/>)}>Contact</button>
         </nav>
       </header> 
       <body>

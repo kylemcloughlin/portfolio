@@ -18,21 +18,18 @@ function Contact() {
       subject: subject,
       message_html: message,
     }
-    console.log(templateParams)
 
-    emailjs.send(
+  emailjs.send(
     'gmail',
-    process.env.REACT_APP_EMAIL_TEMPLATE,
-    templateParams,
-    process.env.REACT_APP_USER_ID
+     process.env.REACT_APP_EMAIL_TEMPLATE,
+     templateParams,
+     process.env.REACT_APP_USER_ID
   )
 
 }
  
  return (
   <div className="Contact">
-    <label>Name</label>
-    <input placeholder='name' onChange={(e) => setName(e.target.value)}/>
     <label>Email</label>
     <input placeholder='Email' onChange={(e) => setFrom(e.target.value)} />
     <label>Subject</label>
