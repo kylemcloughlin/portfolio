@@ -1,0 +1,60 @@
+@media only screen and (min-width: 768px) {
+  .App-header {
+    background: blue;
+  }
+}
+
+#profile-photo {
+  max-width: 25%;
+  max-height: 25%;
+  border-radius: 5em;
+  position: relative;
+  top: 0%;
+  left: 38%;
+  margin-top: 1em;
+}
+
+.App-header {
+  background: red;
+  height: 20em;
+}
+
+#title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: red;
+}
+
+#job-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: red;
+  margin-top: -17px;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.about {
+  color: aqua;
+}
+/*# sourceMappingURL=style.css.map */

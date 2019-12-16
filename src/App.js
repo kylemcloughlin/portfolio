@@ -2,23 +2,28 @@ import React,  { useState }from 'react';
 import About from './hooks/about.js';
 import Contact from './hooks/contact.js';
 import Projects from './hooks/projects.js';
-// import './App.css';
+import './styles/style.css';
+import profile from './hooks/photos/testPhoto.png'
 
 function App() {
   const [page, setPage] = useState(About);
   return (
     <div className="App">
        <header className="App-header">
-       <h1>Kyle McLoughlin</h1>
-       <h3>Full Stack Web Developer</h3>
-        <nav>
-          <button onClick={() => setPage(<About/>)}>about</button>
-          <button onClick={() => setPage(<Projects/>)}>projects</button>
-          <button onClick={() => setPage(<Contact/>)}>Contact</button>
+       <img id='profile-photo' src={profile}/>
+       <h1 id='title'>Kyle McLoughlin</h1>
+      
+       <h3 id = 'job-title'> Full Stack Web Developer </h3>
+        <nav class='nav-bar'>
+          <button class='button' onClick={() => setPage(<About/>)}>about</button>
+          <button class='button' onClick={() => setPage(<Projects/>)}>projects</button>
+          <button class='button' onClick={() => setPage(<Contact/>)}>Contact</button>
         </nav>
       </header> 
       <body>
+        <div class='wrapper'>
         {page}
+        </div>
       </body>
     </div>
   );

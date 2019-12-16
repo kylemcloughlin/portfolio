@@ -1,0 +1,58 @@
+$primaryColour : red;
+$secondaryColour : blue; 
+// $primaryFont
+// $secondaryFont
+@import './ipadstyle.scss';
+
+
+
+@mixin flexCenter {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primaryColour;
+}
+@mixin position($top, $left) {
+  position: relative;
+  top: $top;
+  left: $left;
+
+  
+}
+#profile-photo {
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 5em;
+    @include position(0%, 38%);
+    margin-top: 1em;
+
+}
+.App-header {
+  // @include flexCenter();
+  background: $primaryColour;
+  height: 20em;
+}
+#title {
+  // @include position(1%, 5%)
+  @include flexCenter();
+
+}
+#job-title {
+  // @include position(11%, 50%);
+  @include flexCenter();
+  margin-top: -17px;
+
+}
+.nav-bar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+
+.about {
+  color: aqua;
+}
