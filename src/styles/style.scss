@@ -6,10 +6,10 @@
 //variables
 $primaryColour : red;
 $secondaryColour : blue; 
-// $primaryFont
-// $secondaryFont
+$primaryFont : 'Varela Round', sans-serif;
+$secondaryFont : 'Mukta', sans-serif;
+$logoFont :  'Faster One', cursive;
 //mixins
-
 
 
 @mixin flexCenter {
@@ -35,19 +35,46 @@ $secondaryColour : blue;
 
 }
 .App-header {
-  // @include flexCenter();
+ position: relative;
   background: $primaryColour;
-  height: 20em;
+ width: 100%;
+ height: 12em;
+  &:after {
+     position: absolute;
+     width: 100%;
+     height: 122%;
+     content: '';
+     background: inherit;
+     z-index: -1;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     transform-origin: top left;
+     transform: skewY(12deg);
+  };
 }
+
 #title {
   // @include position(1%, 5%)
   @include flexCenter();
-
+font-family: $secondaryFont;
 }
 #job-title {
   // @include position(11%, 50%);
   @include flexCenter();
   margin-top: -17px;
+  font-family: $secondaryFont;
+
+
+}
+#logo {
+  @include position(-35%,4% );
+  // float: left;
+font-family: $logoFont;
+background: red;
+width: 10%;
+font-size: 2em;
 
 }
 .nav-bar {
@@ -56,4 +83,15 @@ $secondaryColour : blue;
 
 .wrapper {
   width: 100%;
+  margin-top: 5em;
+  background-color: lightgray;
 }
+
+.seperator {
+   width: 100%;
+   background: red;
+   height: 19em;
+   margin-top: 3em;
+   margin-bottom: 3em;
+   transform: skewY(12deg);
+   }

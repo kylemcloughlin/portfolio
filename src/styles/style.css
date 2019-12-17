@@ -5,7 +5,7 @@
 }
 
 .about {
-  color: aqua;
+  margin-top: 10em;
 }
 
 .input {
@@ -16,6 +16,31 @@
   padding-left: 1em;
   border-radius: 2em;
   width: 76%;
+}
+
+.contact {
+  position: relative;
+  background: red;
+  width: 100%;
+  height: 19em;
+  margin-top: 14em;
+}
+
+.contact:before {
+  position: absolute;
+  width: 100%;
+  height: 122%;
+  content: '';
+  background: red;
+  z-index: 0;
+  top: -48%;
+  right: 0;
+  bottom: 22%;
+  left: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(12deg);
+          transform: skewY(12deg);
 }
 
 .input-wrapper {
@@ -33,15 +58,17 @@
 }
 
 .submit-button {
+  position: relative;
+  left: 2em;
   color: white;
   background-color: blue;
   width: 81%;
-  margin-left: 2em;
   height: 2em;
   border: none;
 }
 
 .flip-card-container {
+  font-family: "Mukta", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,10 +82,12 @@
   height: 400px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  margin-left: 1.3em;
+  margin-bottom: .5em;
 }
 
 .flip-card {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   -webkit-transition: -webkit-transform 1s;
@@ -75,8 +104,24 @@
   /* <=>  rotateY(.5turn) */
 }
 
-/* Position the front and back side */
-.flip-card-front,
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+}
+
 .flip-card-back {
   position: absolute;
   width: 100%;
@@ -92,7 +137,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border-radius: 0.5rem; */
+  border-radius: 0.5rem;
 }
 
 .flip-card-front {
@@ -107,6 +152,32 @@
           transform: rotateY(180deg);
 }
 
+.card-header {
+  bottom: 26%;
+  position: relative;
+  background: red;
+  width: 100%;
+  height: 12em;
+}
+
+.card-header:after {
+  position: absolute;
+  width: 100%;
+  height: 122%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(4deg);
+          transform: skewY(4deg);
+  opacity: .5;
+}
+
 #profile-photo {
   max-width: 25%;
   max-height: 25%;
@@ -118,8 +189,27 @@
 }
 
 .App-header {
+  position: relative;
   background: red;
-  height: 20em;
+  width: 100%;
+  height: 12em;
+}
+
+.App-header:after {
+  position: absolute;
+  width: 100%;
+  height: 122%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(12deg);
+          transform: skewY(12deg);
 }
 
 #title {
@@ -133,6 +223,7 @@
       -ms-flex-align: center;
           align-items: center;
   background: red;
+  font-family: "Mukta", sans-serif;
 }
 
 #job-title {
@@ -147,6 +238,17 @@
           align-items: center;
   background: red;
   margin-top: -17px;
+  font-family: "Mukta", sans-serif;
+}
+
+#logo {
+  position: relative;
+  top: -35%;
+  left: 4%;
+  font-family: "Faster One", cursive;
+  background: red;
+  width: 10%;
+  font-size: 2em;
 }
 
 .nav-bar {
@@ -155,5 +257,17 @@
 
 .wrapper {
   width: 100%;
+  margin-top: 5em;
+  background-color: lightgray;
+}
+
+.seperator {
+  width: 100%;
+  background: red;
+  height: 19em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  -webkit-transform: skewY(12deg);
+          transform: skewY(12deg);
 }
 /*# sourceMappingURL=style.css.map */

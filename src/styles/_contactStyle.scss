@@ -11,6 +11,27 @@
       border-radius: 2em;
           width: 76%;
 }
+.contact {
+    position: relative;
+    background: red;
+    width: 100%;
+    height: 19em;
+    margin-top: 14em;
+    &:before {
+          position: absolute;
+          width: 100%;
+          height: 122%;
+          content: '';
+          background: red;
+          z-index: 0;
+          top: -48%;
+          right: 0;
+          bottom: 22%;
+          left: 0;
+          transform-origin: top left;
+          transform: skewY(12deg);
+    };
+}
 
 .input-wrapper {
   padding-bottom: 1em;
@@ -27,10 +48,11 @@
 }
 
 .submit-button {
+   @include postion();
   color: white;
   background-color: blue;
   width: 81%;
-  margin-left: 2em;
+  // margin-left: 2em;
   height: 2em;
   border: none;
 }

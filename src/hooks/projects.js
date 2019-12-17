@@ -13,11 +13,12 @@ function Projects() {
             <div class='flip-card-container'>
             <div class='flip-card'> 
 <div class='flip-card-front'>
-            <h1>{website.name}</h1>
-
+            <div class='card-header'> 
+            <h1>{website.name} </h1>
+            </div>
+            
 </div>
 <div class='flip-card-back'>
-  
             <p>{website.discription}</p>
 </div>
             {/* <img src={require(`${website.photos}`)} /> */}

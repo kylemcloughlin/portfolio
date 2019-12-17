@@ -29,7 +29,7 @@ function Contact() {
 }
  
  return (
-  <div className="Contact">
+ <div class="contact">
   <div class='input-wrapper'>
     {/* <label class='label' >Email</label> */}
     <input class='input' placeholder='Email' onChange={(e) => setFrom(e.target.value)} />
