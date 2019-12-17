@@ -1,8 +1,14 @@
+@import './ipadstyle.scss';
+@import './aboutStyle';
+@import './contactStyle';
+@import './projectsStyle';
+
+//variables
 $primaryColour : red;
 $secondaryColour : blue; 
 // $primaryFont
 // $secondaryFont
-@import './ipadstyle.scss';
+//mixins
 
 
 
@@ -50,9 +56,4 @@ $secondaryColour : blue;
 
 .wrapper {
   width: 100%;
-}
-
-
-.about {
-  color: aqua;
 }

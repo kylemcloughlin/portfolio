@@ -6,19 +6,27 @@ function Projects() {
  console.log(websites)
   return (
     <div className="App">
-    {/* <img src='./tes'/> */}
+
       {
         websites.map(website => {
           return (
-          <div>
+            <div class='flip-card-container'>
+            <div class='flip-card'> 
+<div class='flip-card-front'>
             <h1>{website.name}</h1>
-          <img src={require(`${website.photos}`)} />
-            <p>{website.discription}</p>
-            <li>{website.keyFeatures}  </li> 
-            {/* gon have to map key features  */}
-            <button>{website.linkToProject}</button>
-            <button>{website.linkToProjectsCode}</button>
 
+</div>
+<div class='flip-card-back'>
+  
+            <p>{website.discription}</p>
+</div>
+            {/* <img src={require(`${website.photos}`)} /> */}
+            {/* <li>{website.keyFeatures}  </li>  */}
+            {/* gon have to map key features  */}
+            {/* <button>{website.linkToProject}</button> */}
+            {/* <button>{website.linkToProjectsCode}</button>  */}
+
+            </div>
           </div>
           )
         })

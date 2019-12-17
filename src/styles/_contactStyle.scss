@@ -1,0 +1,36 @@
+@mixin postion {
+  position: relative;
+  left: 2em;
+  
+}
+.input {
+  @include postion();   
+  border: 1.5px black solid;
+      height: 2em;
+      padding-left: 1em;
+      border-radius: 2em;
+          width: 76%;
+}
+
+.input-wrapper {
+  padding-bottom: 1em;
+}
+
+#message-body {
+  height: 9em;
+  padding-top: 1em;
+  border-radius: 1em;
+  
+}
+.label {
+  float: left;
+}
+
+.submit-button {
+  color: white;
+  background-color: blue;
+  width: 81%;
+  margin-left: 2em;
+  height: 2em;
+  border: none;
+}

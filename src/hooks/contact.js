@@ -30,13 +30,19 @@ function Contact() {
  
  return (
   <div className="Contact">
-    <label>Email</label>
-    <input placeholder='Email' onChange={(e) => setFrom(e.target.value)} />
-    <label>Subject</label>
-    <input placeholder='Subject' onChange={(e) => setSubject(e.target.value)}/>
-    <label>Message</label>
-    <input placeholder='Message' onChange={(e) => setMessage(e.target.value)}/>
-    <button onClick={handleEmail}>Submit</button>
+  <div class='input-wrapper'>
+    {/* <label class='label' >Email</label> */}
+    <input class='input' placeholder='Email' onChange={(e) => setFrom(e.target.value)} />
+  </div>
+  <div class='input-wrapper'> 
+    {/* <label class='label'> Subject </label> */}
+    <input class='input' placeholder='Subject' onChange={(e) => setSubject(e.target.value)}/>
+  </div>
+  <div> 
+    {/* <label class='label'>Message</label> */}
+    <textarea id="message-body"class='input' placeholder='Message' onChange={(e) => setMessage(e.target.value)}/>
+  </div>
+    <button class='submit-button' onClick={handleEmail}>Submit</button>
   </div>
   );
 }

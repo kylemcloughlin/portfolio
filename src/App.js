@@ -6,7 +6,7 @@ import './styles/style.css';
 import profile from './hooks/photos/testPhoto.png'
 
 function App() {
-  const [page, setPage] = useState(About);
+  const [page, setPage] = useState(Projects);
   return (
     <div className="App">
        <header className="App-header">
