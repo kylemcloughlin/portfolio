@@ -26,7 +26,7 @@
   margin-top: 14em;
 }
 
-.contact:before {
+.contact::before {
   position: absolute;
   width: 100%;
   height: 122%;
@@ -154,28 +154,29 @@
 
 .card-header {
   bottom: 26%;
-  position: relative;
+  position: absolute;
   background: red;
   width: 100%;
-  height: 12em;
+  height: 10em;
+  top: 0em;
+  border-radius: .5em;
 }
 
 .card-header:after {
   position: absolute;
   width: 100%;
-  height: 122%;
+  height: 64%;
   content: '';
   background: inherit;
-  z-index: -1;
-  top: 0;
+  z-index: 0;
+  top: 129px;
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: skewY(4deg);
-          transform: skewY(4deg);
-  opacity: .5;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: skewY(-13deg);
+          transform: skewY(-13deg);
 }
 
 #profile-photo {
@@ -258,7 +259,6 @@
 .wrapper {
   width: 100%;
   margin-top: 5em;
-  background-color: lightgray;
 }
 
 .seperator {

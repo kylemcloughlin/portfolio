@@ -25,7 +25,7 @@ function App() {
         <div class='wrapper'>
         < About />
        <div class='seperator'></div>
-        {/* < Projects/> */}
+        < Projects/>
         < Contact />
         </div>
       </body>
