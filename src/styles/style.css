@@ -167,6 +167,8 @@
   height: 14em;
   top: 11em;
   border-radius: .5em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .card-footer::before {
@@ -202,6 +204,8 @@
   position: absolute;
   bottom: 10em;
   left: .5em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .p-features {
@@ -209,11 +213,15 @@
   position: absolute;
   left: 1em;
   z-index: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .buttons-div {
   position: absolute;
   bottom: 44px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 #profile-photo {
