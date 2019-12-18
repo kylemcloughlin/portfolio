@@ -98,7 +98,7 @@ cursive;
 }
 
 #title {
-  @include position(17%, 20%)
+  @include position(6%, 20%)
   @include flexCenter();
   font-family: $secondaryFont;
   color: white;
@@ -106,7 +106,7 @@ cursive;
 }
 
 #job-title {
-  @include position(23%, 23%);
+  @include position(12%, 23%);
   @include flexCenter();
   color: white;
   font-family: $secondaryFont;
@@ -146,7 +146,7 @@ cursive;
 }
 
 .seperatorOverlay {
-  @include position(71%, 0%)
+  @include position(71%, 0%);
   width: 100%;
   background: red;
   height: 19em;
@@ -154,4 +154,10 @@ cursive;
   margin-bottom: 3em;
   opacity: 0.4;
   transform: skewY(7deg);
+}
+
+.projects-button {
+  position: relative;
+  top: 13em;
+  left: 13em;
 }

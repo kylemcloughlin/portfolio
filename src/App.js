@@ -19,6 +19,7 @@ function App() {
         <h1 id='logo'>K</h1>
          <h1 id='title'>Kyle McLoughlin</h1>
          <h3 id = 'job-title'> Full Stack Web Developer </h3>
+         <button class='projects-button'>Projects</button>
       <body>
         <div class='wrapper'>
         < About />

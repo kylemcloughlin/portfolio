@@ -27,9 +27,14 @@ function Projects() {
 </div>
 <div class='flip-card-back'>
             <p>{website.discription}</p>
+         {/* <div class='buttons-div'>  */}
+            <button class='buttons-div'>Demo</button>
+            {/* <button>code</button> */}
+            {/* <button>live</button> */}
+         {/* </div> */}
+
 </div>
             {/* gon have to map key features  */}
-            {/* <button>{website.linkToProject}</button> */}
             {/* <button>{website.linkToProjectsCode}</button>  */}
 
             </div>
