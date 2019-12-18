@@ -9,20 +9,25 @@ function Projects() {
 
       {
         websites.map(website => {
+         const projectStyle = {
+           backgroundColor: 'blue'
+         
+         };
+
           return (
             <div class='flip-card-container'>
             <div class='flip-card'> 
 <div class='flip-card-front'>
-            <div class='card-header'> 
-            <h1>{website.name} </h1>
+            <img class='p-img' src={require(`${website.photos}`)} />
+            <div class='card-footer' style={projectStyle}> 
+            <h1 class='p-name'>{website.name} </h1>
+            <li class='p-features'>{website.keyFeatures}  </li> 
             </div>
             
 </div>
 <div class='flip-card-back'>
             <p>{website.discription}</p>
 </div>
-            {/* <img src={require(`${website.photos}`)} /> */}
-            {/* <li>{website.keyFeatures}  </li>  */}
             {/* gon have to map key features  */}
             {/* <button>{website.linkToProject}</button> */}
             {/* <button>{website.linkToProjectsCode}</button>  */}
