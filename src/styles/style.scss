@@ -5,10 +5,14 @@
 
 //variables
 $primaryColour : red;
-$secondaryColour : blue; 
-$primaryFont : 'Varela Round', sans-serif;
-$secondaryFont : 'Mukta', sans-serif;
-$logoFont :  'Faster One', cursive;
+$bground : url('.././hooks/photos/toronto.gif');
+$secondaryColour : blue;
+$primaryFont : 'Varela Round',
+sans-serif;
+$secondaryFont : 'Mukta',
+sans-serif;
+$logoFont : 'Faster One',
+cursive;
 //mixins
 
 
@@ -17,66 +21,110 @@ $logoFont :  'Faster One', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $primaryColour;
+  // background: $primaryColour;
 }
+
 @mixin position($top, $left) {
-  position: relative;
+  position: absolute;
   top: $top;
   left: $left;
 
-  
-}
-#profile-photo {
-    max-width: 25%;
-    max-height: 25%;
-    border-radius: 5em;
-    @include position(0%, 38%);
-    margin-top: 1em;
+
 
 }
+
+#profile-photo {
+  max-height: auto;
+  max-height: 333em;
+
+  position: absolute;
+  top: 0%;
+
+  opacity: .2;
+
+
+}
+
 .App-header {
- position: relative;
-  background: $primaryColour;
- width: 100%;
- height: 12em;
+  position: relative;
+  background-color: $primaryColour;
+  background-image: $bground;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 12em;
+  top: -21px;
+
   &:after {
-     position: absolute;
-     width: 100%;
-     height: 130%;
-     content: '';
-     background: inherit;
-     z-index: -1;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     transform-origin: top left;
-     transform: skewY(12deg);
-  };
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: -1px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+
+  }
+
+  ;
+}
+
+.overlay {
+  background-color: $primaryColour;
+  width: 100%;
+  position: absolute;
+  height: 12em;
+  opacity: 0.5;
+  top: 0;
+
+&::after {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(6deg);
+}
 }
 
 #title {
-  // @include position(1%, 5%)
+  @include position(17%, 20%)
   @include flexCenter();
-font-family: $secondaryFont;
+  font-family: $secondaryFont;
+  color: white;
+
 }
+
 #job-title {
-  // @include position(11%, 50%);
+  @include position(23%, 23%);
   @include flexCenter();
-  margin-top: -17px;
+  color: white;
   font-family: $secondaryFont;
 
 
 }
+
 #logo {
-  @include position(-35%,4% );
+  @include position( -2%, 4%);
   // float: left;
-font-family: $logoFont;
-background: red;
-width: 10%;
-font-size: 2em;
+  font-family: $logoFont;
+  // background: red;
+  width: 10%;
+  font-size: 2em;
+  color: white;
 
 }
+
 .nav-bar {
   display: none;
 }
@@ -84,14 +132,26 @@ font-size: 2em;
 .wrapper {
   width: 100%;
   margin-top: 5em;
-  
+
 }
 
 .seperator {
-   width: 100%;
-   background: red;
-   height: 19em;
-   margin-top: 3em;
-   margin-bottom: 3em;
-   transform: skewY(12deg);
-   }
+  @include position(71%, 0%)
+  width: 100%;
+  background-image: url('.././hooks/photos/banner2.jpg');
+  height: 19em;
+      margin-top: 6em;
+      margin-bottom: 3em;
+      transform: skewY(7deg);
+}
+
+.seperatorOverlay {
+  @include position(71%, 0%)
+  width: 100%;
+  background: red;
+  height: 19em;
+  margin-top: 6em;
+  margin-bottom: 3em;
+  opacity: 0.4;
+  transform: skewY(7deg);
+}

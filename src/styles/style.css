@@ -19,11 +19,13 @@
 }
 
 .contact {
-  position: relative;
+  position: absolute;
   background: red;
   width: 100%;
   height: 19em;
   margin-top: 14em;
+  top: 187em;
+  opacity: .4;
 }
 
 .contact::before {
@@ -65,6 +67,11 @@
   width: 81%;
   height: 2em;
   border: none;
+}
+
+.projects {
+  position: absolute;
+  top: 60em;
 }
 
 .flip-card-container {
@@ -202,20 +209,21 @@
 }
 
 #profile-photo {
-  max-width: 25%;
-  max-height: 25%;
-  border-radius: 5em;
-  position: relative;
+  max-height: auto;
+  max-height: 333em;
+  position: absolute;
   top: 0%;
-  left: 38%;
-  margin-top: 1em;
+  opacity: .2;
 }
 
 .App-header {
   position: relative;
-  background: red;
+  background-color: red;
+  background-image: url(".././hooks/photos/toronto.gif");
+  background-repeat: no-repeat;
   width: 100%;
   height: 12em;
+  top: -21px;
 }
 
 .App-header:after {
@@ -225,17 +233,46 @@
   content: '';
   background: inherit;
   z-index: -1;
-  top: 0;
+  top: -1px;
   right: 0;
   bottom: 0;
   left: 0;
   -webkit-transform-origin: top left;
           transform-origin: top left;
-  -webkit-transform: skewY(12deg);
-          transform: skewY(12deg);
+  -webkit-transform: skewY(6deg);
+          transform: skewY(6deg);
+}
+
+.overlay {
+  background-color: red;
+  width: 100%;
+  position: absolute;
+  height: 12em;
+  opacity: 0.5;
+  top: 0;
+}
+
+.overlay::after {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(6deg);
+          transform: skewY(6deg);
 }
 
 #title {
+  position: absolute;
+  top: 17%;
+  left: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,11 +282,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: red;
   font-family: "Mukta", sans-serif;
+  color: white;
 }
 
 #job-title {
+  position: absolute;
+  top: 23%;
+  left: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,19 +299,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: red;
-  margin-top: -17px;
+  color: white;
   font-family: "Mukta", sans-serif;
 }
 
 #logo {
-  position: relative;
-  top: -35%;
+  position: absolute;
+  top: -2%;
   left: 4%;
   font-family: "Faster One", cursive;
-  background: red;
   width: 10%;
   font-size: 2em;
+  color: white;
 }
 
 .nav-bar {
@@ -284,12 +323,29 @@
 }
 
 .seperator {
+  position: absolute;
+  top: 71%;
+  left: 0%;
+  width: 100%;
+  background-image: url(".././hooks/photos/banner2.jpg");
+  height: 19em;
+  margin-top: 6em;
+  margin-bottom: 3em;
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+}
+
+.seperatorOverlay {
+  position: absolute;
+  top: 71%;
+  left: 0%;
   width: 100%;
   background: red;
   height: 19em;
-  margin-top: 3em;
+  margin-top: 6em;
   margin-bottom: 3em;
-  -webkit-transform: skewY(12deg);
-          transform: skewY(12deg);
+  opacity: 0.4;
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
 }
 /*# sourceMappingURL=style.css.map */

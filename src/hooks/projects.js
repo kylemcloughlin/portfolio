@@ -5,7 +5,7 @@ function Projects() {
   let websites = seed.seed;
  console.log(websites)
   return (
-    <div className="App">
+    <div className="projects">
 
       {
         websites.map(website => {

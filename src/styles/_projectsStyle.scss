@@ -8,7 +8,10 @@ sans-serif;
   align-items: center;
 
 }
-
+.projects {
+      position: absolute;
+          top: 60em;
+}
 .flip-card-container {
   font-family: $secondaryFont;
   @include flexCenter();
