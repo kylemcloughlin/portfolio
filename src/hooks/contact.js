@@ -29,8 +29,11 @@ function Contact() {
 }
  
  return (
- <div class="contact">
-  <div class='input-wrapper'>
+ <div >
+ <div class='contact'></div>
+ <div class='contact-form'>
+
+ <div class='input-wrapper'>
     {/* <label class='label' >Email</label> */}
     <input class='input' placeholder='Email' onChange={(e) => setFrom(e.target.value)} />
   </div>
@@ -43,7 +46,8 @@ function Contact() {
     <textarea id="message-body"class='input' placeholder='Message' onChange={(e) => setMessage(e.target.value)}/>
   </div>
     <button class='submit-button' onClick={handleEmail}>Submit</button>
-  </div>
+ </div>
+ </div>
   );
 }
 

@@ -126,12 +126,48 @@ sans-serif;
   left: 1em;
   z-index: 0;
   backface-visibility: hidden;
+ }
+
+ .p-discription {
+   margin: 1em;
+ }
+.demo-but{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  backface-visibility: hidden;
+   border-radius: 2em;
+   border: none;
+   height: 2em;
+   width: 9em;
+   color: aliceblue;
+   background: red;
+   opacity: .5;
+    transition: transform .5s;
+   &:hover {
+     opacity: 1;
+
+   }
+
+}
+
+.code-but {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  backface-visibility: hidden;
+  border-radius: 2em;
+  border: none;
+  height: 2em;
+  width: 9em;
+  color: aliceblue;
+  background: red;
+  opacity: .5;
+  transition: transform .5s;
+
+  &:hover {
+    opacity: 1;
 
   }
-
-.buttons-div{
-      position: absolute;
-      bottom: 44px;
-  backface-visibility: hidden;
 
 }

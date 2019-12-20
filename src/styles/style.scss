@@ -157,7 +157,20 @@ cursive;
 }
 
 .projects-button {
-  position: relative;
-  top: 13em;
-  left: 13em;
-}
+ position: absolute;
+ top: 10em;
+ left: 9em;
+ border-radius: 2em;
+ border: none;
+ height: 2em;
+ width: 9em;
+ color: aliceblue;
+ background: steelblue;
+ opacity: .5;
+  &:hover {
+    opacity: 1;
+  
+  }
+ }
+
+
