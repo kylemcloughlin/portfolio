@@ -13,18 +13,18 @@
 }
 .contact {
     position: absolute;
-    background: red;
+    background: #202833;
     width: 100%;
     height: 19em;
     margin-top: 14em;
-        top: 187em;
-        opacity: .4;
+        top: 197em;
+        opacity: .9;
     &::before {
           position: absolute;
           width: 100%;
           height: 122%;
           content: '';
-          background: red;
+          background: #202833;
           z-index: 0;
           top: -48%;
           right: 0;
@@ -61,7 +61,7 @@
 
 .contact-form {
   position: absolute;
-  top: 200em;
+  top: 210em;
   width: 100%;
   
 

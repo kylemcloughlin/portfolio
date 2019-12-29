@@ -8,10 +8,13 @@ sans-serif;
   align-items: center;
 
 }
+$primaryColour : #4D9D99;
+$secondaryColour : #63ada8;
 .projects {
-      position: absolute;
-          top: 60em;
+  position: absolute;
+  top: 74em;
 }
+
 .flip-card-container {
   font-family: $secondaryFont;
   @include flexCenter();
@@ -60,12 +63,12 @@ sans-serif;
 }
 
 .flip-card-front {
-  background-color: #333;
+  background-color: $secondaryColour;
   color: #fff;
 }
 
 .flip-card-back {
-  background-color: #517fa4;
+  background-color: $primaryColour;
   color: #fff;
   transform: rotateY(180deg);
 }
@@ -74,6 +77,7 @@ sans-serif;
 .card-footer {
   bottom: 26%;
   position: absolute;
+  background-color: $secondaryColour;
   width: 100%;
   height: 14em;
   top: 11em;
@@ -94,19 +98,19 @@ sans-serif;
     left: 0;
     transform-origin: bottom left;
     transform: skewY(-4deg);
-    
-   
+
+
   }
 
 }
 
 .p-img {
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 2.7em;
-    width: 100%;
-    border-radius: 0.5em;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 2.7em;
+  width: 100%;
+  border-radius: 0.5em;
   backface-visibility: hidden;
 
 }
@@ -114,8 +118,8 @@ sans-serif;
 .p-name {
   color: #333;
   position: absolute;
-  bottom: 10em;
-  left: .5em;
+  // bottom: 10em;
+  left: 10%;
   backface-visibility: hidden;
 
 }
@@ -123,51 +127,90 @@ sans-serif;
 .p-features {
   font-size: 2em;
   position: absolute;
-  left: 1em;
+  left: 5%;
+  top: 25%;
   z-index: 0;
   backface-visibility: hidden;
- }
+}
 
- .p-discription {
-   margin: 1em;
- }
-.demo-but{
+.p-discription {
+  margin: 1em;
+}
+
+.demo-but {
   position: absolute;
-  bottom: 1em;
-  right: 1em;
-  backface-visibility: hidden;
-   border-radius: 2em;
-   border: none;
-   height: 2em;
-   width: 9em;
-   color: aliceblue;
-   background: red;
-   opacity: .5;
-    transition: transform .5s;
-   &:hover {
-     opacity: 1;
+  top: 17em;
+  left: 1.2em;
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  // font-family: "montserrat";
+  cursor: pointer;
+  transition: 0.8s;
+  overflow: hidden;
+  color: #3498db;
 
-   }
+  &:hover {
+    color: #fff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+
+  }
+
+  &:hover::before {
+    height: 180em;
+    // transition: 0.8s;
+  }
 
 }
 
 .code-but {
   position: absolute;
-  bottom: 1em;
-  left: 1em;
-  backface-visibility: hidden;
-  border-radius: 2em;
-  border: none;
-  height: 2em;
-  width: 9em;
-  color: aliceblue;
-  background: red;
-  opacity: .5;
-  transition: transform .5s;
+  top: 17em;
+  right: 1.2em;
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  // font-family: "montserrat";
+  cursor: pointer;
+  transition: 0.8s;
+  overflow: hidden;
+  color: #3498db;
 
   &:hover {
-    opacity: 1;
+    color: #fff;
+  }
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+
+  }
+
+  &:hover::before {
+    height: 180em;
+    // transition: 0.8s;
   }
 
 }
