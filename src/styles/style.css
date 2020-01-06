@@ -291,6 +291,37 @@
   height: 180em;
 }
 
+.skills-holder {
+  top: 42em;
+  left: 5.5em;
+  height: 23em;
+  width: 12em;
+  background-color: #EDF5E1;
+  position: absolute;
+}
+
+#arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 52em;
+  left: 2em;
+  border-right: 10px solid #EDF5E1;
+}
+
+#arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 52em;
+  right: 2em;
+  border-left: 10px solid #EDF5E1;
+}
+
 #profile-photo {
   max-height: auto;
   max-height: 333em;

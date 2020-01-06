@@ -7,6 +7,7 @@ import './styles/style.css';
 import headerGif from './header.gif';
 import { BrowserRouter } from "react-router-dom";
 import ScrollHandler from './hooks/scrollHandler.js';
+import Skills from './hooks/skills.js';
 
 
 function App() {
@@ -31,12 +32,12 @@ function App() {
          </Link>  
       <body>
         <div class='wrapper'>
-        < About />
+        <About/>
        <div class='seperator'></div>
-       < div class = 'seperatorOverlay' > </div>
-
-        < Projects  key='projects'/>
-        < Contact />
+       <div class ='seperatorOverlay'></div>
+       <Skills/>
+        <Projects key='projects'/>
+        <Contact/>
         </div>
       </body>
      </BrowserRouter>
