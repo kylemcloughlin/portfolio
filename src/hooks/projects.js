@@ -1,16 +1,19 @@
 import React,  { useState }from 'react';
-import seed from '../exports'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import seed from '../exports';
 
 function Projects() {
   let websites = seed.seed;
- console.log(websites)
+ console.log(websites);
   return (
-    <div className="projects">
+    <div className="projects" id={`#projects`}>
+  
 
       {
         websites.map(website => {
-      
-
+          
+          
           return (
             <div class='flip-card-container'>
             <div class='flip-card'> 

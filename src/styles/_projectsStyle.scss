@@ -10,6 +10,8 @@ sans-serif;
 }
 $primaryColour : #4D9D99;
 $secondaryColour : #63ada8;
+
+
 .projects {
   position: absolute;
   top: 74em;
@@ -49,6 +51,8 @@ $secondaryColour : #63ada8;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+    background-color: $secondaryColour;
+    color: #fff;
 }
 
 .flip-card-back {
@@ -60,18 +64,18 @@ $secondaryColour : #63ada8;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-}
-
-.flip-card-front {
-  background-color: $secondaryColour;
-  color: #fff;
-}
-
-.flip-card-back {
-  background-color: $primaryColour;
+  background-color: #8860D0;
   color: #fff;
   transform: rotateY(180deg);
 }
+
+
+
+// .flip-card-back {
+//   background-color: #8860D0;
+//   color: #fff;
+//   transform: rotateY(180deg);
+// }
 
 
 .card-footer {

@@ -129,6 +129,8 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5rem;
+  background-color: #63ada8;
+  color: #fff;
 }
 
 .flip-card-back {
@@ -147,15 +149,7 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5rem;
-}
-
-.flip-card-front {
-  background-color: #63ada8;
-  color: #fff;
-}
-
-.flip-card-back {
-  background-color: #4D9D99;
+  background-color: #8860D0;
   color: #fff;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);

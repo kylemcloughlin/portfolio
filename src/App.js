@@ -4,7 +4,6 @@ import Contact from './hooks/contact.js';
 import Projects from './hooks/projects.js';
 import { Link } from "react-router-dom";
 import './styles/style.css';
-// import profile from './hooks/photos/testPhoto.png';
 import headerGif from './header.gif';
 import { BrowserRouter } from "react-router-dom";
 import ScrollHandler from './hooks/scrollHandler.js';
@@ -25,7 +24,7 @@ function App() {
         <h1 id='logo'>K</h1>
          <h1 id='title'>Kyle McLoughlin</h1>
          <h3 id = 'job-title'> Full Stack Web Developer </h3>
-         <Link to='/#projects'>
+         <Link to={`/#projects`}>
           <button class='projects-button'>
            Projects
           </button> 
@@ -36,7 +35,7 @@ function App() {
        <div class='seperator'></div>
        < div class = 'seperatorOverlay' > </div>
 
-        < Projects  key='projects' id='/#projects'/>
+        < Projects  key='projects'/>
         < Contact />
         </div>
       </body>
