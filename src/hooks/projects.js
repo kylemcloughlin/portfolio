@@ -1,9 +1,11 @@
 import React,  { useState }from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 import seed from '../exports';
+import DemoModal from './modal.js';
+// import Modal from 'react-modal';
 
+// Modal.setAppElement(document.getElementsByClassName('flip-card-container'));
 function Projects() {
+  
   let websites = seed.seed;
  console.log(websites);
   return (
@@ -29,6 +31,7 @@ function Projects() {
             <p class='p-discription'>{website.discription}</p>
             <button class='code-but' onClick={() => {window.open(website.linkToProjectsCode)}}>code</button>
             <button class='demo-but'>Demo</button>
+           <DemoModal/>
             {/* <button>live</button> */}
 
 </div>
