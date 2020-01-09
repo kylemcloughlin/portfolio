@@ -36,7 +36,7 @@ function DemoModal(){
   },[])
     return (
       <div>
-        <button onClick={openModal}>Open Modal</button>
+        <button class='demo-but' onClick={openModal}>Demo</button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
@@ -48,13 +48,13 @@ function DemoModal(){
           <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2>
           <button onClick={closeModal}>close</button>
           <div>I am a modal</div>
-          <form>
+          {/* <form>
             <input />
             <button>tab navigation</button>
             <button>stays</button>
             <button>inside</button>
             <button>the modal</button>
-          </form>
+          </form> */}
         </Modal>
       </div>
     );

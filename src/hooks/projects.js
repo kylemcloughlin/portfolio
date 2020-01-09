@@ -30,7 +30,7 @@ function Projects() {
 <div class='flip-card-back'>
             <p class='p-discription'>{website.discription}</p>
             <button class='code-but' onClick={() => {window.open(website.linkToProjectsCode)}}>code</button>
-            <button class='demo-but'>Demo</button>
+            {/* <button class='demo-but'>Demo</button> */}
            <DemoModal/>
             {/* <button>live</button> */}
 
