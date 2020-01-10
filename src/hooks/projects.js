@@ -31,7 +31,7 @@ function Projects() {
             <p class='p-discription'>{website.discription}</p>
             <button class='code-but' onClick={() => {window.open(website.linkToProjectsCode)}}>code</button>
             {/* <button class='demo-but'>Demo</button> */}
-           <DemoModal/>
+           <DemoModal gif={website.gif}/>
             {/* <button>live</button> */}
 
 </div>
