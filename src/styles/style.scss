@@ -99,7 +99,8 @@ cursive;
 }
 
 #title {
-  @include position(6%, 20%) @include flexCenter();
+  @include position(6%, 20%); 
+  @include flexCenter();
   font-family: $secondaryFont;
   color: white;
 

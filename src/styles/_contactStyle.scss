@@ -1,38 +1,43 @@
 @mixin postion {
   position: relative;
   left: 2em;
-  
+
 }
+
 .input {
-  @include postion();   
+  @include postion();
   border: 1.5px black solid;
-      height: 2em;
-      padding-left: 1em;
-      border-radius: 2em;
-          width: 76%;
+  height: 2em;
+  padding-left: 1em;
+  border-radius: 2em;
+  width: 76%;
 }
+
 .contact {
+  position: absolute;
+  background: #0B0C10;
+  width: 100%;
+  height: 19em;
+  margin-top: 16em;
+  top: 197em;
+  opacity: .9;
+
+  &::before {
     position: absolute;
-    background: #202833;
     width: 100%;
-    height: 19em;
-    margin-top: 16em;
-        top: 197em;
-        opacity: .9;
-    &::before {
-          position: absolute;
-          width: 100%;
-          height: 122%;
-          content: '';
-          background: #202833;
-          z-index: 0;
-          top: -48%;
-          right: 0;
-          bottom: 22%;
-          left: 0;
-          transform-origin: top left;
-          transform: skewY(12deg);
-    };
+    height: 122%;
+    content: '';
+    background: #0B0C10;
+    z-index: 0;
+    top: -48%;
+    right: 0;
+    bottom: 22%;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(12deg);
+  }
+
+  ;
 }
 
 .input-wrapper {
@@ -43,26 +48,77 @@
   height: 9em;
   padding-top: 1em;
   border-radius: 1em;
-  
+
 }
+
 .label {
   float: left;
 }
 
+// .submit-button {
+//    @include postion();
+//   color: white;
+//   background-color: blue;
+//   width: 81%;
+//   // margin-left: 2em;
+//   height: 2em;
+//   border: none;
+// }
+// .submit-button {
+//   position: relative;
+//   left: 2.8em;
+//   border: 1px solid #3498db;
+//   background: none;
+//   padding: 10px 20px;
+//   font-size: 20px;
+//   cursor: pointer;
+//   transition: 0.8s;
+//   overflow: hidden;
+//   color: #3498db;
+//   width: 12em;
+// }
 .submit-button {
-   @include postion();
-  color: white;
-  background-color: blue;
-  width: 81%;
-  // margin-left: 2em;
-  height: 2em;
-  border: none;
+  position: relative;
+  left: 2.8em;
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.8s;
+  overflow: hidden;
+  color: #3498db;
+  width: 12em;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+
+  }
+
+  &:hover::before {
+    height: 180em;
+    // transition: 0.8s;
+  }
+
 }
 
 .contact-form {
   position: absolute;
   top: 210em;
   width: 100%;
-  
+
 
 }

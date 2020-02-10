@@ -1,14 +1,17 @@
 import React,  { useState }from 'react';
 
 const skillList = [{
-  title: 'test',
-  list:  ['1', '2', '3']
+  title: 'FRONTEND',
+  list:  ['HTML5', 'CSS3 | SCSS | SASS', 'JavaScript', 'React | Redux', 'jQuery']
 }, {
-  title: 'test-2',
-  list: ['4', '5', '6']
+  title: 'BACKEND',
+  list: ['NodeJS', 'Express', 'Ruby']
 }, {
-  title: 'test-3',
-  list: ['7', '8', '9']
+  title: 'DATABASE',
+  list: ['mongoDB', 'PostgreSQL', 'mySql']
+}, {
+  title: 'DEPLOYMENT',
+  list: ['Heroku', 'Git', 'Docker']
 }]
 function Skills () {
 const [count, setCount] = useState(0);
@@ -34,7 +37,9 @@ let leftArrowStyle = count <= 0 ? (hidden) : (visable);
           <h2>{currentSkill.title}</h2>
         {currentSkill.list.map((skill)=> {
          return (
-          <ul>{skill}</ul>
+          <ul>
+         <li class='skill-li'>{skill}</li>
+          </ul>
          )
 
          })}

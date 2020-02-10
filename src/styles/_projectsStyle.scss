@@ -8,8 +8,8 @@ sans-serif;
   align-items: center;
 
 }
-$primaryColour : #4D9D99;
-$secondaryColour : #63ada8;
+$primaryColour : #0B0c10;
+$secondaryColour : #C5C6C7;
 
 
 .projects {
@@ -64,7 +64,7 @@ $secondaryColour : #63ada8;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  background-color: #8860D0;
+  background-color: $primaryColour;
   color: #fff;
   transform: rotateY(180deg);
 }

@@ -1,4 +1,5 @@
-$primaryColor : #EDF5E1;
+$primaryColor : #C5C6C7;
+
 .skills-holder {
     top: 42em;
     left: 5.5em;
@@ -6,6 +7,7 @@ $primaryColor : #EDF5E1;
     width: 12em;
     background-color: $primaryColor;
     position: absolute;
+    text-align: center;
 }
 
 #arrow-left {
@@ -30,4 +32,8 @@ $primaryColor : #EDF5E1;
     top: 52em;
     right: 2em;
     border-left: 10px solid $primaryColor;
+}
+.skill-li {
+padding-right: 2em;
+
 }
