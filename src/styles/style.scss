@@ -3,7 +3,7 @@
 @import './contactStyle';
 @import './projectsStyle';
 @import './skillsStyle';
-
+@import './modalStyles.scss';
 //variables
 $primaryColour : #202833;
 $bground : url('.././hooks/photos/toronto.gif');
@@ -166,7 +166,7 @@ cursive;
    height: 2em;
    width: 9em;
    color: aliceblue;
-   background: steelblue;
+   background: #45A29E;
    opacity: .5;
     &:hover {
       opacity: 1;

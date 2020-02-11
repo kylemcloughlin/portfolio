@@ -1,7 +1,7 @@
 .about {
   margin: 1em;
   margin-top: 10em;
-  color: #66fcf1; }
+  color: #ffff; }
 
 .input {
   position: relative;
@@ -48,14 +48,14 @@
 .submit-button {
   position: relative;
   left: 2.8em;
-  border: 1px solid #3498db;
+  border: 1px solid #45A29E;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
-  color: #3498db;
+  color: #45A29E;
   width: 12em; }
   .submit-button:hover {
     color: #fff; }
@@ -181,14 +181,14 @@
   position: absolute;
   top: 17em;
   left: 1.2em;
-  border: 1px solid #3498db;
+  border: 1px solid #45A29E;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
-  color: #3498db; }
+  color: #45A29E; }
   .demo-but:hover {
     color: #fff; }
   .demo-but::before {
@@ -209,14 +209,14 @@
   position: absolute;
   top: 17em;
   right: 1.2em;
-  border: 1px solid #3498db;
+  border: 1px solid #45A29E;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
-  color: #3498db; }
+  color: #45A29E; }
   .code-but:hover {
     color: #fff; }
   .code-but::before {
@@ -265,6 +265,9 @@
 
 .skill-li {
   padding-right: 2em; }
+
+.demo-gif {
+  width: 100%; }
 
 #profile-photo {
   max-height: auto;
@@ -384,7 +387,7 @@
   height: 2em;
   width: 9em;
   color: aliceblue;
-  background: steelblue;
+  background: #45A29E;
   opacity: .5; }
   .projects-button:hover {
     opacity: 1; }
