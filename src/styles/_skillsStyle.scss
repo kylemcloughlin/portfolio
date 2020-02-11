@@ -8,6 +8,8 @@ $primaryColor : #C5C6C7;
     background-color: $primaryColor;
     position: absolute;
     text-align: center;
+    box-shadow: 5px 5px 7px 1px #0B0C10;
+    ;
 }
 
 #arrow-left {
@@ -19,6 +21,8 @@ $primaryColor : #C5C6C7;
     top: 52em;
     left: 2em;
     border-right:10px solid $primaryColor;
+    // box-shadow: 3px 3px 5px 1px #fff;
+
     
 }
 
@@ -32,6 +36,8 @@ $primaryColor : #C5C6C7;
     top: 52em;
     right: 2em;
     border-left: 10px solid $primaryColor;
+    // box-shadow: 3px 3px 5px 1px #fff;
+
 }
 .skill-li {
 padding-right: 2em;

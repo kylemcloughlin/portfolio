@@ -102,14 +102,14 @@ cursive;
   @include position(6%, 20%); 
   @include flexCenter();
   font-family: $secondaryFont;
-  color: white;
+  color: #66FCF1;
 
 }
 
 #job-title {
   @include position(12%, 23%);
   @include flexCenter();
-  color: white;
+  color: #45A29E;
   font-family: $secondaryFont;
 
 
@@ -122,7 +122,7 @@ cursive;
   // background: red;
   width: 10%;
   font-size: 2em;
-  color: white;
+  color: #45A29E;
 
 }
 
@@ -136,7 +136,7 @@ cursive;
 
 }
 
-.seperator {
+.x {
   @include position(71%, 0%);
    width: 100%;
   background-image: url('.././hooks/photos/banner2.jpg');
@@ -159,8 +159,8 @@ cursive;
 
 .projects-button {
    position: absolute;
-   top: 12em;
-   left: 12em;
+   top: 10em;
+   left: 9.2em;
    border-radius: 2em;
    border: none;
    height: 2em;

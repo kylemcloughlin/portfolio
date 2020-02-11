@@ -14,18 +14,18 @@
 
 .contact {
   position: absolute;
-  background: #0B0C10;
+  background: #1f2833;
   width: 100%;
   height: 19em;
   margin-top: 16em;
-  top: 197em;
+  top: 205em;
   opacity: .9; }
   .contact::before {
     position: absolute;
     width: 100%;
     height: 122%;
     content: '';
-    background: #0B0C10;
+    background: #1f2833;
     z-index: 0;
     top: -48%;
     right: 0;
@@ -75,7 +75,7 @@
 
 .contact-form {
   position: absolute;
-  top: 210em;
+  top: 220em;
   width: 100%; }
 
 .projects {
@@ -91,7 +91,7 @@
   height: 400px;
   perspective: 1000px;
   margin-left: 1.3em;
-  margin-bottom: .5em; }
+  margin-bottom: 2.5em; }
 
 .flip-card {
   position: absolute;
@@ -113,9 +113,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
   background-color: #C5C6C7;
-  color: #fff; }
+  color: #fff;
+  box-shadow: 6px 11px 5px 1px #1f2830; }
 
 .flip-card-back {
   position: absolute;
@@ -125,10 +125,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
-  background-color: #0B0c10;
+  background-color: #1f2833;
   color: #fff;
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+  box-shadow: 6px 11px 17px -6px #C5C6C7; }
 
 .card-footer {
   bottom: 26%;
@@ -137,7 +137,6 @@
   width: 100%;
   height: 14em;
   top: 11em;
-  border-radius: .5em;
   backface-visibility: hidden; }
   .card-footer::before {
     position: absolute;
@@ -159,7 +158,6 @@
   top: 0;
   bottom: 2.7em;
   width: 100%;
-  border-radius: 0.5em;
   backface-visibility: hidden; }
 
 .p-name {
@@ -242,7 +240,8 @@
   width: 12em;
   background-color: #C5C6C7;
   position: absolute;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 5px 5px 7px 1px #0B0C10; }
 
 #arrow-left {
   width: 0;
@@ -325,7 +324,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Mukta", sans-serif;
-  color: white; }
+  color: #66FCF1; }
 
 #job-title {
   position: absolute;
@@ -334,7 +333,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #45A29E;
   font-family: "Mukta", sans-serif; }
 
 #logo {
@@ -344,7 +343,7 @@
   font-family: "Faster One", cursive;
   width: 10%;
   font-size: 2em;
-  color: white; }
+  color: #45A29E; }
 
 .nav-bar {
   display: none; }
@@ -353,7 +352,7 @@
   width: 100%;
   margin-top: 5em; }
 
-.seperator {
+.x {
   position: absolute;
   top: 71%;
   left: 0%;
@@ -378,8 +377,8 @@
 
 .projects-button {
   position: absolute;
-  top: 12em;
-  left: 12em;
+  top: 10em;
+  left: 9.2em;
   border-radius: 2em;
   border: none;
   height: 2em;
