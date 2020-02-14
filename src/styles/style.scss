@@ -34,17 +34,6 @@ cursive;
 
 }
 
-#profile-photo {
-  max-height: auto;
-  max-height: 333em;
-
-  position: absolute;
-  top: 0%;
-
-  opacity: .2;
-
-
-}
 
 .App-header {
   position: relative;
@@ -140,12 +129,12 @@ cursive;
 
 }
 
-.x {
+.seperator {
   @include position(71%, 0%);
    width: 100%;
   background-image: url('.././hooks/photos/banner2.jpg');
-  height: 36em;
-  margin-top: 6em;
+  height: 31em;
+  margin-top: 9em;
   margin-bottom: 3em;
   transform: skewY(7deg);
 }
@@ -163,8 +152,8 @@ cursive;
 
 .projects-button {
    position: absolute;
-   top: 12em;
-   left: 12.2em;
+   top: 20%;
+   left: 33%;
    border-radius: 2em;
    border: none;
    height: 2em;

@@ -38,6 +38,9 @@ function App() {
         </div>
       </body>
      </BrowserRouter>
+          {/* <div class='footer'>
+           <h1 class='foot-logo'>K</h1>
+          </div> */}
     </div>
   );
 }

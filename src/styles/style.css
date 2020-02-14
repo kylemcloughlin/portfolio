@@ -28,16 +28,6 @@
   color: #45A29E;
 }
 
-.input {
-  position: relative;
-  left: 2em;
-  border: 1.5px black solid;
-  height: 2em;
-  padding-left: 1em;
-  border-radius: 2em;
-  width: 76%;
-}
-
 .contact {
   position: absolute;
   background: #1f2833;
@@ -65,8 +55,56 @@
           transform: skewY(12deg);
 }
 
+.title-wrapper {
+  position: relative;
+  top: -12%;
+}
+
+.contact-tl {
+  background-color: #45A29E;
+  width: 53%;
+  height: 1px;
+  margin: -1em;
+  position: relative;
+  left: 24%;
+}
+
+.contact-title {
+  text-align: center;
+  color: #66FCF1;
+  padding-right: 1em;
+  font-weight: 350;
+  font-family: "Varela Round", sans-serif;
+}
+
+.contact-ul {
+  background-color: #45A29E;
+  width: 53%;
+  height: 1px;
+  margin: -1em;
+  position: relative;
+  left: 24%;
+  margin-bottom: 1em;
+}
+
+.contact-form {
+  position: absolute;
+  width: 100%;
+  top: 4%;
+}
+
 .input-wrapper {
   padding-bottom: 1em;
+}
+
+.input {
+  position: relative;
+  left: 2em;
+  border: 1.5px black solid;
+  height: 2em;
+  padding-left: 1em;
+  border-radius: 2em;
+  width: 76%;
 }
 
 #message-body {
@@ -116,10 +154,21 @@
   height: 180em;
 }
 
-.contact-form {
-  position: absolute;
-  top: 225em;
-  width: 102%;
+.footer {
+  background-color: #0B0C10;
+  top: 0%;
+  width: 100%;
+  height: 14%;
+}
+
+.foot-logo {
+  font-family: "Faster One", cursive;
+  position: relative;
+  left: 45%;
+  margin-bottom: 0;
+  width: 10%;
+  font-size: 2em;
+  color: #45A29E;
 }
 
 .projects {
@@ -208,8 +257,8 @@
           align-items: center;
   background-color: #555555;
   color: #fff;
-  -webkit-box-shadow: 6px 11px 5px 1px #1f2830;
-          box-shadow: 6px 11px 5px 1px #1f2830;
+  -webkit-box-shadow: 0px 13px 35px 14px #333;
+          box-shadow: 0px 13px 35px 14px #333;
 }
 
 .p-img {
@@ -304,8 +353,8 @@
   color: #fff;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  -webkit-box-shadow: 6px 11px 17px -6px #C5C6C7;
-          box-shadow: 6px 11px 17px -6px #C5C6C7;
+  -webkit-box-shadow: 0px 13px 35px 14px #333;
+          box-shadow: 0px 13px 35px 14px #333;
 }
 
 .p-discription {
@@ -398,8 +447,8 @@
   background-color: #999999;
   position: absolute;
   text-align: center;
-  -webkit-box-shadow: 5px 5px 7px 1px #0B0C10;
-          box-shadow: 5px 5px 7px 1px #0B0C10;
+  -webkit-box-shadow: 0px 10px 15px 4px #0B0C10;
+          box-shadow: 0px 10px 15px 4px #0B0C10;
 }
 
 .skill-list-img {
@@ -439,6 +488,8 @@
   top: 52em;
   left: 2em;
   border-right: 10px solid #999999;
+  -webkit-box-shadow: 7px 1px 3px -2px #0B0C10;
+          box-shadow: 7px 1px 3px -2px #0B0C10;
 }
 
 #arrow-right {
@@ -450,18 +501,12 @@
   top: 52em;
   right: 2em;
   border-left: 10px solid #999999;
+  -webkit-box-shadow: -7px 1px 3px -2px #0B0C10;
+          box-shadow: -7px 1px 3px -2px #0B0C10;
 }
 
 .demo-gif {
   width: 100%;
-}
-
-#profile-photo {
-  max-height: auto;
-  max-height: 333em;
-  position: absolute;
-  top: 0%;
-  opacity: .2;
 }
 
 .App-header {
@@ -571,14 +616,14 @@
   margin-top: 5em;
 }
 
-.x {
+.seperator {
   position: absolute;
   top: 71%;
   left: 0%;
   width: 100%;
   background-image: url(".././hooks/photos/banner2.jpg");
-  height: 36em;
-  margin-top: 6em;
+  height: 31em;
+  margin-top: 9em;
   margin-bottom: 3em;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
@@ -600,8 +645,8 @@
 
 .projects-button {
   position: absolute;
-  top: 12em;
-  left: 12.2em;
+  top: 20%;
+  left: 33%;
   border-radius: 2em;
   border: none;
   height: 2em;
