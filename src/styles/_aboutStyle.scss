@@ -1,5 +1,43 @@
+$primaryFont : 'Varela Round', sans-serif;
+$secondaryFont : 'Mukta', sans-serif;
+// $secondaryColour: #45A29E;
+// $primaryColour:  #6EFAF1;
+$secondaryColour: #45A29E;
+$primaryColour: #6EFAF1;
+
 .about {
-margin: 1em;
-margin-top: 10em;
-color:#ffff;
+  margin: 1em;
+  margin-top: 5em;
+  color: $primaryColour;
+  font-family: $secondaryFont;
+  color: lightgrey  
 }
+
+.job-titles {
+  font-family: $secondaryFont;
+  text-align: center;
+}
+
+#abt-title-2 {
+  font-family: $primaryFont;
+  text-align: center;
+  position: relative;
+  top: -1.5em;
+  color: $secondaryColour;
+}
+
+.about-body {
+    position: relative;
+    top: -1.5em;
+}
+
+.about-body-t {
+  color: $secondaryColour;
+}
+
+// #paragraph-1{
+  
+// }
+// #paragraph-2 {
+
+// }

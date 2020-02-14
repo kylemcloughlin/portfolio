@@ -1,25 +1,55 @@
-$secondaryFont : 'Mukta',
-sans-serif;
+$primaryFont : 'Varela Round' , sans-serif;
+$secondaryFont : 'Mukta',sans-serif;
 
 @mixin flexCenter {
-
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
 }
 $primaryColour : #1f2833;
-$secondaryColour : #C5C6C7;
+$secondaryColour : #555555;
+
+
+
 
 
 .projects {
   position: absolute;
   top: 74em;
+  // text-align: center;
+}
+
+.title-tl {
+  background-color: #45A29E;
+  width: 50%;
+  height: 1px;
+  margin: -1em;
+  position: relative;
+  left: 29%;
+  // margin-top: 1em;
+}
+
+.project-title {
+  color: #66FCF1;
+  padding-left: .2em;
+  font-weight: 350;
+  font-family: $primaryFont
+}
+
+.title-ul {
+  background-color: #45A29E; 
+  width: 50%;
+  height: 1px;
+  margin: -1em;
+  position: relative;
+  left: 29%;
+  margin-bottom: 1em;
 }
 
 .flip-card-container {
-  font-family: $secondaryFont;
   @include flexCenter();
+  font-family: $secondaryFont;
   width: 300px;
   height: 400px;
   perspective: 1000px;
@@ -27,7 +57,13 @@ $secondaryColour : #C5C6C7;
   margin-bottom: 2.5em;
   // box-shadow: 5px 5px 7px 1px #1f2830;
 
+  
+}
 
+
+.flip-card-container:hover .flip-card {
+  transform: rotateY(180deg);
+  /* <=>  rotateY(.5turn) */
 }
 
 .flip-card {
@@ -41,11 +77,6 @@ $secondaryColour : #C5C6C7;
 
 }
 
-.flip-card-container:hover .flip-card {
-  transform: rotateY(180deg);
-  /* <=>  rotateY(.5turn) */
-}
-
 
 .flip-card-front {
   position: absolute;
@@ -56,38 +87,24 @@ $secondaryColour : #C5C6C7;
   justify-content: center;
   align-items: center;
   // border-radius: 0.5rem;
-    background-color: $secondaryColour;
-    color: #fff;
-    // box-shadow: 5px 5px 7px 1px #1f2830;
-box-shadow: 6px 11px 5px 1px #1f2830;
-
-}
-
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // border-radius: 0.5rem;
-  background-color: $primaryColour;
+  background-color: $secondaryColour;
   color: #fff;
-  transform: rotateY(180deg);
-box-shadow: 6px 11px 17px -6px #C5C6C7;
-
-
+  // box-shadow: 5px 5px 7px 1px #1f2830;
+  box-shadow: 6px 11px 5px 1px #1f2830;
+  
 }
 
-
-
-// .flip-card-back {
-//   background-color: #8860D0;
-//   color: #fff;
-//   transform: rotateY(180deg);
-// }
-
+.p-img {
+  height: auto;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 2.7em;
+  width: 99.3%;
+  // border-radius: 0.5em;
+  backface-visibility: hidden;
+  
+}
 
 .card-footer {
   bottom: 26%;
@@ -119,37 +136,65 @@ box-shadow: 6px 11px 17px -6px #C5C6C7;
 
 }
 
-.p-img {
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 2.7em;
-  width: 100%;
-  // border-radius: 0.5em;
-  backface-visibility: hidden;
-
-}
-
 .p-name {
-  color: #333;
+  color: #222222;
   position: absolute;
-  // bottom: 10em;
-  left: 10%;
+  top: -10%;
+  left: 4%;
   backface-visibility: hidden;
+  // text-align: center;
 
 }
 
 .p-features {
-  font-size: 2em;
-  position: absolute;
-  left: 5%;
-  top: 25%;
-  z-index: 0;
+  position: relative;
+  top: 22%;
+  // z-index: 0;
   backface-visibility: hidden;
 }
 
+.list-point {
+  font-size: larger;
+  font-weight: 100;
+  color: #dddddd;
+  text-align: center; 
+  margin: 0;
+  font-family: 'Roboto',
+  sans-serif;
+  ;
+}
+
+.list-point-ul {
+  background-color: #888888;
+  width: 22%;
+  height: 1px;
+  margin: 5px;
+  position: relative;
+  left: 39%;
+}
+
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border-radius: 0.5rem;
+  background-color: $primaryColour;
+  color: #fff;
+  transform: rotateY(180deg);
+  box-shadow: 6px 11px 17px -6px #C5C6C7;
+}
+
+
+
 .p-discription {
   margin: 1em;
+  font-family: 'Roboto',
+  sans-serif;
+  text-align: center;
 }
 
 .demo-but {
@@ -160,7 +205,8 @@ box-shadow: 6px 11px 17px -6px #C5C6C7;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
-  // font-family: "montserrat";
+  font-family: 'Roboto',
+  sans-serif;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
@@ -176,7 +222,7 @@ box-shadow: 6px 11px 17px -6px #C5C6C7;
     left: 0;
     width: 100%;
     height: 0%;
-    background: #3498db;
+    background: #45A29E;
     z-index: -1;
     transition: 0.8s;
     bottom: 0;
@@ -199,7 +245,8 @@ box-shadow: 6px 11px 17px -6px #C5C6C7;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
-  // font-family: "montserrat";
+  font-family: 'Roboto',
+  sans-serif;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
@@ -215,7 +262,7 @@ box-shadow: 6px 11px 17px -6px #C5C6C7;
     left: 0;
     width: 100%;
     height: 0%;
-    background: #3498db;
+    background: #45A29E;
     z-index: -1;
     transition: 0.8s;
     top: 0;
@@ -229,3 +276,4 @@ box-shadow: 6px 11px 17px -6px #C5C6C7;
   }
 
 }
+

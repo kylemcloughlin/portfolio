@@ -17,27 +17,24 @@ function App() {
   }
   return (
     <div className="App">
-       <header className="App-header" style={style}>
-      </header> 
-        <BrowserRouter >
-          <ScrollHandler/>
+      <header className="App-header" style={style}/>
+      <BrowserRouter>
+      <ScrollHandler/>
       <div class='overlay'></div>
         <h1 id='logo'>K</h1>
-         <h1 id='title'>Kyle McLoughlin</h1>
-         <h3 id = 'job-title'> Full Stack Web Developer </h3>
-         <Link to={`/#projects`}>
-          <button class='projects-button'>
-           Projects
-          </button> 
-         </Link>  
+        <h1 id='title'>Kyle McLoughlin</h1>
+        <h3 id = 'job-title'> Full Stack Web Developer </h3>
+        <Link to={`/#projects`}>
+          <button class='projects-button'>See Projects</button> 
+        </Link>  
       <body>
         <div class='wrapper'>
         <About/>
-       <div class='seperator'></div>
-       <div class ='seperatorOverlay'></div>
-       <Skills/>
-        <Projects key='projects'/>
-        <Contact/>
+        <div class='seperator'></div>
+          <div class ='seperatorOverlay'></div>
+          <Skills/>
+          <Projects key='projects'/>
+          <Contact/>
         </div>
       </body>
      </BrowserRouter>
