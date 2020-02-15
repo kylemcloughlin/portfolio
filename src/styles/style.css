@@ -1,4 +1,7 @@
 .about {
+  position: absolute;
+  top: 11em;
+  left: 0em;
   margin: 1em;
   margin-top: 5em;
   color: #6EFAF1;
@@ -26,6 +29,12 @@
 
 .about-body-t {
   color: #45A29E;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    top: 13em;
+  }
 }
 
 .contact {
@@ -171,6 +180,37 @@
   color: #45A29E;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer {
+    position: relative;
+    right: 4em;
+    top: 1em;
+  }
+  .foot-logo {
+    left: 12.2em;
+    margin-bottom: .1em;
+  }
+  .contact {
+    top: 210em;
+  }
+  .contact::before {
+    top: -63%;
+    -webkit-transform: skewY(7deg);
+            transform: skewY(7deg);
+  }
+  .submit-button {
+    left: 10.7em;
+    top: .2em;
+  }
+  .contact-form {
+    left: 6%;
+    width: 94%;
+  }
+  .input {
+    width: 81%;
+  }
+}
+
 .projects {
   position: absolute;
   top: 74em;
@@ -183,6 +223,15 @@
   margin: -1em;
   position: relative;
   left: 29%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project-title {
@@ -203,15 +252,6 @@
 }
 
 .flip-card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: "Mukta", sans-serif;
   width: 300px;
   height: 400px;
@@ -439,6 +479,26 @@
   height: 180em;
 }
 
+@media only screen and (min-width: 414px) {
+  .project-title {
+    padding-left: .8em;
+  }
+  .card-holder {
+    position: relative;
+    left: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    left: 11em;
+  }
+}
+
+.skills {
+  overflow: hidden;
+}
+
 .skills-holder {
   top: 42em;
   left: 5.5em;
@@ -449,6 +509,10 @@
   text-align: center;
   -webkit-box-shadow: 0px 10px 15px 4px #0B0C10;
           box-shadow: 0px 10px 15px 4px #0B0C10;
+}
+
+.lrg-skills-holder {
+  visibility: hidden;
 }
 
 .skill-list-img {
@@ -503,6 +567,52 @@
   border-left: 10px solid #999999;
   -webkit-box-shadow: -7px 1px 3px -2px #0B0C10;
           box-shadow: -7px 1px 3px -2px #0B0C10;
+}
+
+.skills-wrapper {
+  visibility: hidden;
+  width: 0%;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills {
+    overflow: inherit;
+  }
+  #arrow-right {
+    visibility: hidden !important;
+  }
+  #arrow-left {
+    visibility: hidden !important;
+  }
+  .skills-holder {
+    visibility: hidden;
+  }
+  .lrg-skills-holder {
+    visibility: visible;
+    position: relative;
+    top: -58em;
+    height: 23em;
+    width: 12em;
+    background-color: #999999;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 15px 4px #0B0C10;
+            box-shadow: 0px 10px 15px 4px #0B0C10;
+    margin-right: -1em;
+  }
+  .skills-wrapper {
+    visibility: visible !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .demo-gif {
@@ -563,9 +673,9 @@
 }
 
 #title {
-  position: absolute;
-  top: 6%;
-  left: 20%;
+  position: relative;
+  top: -6em;
+  left: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,9 +690,9 @@
 }
 
 #job-title {
-  position: absolute;
-  top: 12%;
-  left: 23%;
+  position: relative;
+  top: -12em;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,9 +708,9 @@
 }
 
 #logo {
-  position: absolute;
-  top: -2%;
-  left: 4%;
+  position: relative;
+  top: -6.5em;
+  left: 0.5em;
   font-family: "Faster One", cursive;
   width: 10%;
   font-size: 2em;
@@ -617,35 +727,33 @@
 }
 
 .seperator {
-  position: absolute;
-  top: 71%;
+  position: relative;
+  top: 3em;
   left: 0%;
   width: 100%;
   background-image: url(".././hooks/photos/banner2.jpg");
   height: 31em;
   margin-top: 9em;
-  margin-bottom: 3em;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
 }
 
 .seperatorOverlay {
-  position: absolute;
-  top: 71%;
+  position: relative;
+  top: -31em;
   left: 0%;
   width: 100%;
   background: #202833;
   height: 31em;
-  margin-top: 9em;
-  margin-bottom: 3em;
+  margin-top: 3em;
   opacity: 0.8;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
 }
 
 .projects-button {
-  position: absolute;
-  top: 20%;
+  position: relative;
+  top: -18em;
   left: 33%;
   border-radius: 2em;
   border: none;
@@ -653,5 +761,14 @@
   width: 9em;
   color: aliceblue;
   background: #45A29E;
+}
+
+@media only screen and (min-width: 768px) {
+  .projects-button {
+    left: 42%;
+  }
+  .seperatorOverlay {
+    margin-top: 3em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

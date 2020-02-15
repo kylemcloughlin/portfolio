@@ -2,16 +2,16 @@ import React,  { useState }from 'react';
 
 const skillList = [{
   title: 'FRONTEND',
-  list:  ['HTML5', 'CSS3 | SCSS | SASS', 'JavaScript', 'React | Redux', 'jQuery']
+  skills:  ['HTML5', 'CSS3 | SCSS | SASS', 'JavaScript', 'React | Redux', 'jQuery']
 }, {
   title: 'BACKEND',
-  list: ['NodeJS', 'Express', 'Ruby']
+  skills: ['NodeJS', 'Express', 'Ruby']
 }, {
   title: 'DATABASE',
-  list: ['mongoDB', 'PostgreSQL', 'mySql']
+  skills: ['mongoDB', 'PostgreSQL', 'mySql']
 }, {
   title: 'DEPLOYMENT',
-  list: ['Heroku', 'Git', 'Docker']
+  skills: ['Heroku', 'Git', 'Docker']
 }]
 
 function Skills () {
@@ -27,17 +27,17 @@ function Skills () {
      opacity: '0',
      transition: 'visibility 0 s 2 s, opacity 2 s linear'
   };
-  let rightArrowStyle = count <= 1 ? (visable) : (hidden);
+  let rightArrowStyle = count <= 2 ? (visable) : (hidden);
   let leftArrowStyle = count <= 0 ? (hidden) : (visable);
 
   return (
-   <div>
+   <div class='skills'>
      <div id='arrow-left' style={leftArrowStyle} onClick={() =>  setCount(count - 1)}></div>
      <div class='skills-holder'>
        <h1 class='skill-list-img'>{count}</h1>
        <div class='skill-list'>
          <h2 class='skill-title'>{currentSkill.title}</h2>
-         {currentSkill.list.map((skill)=> {
+         {currentSkill.skills.map((skill)=> {
            return (
               <div class='skill-list-item'>
                 <h5>{skill}</h5>
@@ -47,6 +47,26 @@ function Skills () {
          })}
       </div>
      </div>
+         <div class='skills-wrapper'>
+           {skillList.map((list)=> {
+             return (
+               <div class='lrg-skills-holder'>
+                 <h1 class='skill-list-img'>{count}</h1>
+                 <div class='skill-list'>
+                 <h2 class='skill-title'>{list.title}</h2>  
+                 {list.skills.map((skill) =>{
+                   return (
+                     <div class='skill-list-item'>
+                       <h5>{skill}</h5>
+                       <div class='underline'/>
+                     </div>
+                   )  
+                 })}
+                </div>
+              </div>
+              )
+            })}
+          </div>
      <div id='arrow-right' style={rightArrowStyle} onClick={ () => setCount(count + 1)}></div>
    </div>
   )

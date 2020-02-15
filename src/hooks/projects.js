@@ -11,6 +11,7 @@ function Projects() {
       <div class='title-tl'/>     
       <h1 class='project-title'>PROJECTS PORTFOLIO</h1>
       <div class='title-ul'/>
+    <div class='card-holder'>
       {websites.map(website => {     
         return (
           <div class='flip-card-container'>
@@ -41,6 +42,7 @@ function Projects() {
           </div>
         )
       })}
+      </div>
     </div>
   );
 }

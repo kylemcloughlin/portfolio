@@ -159,3 +159,33 @@ cursive;
   font-size: 2em;
   color: #45A29E;
 }
+
+@media only screen and (min-width: 768px) { 
+  .footer {
+    position: relative;
+    right: 4em;
+    top: 1em;
+  }
+  .foot-logo {
+    left: 12.2em;
+    margin-bottom: .1em;
+  }
+  .contact {
+    top: 210em;
+    &::before{
+      top: -63%;
+      transform: skewY(7deg);
+    }
+  }
+  .submit-button {
+    left: 10.7em;
+    top: .2em;
+  }
+  .contact-form {
+    left: 6%;
+    width: 94%
+  }
+  .input {
+    width: 81%;
+  }
+}

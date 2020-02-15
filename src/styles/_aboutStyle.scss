@@ -4,8 +4,17 @@ $secondaryFont : 'Mukta', sans-serif;
 // $primaryColour:  #6EFAF1;
 $secondaryColour: #45A29E;
 $primaryColour: #6EFAF1;
+@mixin position($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+
+
+
+}
 
 .about {
+@include position(11em, 0em);
   margin: 1em;
   margin-top: 5em;
   color: $primaryColour;
@@ -35,6 +44,12 @@ $primaryColour: #6EFAF1;
   color: $secondaryColour;
 }
 
+
+@media only screen and (min-width: 768px) {
+  .about {
+    top: 13em;
+  }
+}
 // #paragraph-1{
   
 // }

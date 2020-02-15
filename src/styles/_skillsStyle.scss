@@ -3,8 +3,15 @@ $secondaryColor : #333333;
 $primaryFont : 'Varela Round', sans-serif;
 $secondaryFont : 'Mukta', sans-serif;
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.skills {
+  overflow: hidden;
+}
 .skills-holder {
   top: 42em;
   left: 5.5em;
@@ -15,6 +22,9 @@ $secondaryFont : 'Mukta', sans-serif;
   text-align: center;
   box-shadow: 0px 10px 15px 4px #0B0C10;
 //   font-family: $secondaryFont;
+}
+.lrg-skills-holder {
+  visibility: hidden;
 }
 .skill-list-img {
  position: relative;
@@ -70,6 +80,46 @@ $secondaryFont : 'Mukta', sans-serif;
   box-shadow: -7px 1px 3px -2px #0B0C10;
 
 }
-.skill-li {
-//   padding-right: 2em;
+.skills-wrapper {
+  visibility: hidden;
+  width: 0%;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+ .skills {
+   overflow: inherit;
+ }
+  #arrow-right {
+    visibility: hidden !important;
+  }
+  #arrow-left{
+    visibility: hidden !important;
+  }
+  .skills-holder {
+    visibility: hidden;
+  }
+  .lrg-skills-holder {
+    visibility: visible;
+    position: relative;
+    top: -58em;
+    // left: 5.5em;
+    height: 23em;
+    width: 12em;
+    background-color: $primaryColor;
+    text-align: center;
+    box-shadow: 0px 10px 15px 4px #0B0C10;
+    margin-right: -1em;
+
+
+  }
+  .skills-wrapper {
+    visibility: visible !important;   
+    @include flexCenter(); 
+    // top: ;
+    position: relative;
+    width: 100%
+
+  }
 }

@@ -26,7 +26,7 @@ cursive;
 }
 
 @mixin position($top, $left) {
-  position: absolute;
+  position: relative;
   top: $top;
   left: $left;
 
@@ -91,7 +91,7 @@ cursive;
 }
 
 #title {
-  @include position(6%, 20%); 
+  @include position(-6em, 0%); 
   @include flexCenter();
   font-family: $secondaryFont;
   color: #66FCF1;
@@ -99,7 +99,7 @@ cursive;
 }
 
 #job-title {
-  @include position(12%, 23%);
+  @include position(-12em, 0);
   @include flexCenter();
   color: #45A29E;
   font-weight: 200;
@@ -109,7 +109,7 @@ cursive;
 }
 
 #logo {
-  @include position(-2%, 4%);
+  @include position(-6.5em, .5em);
   // float: left;
   font-family: $logoFont;
   // background: red;
@@ -130,30 +130,29 @@ cursive;
 }
 
 .seperator {
-  @include position(71%, 0%);
+  @include position(3em, 0%);
    width: 100%;
   background-image: url('.././hooks/photos/banner2.jpg');
   height: 31em;
   margin-top: 9em;
-  margin-bottom: 3em;
+  // margin-bottom: 3em;
   transform: skewY(7deg);
 }
 
 .seperatorOverlay {
-  @include position(71%, 0%);
+  @include position(-31em, 0%);
   width: 100%;
   background: $primaryColour;
   height: 31em;
-  margin-top: 9em;
-  margin-bottom: 3em;
+  margin-top: 3em;
+  // margin-bottom: 3em;
   opacity: 0.8;
   transform: skewY(7deg);
 }
 
 .projects-button {
-   position: absolute;
-   top: 20%;
-   left: 33%;
+  @include position(-18em, 33%);
+  // @include flexCenter();
    border-radius: 2em;
    border: none;
    height: 2em;
@@ -162,3 +161,27 @@ cursive;
    background: #45A29E;
   
 }
+
+@media only screen and (min-width: 768px) {
+ .projects-button {
+   left: 42%;
+ }
+ .seperatorOverlay {
+   margin-top: 3em;
+  //  @include position(-31em, 0%);
+ }
+}
+
+
+
+
+
+// @media only screen and (min-width: 414px) {}
+
+// @media only screen and (min-width: 414px) {}
+
+// @media only screen and (min-width: 414px) {}
+
+// @media only screen and (min-width: 414px) {}
+
+// @media only screen and (min-width: 414px) {}
