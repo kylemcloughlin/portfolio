@@ -18,11 +18,10 @@ cursive;
 
 
 @mixin flexCenter {
-
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: $primaryColour;
+
 }
 
 @mixin position($top, $left) {
@@ -39,7 +38,7 @@ cursive;
   position: relative;
   background-color: $primaryColour;
   background-image: $bground;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   width: 100%;
   height: 12em;
   top: -21px;
@@ -51,9 +50,9 @@ cursive;
     width: 100%;
     height: 130%;
     content: '';
-    background: inherit;
-    // background-image: $bground;
-    z-index: 0;
+   background: inherit;
+    background-image: $bground;
+    z-index: -1;
     top: -1px;
     right: 0;
     bottom: 0;
@@ -63,7 +62,7 @@ cursive;
 
   }
 
-  ;
+  // ;
 }
 
 .overlay {
@@ -151,24 +150,59 @@ cursive;
 }
 
 .projects-button {
-  @include position(-18em, 33%);
+  // @include position(-18em, 28%);
   // @include flexCenter();
+  position: absolute;
+  top: 1em;
+  right: 1em;
    border-radius: 2em;
    border: none;
-   height: 2em;
+   height: 3em;
    width: 9em;
+   font-size: .9em;
    color: aliceblue;
    background: #45A29E;
+   
   
 }
 
 @media only screen and (min-width: 768px) {
- .projects-button {
-   left: 42%;
- }
+ .App-header {
+   background-image: url('.././hooks/photos/header.gif');
+   background-size: cover;
+   background-position: center;
+   height: 17em;
+   &::after {
+      visibility: hidden;
+  }
+}
+  .overlay {
+    color: #6EFAF1;
+    height: 15.9em;
+    &::after {
+      visibility: hidden;
+    }
+  }
+
+//   .projects-button {
+//    left: 41%;
+//    top: -22em;
+
+//  }
  .seperatorOverlay {
    margin-top: 3em;
   //  @include position(-31em, 0%);
+
+ }
+ #job-title {
+   top: -15em;
+ }
+ #title {
+   top: -8em;
+ }
+ #logo {
+   top: -9em;
+   left: .8em;
  }
 }
 
@@ -176,8 +210,36 @@ cursive;
 
 
 
-// @media only screen and (min-width: 414px) {}
+// @media only screen and (min-width: 1024px) {
+//   .projects-button {
+//     left: 42%;
+//     top: -21.5em;
+//   }
+// }
 
+
+@media only screen and (min-width: 1250px) {
+  #job-title {
+    top: -15.5em;
+  }
+
+  .projects-button {
+    opacity: .8;
+    &:hover {
+      opacity: 1; 
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #job-title {
+    top: -15.5em;
+  }
+  // .projects-button {
+  //   left: 81em;
+  //   top: -27.5em;
+  // }
+}
 // @media only screen and (min-width: 414px) {}
 
 // @media only screen and (min-width: 414px) {}

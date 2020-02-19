@@ -7,8 +7,8 @@ function Projects() {
   let websites = seed.seed;
  
   return (
-    <div className="projects" id={`#projects`}>
-      <div class='title-tl'/>     
+    <div class="projects" id={`#projects`}>
+      <div class='title-tl'/>    
       <h1 class='project-title'>PROJECTS PORTFOLIO</h1>
       <div class='title-ul'/>
     <div class='card-holder'>

@@ -15,49 +15,57 @@ $secondaryColour : #555555;
 
 
 .projects {
+  @include flexCenter();
   position: absolute;
   top: 74em;
-  // text-align: center;
-  // @include flexCenter();
+  width: 100%
 
 }
 
 .title-tl {
   background-color: #45A29E;
-  width: 50%;
+  width: 14em;
   height: 1px;
-  margin: -1em;
-  position: relative;
-  left: 29%;
+  // margin: -1em;
+  position: absolute;
+  top: 3em;
   // margin-top: 1em;
-   @include flexCenter();
+  //  @include flexCenter();
 }
 
 .project-title {
   color: #66FCF1;
-  padding-left: .2em;
+  // padding-left: .2em;
   font-weight: 350;
-  font-family: $primaryFont
+  font-family: $primaryFont;
+  position: absolute;
+  top: 1.5em;
   
 }
 
 .title-ul {
   background-color: #45A29E; 
-  width: 50%;
+  width: 14em;
   height: 1px;
-  margin: -1em;
-  position: relative;
-  left: 29%;
+  // margin: -1em;
+  position: absolute;
+  top: 8em;
   margin-bottom: 1em;
 }
 
+.card-holder {
+  position: absolute;
+  top: 9em;
+  // left: 23px;
+}
 .flip-card-container {
-  // @include flexCenter();
+  // position: absolute;
+  // top: 9em;
   font-family: $secondaryFont;
   width: 300px;
   height: 400px;
   perspective: 1000px;
-  margin-left: 1.3em;
+  // margin-left: 1.3em; i just comminted out
   margin-bottom: 2.5em;
   // box-shadow: 5px 5px 7px 1px #1f2830;
   
@@ -76,7 +84,7 @@ $secondaryColour : #555555;
   height: 100%;
   transition: transform .5s;
   transform-style: preserve-3d;
-  margin: 1em;
+  
   // box-shadow: 5px 5px 7px 1px #1f2830;
   
 }
@@ -281,21 +289,31 @@ $secondaryColour : #555555;
   
 }
 
-@media only screen and (min-width: 414px) {
-  .project-title {
-    padding-left: .8em;
-  }
-  .card-holder {
-    // @include flexCenter();
-    position: relative;
-    left: 1.2em;
-  }
-}
+// @media only screen and (min-width: 414px) {
+//   .project-title {
+//     padding-left: .8em;
+//   }
+//   .card-holder {
+//     // @include flexCenter();
+//     position: relative;
+//     left: 1.2em;
+//   }
+// }
 
-@media only screen and (min-width: 768px) { 
-  .projects {
-    left: 11em;
-  }
+// @media only screen and (min-width: 768px) { 
+//   .projects {
+//     left: 11em;
+//   }
   
+//   .title-tl {
+//     margin-top: 2.5em;
+//   }
 
-}
+// }
+
+// @media only screen and (min-width: 1024px) {
+//   .projects {
+//     left: 18.7em;
+//     top: 75em;
+//   }
+// }

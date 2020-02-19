@@ -1,17 +1,29 @@
 import React,  { useState }from 'react';
+import img1 from './photos/computer-minimalist.png';
+import img2 from './photos/webpage.png';
+import img3 from './photos/database.png';
+import img4 from './photos/cloud.png';
 
 const skillList = [{
+  id: 'frontend',
   title: 'FRONTEND',
-  skills:  ['HTML5', 'CSS3 | SCSS | SASS', 'JavaScript', 'React | Redux', 'jQuery']
+  skills:  ['HTML5', 'CSS3 | SCSS | SASS', 'JavaScript', 'React | Redux', 'jQuery'],
+  img: img1
 }, {
+  id: 'backend',
   title: 'BACKEND',
-  skills: ['NodeJS', 'Express', 'Ruby']
+  skills: ['NodeJS', 'Express', 'Ruby'],
+  img: img2
 }, {
+  id: 'database',
   title: 'DATABASE',
-  skills: ['mongoDB', 'PostgreSQL', 'mySql']
+  skills: ['mongoDB', 'PostgreSQL', 'mySql'],
+    img: img3
 }, {
+  id: 'deployment',
   title: 'DEPLOYMENT',
-  skills: ['Heroku', 'Git', 'Docker']
+  skills: ['Heroku', 'Git', 'Docker'],
+    img: img4
 }]
 
 function Skills () {
@@ -34,7 +46,7 @@ function Skills () {
    <div class='skills'>
      <div id='arrow-left' style={leftArrowStyle} onClick={() =>  setCount(count - 1)}></div>
      <div class='skills-holder'>
-       <h1 class='skill-list-img'>{count}</h1>
+       <img class='skill-list-img' id={`${currentSkill.id}`}src={currentSkill.img}/>
        <div class='skill-list'>
          <h2 class='skill-title'>{currentSkill.title}</h2>
          {currentSkill.skills.map((skill)=> {
@@ -51,7 +63,7 @@ function Skills () {
            {skillList.map((list)=> {
              return (
                <div class='lrg-skills-holder'>
-                 <h1 class='skill-list-img'>{count}</h1>
+                 <img class='skill-list-img' id={list.id} src={list.img}/>
                  <div class='skill-list'>
                  <h2 class='skill-title'>{list.title}</h2>  
                  {list.skills.map((skill) =>{

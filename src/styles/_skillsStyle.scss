@@ -11,14 +11,15 @@ $secondaryFont : 'Mukta', sans-serif;
 
 .skills {
   overflow: hidden;
+  @include flexCenter;
 }
 .skills-holder {
+  position: absolute;
   top: 42em;
-  left: 5.5em;
+  // left: 7em;
   height: 23em;
   width: 12em;
   background-color: $primaryColor;
-  position: absolute;
   text-align: center;
   box-shadow: 0px 10px 15px 4px #0B0C10;
 //   font-family: $secondaryFont;
@@ -29,8 +30,28 @@ $secondaryFont : 'Mukta', sans-serif;
 .skill-list-img {
  position: relative;
  top: 1.5em;
+ width: 30%;
+}
+// #frontend{
+
+// }
+
+#backend{
+  opacity: 0.7;
+  padding-top: 1em;
+  padding-bottom: .2em;
+  width: 20%;
 }
 
+#database{
+  opacity: 0.7;
+  padding-top: 1em;
+  padding-bottom: .2em;
+  width: 20%;
+}
+// #deployment {
+
+// }
 .skill-list {
   position: relative;
   top: 4.8em; 
@@ -87,6 +108,12 @@ $secondaryFont : 'Mukta', sans-serif;
 }
 
 
+@media only screen and (min-width: 375px) {
+  // .skills-holder {
+  //   left: 5.8em;
+  // }
+}
+
 @media only screen and (min-width: 768px) {
  .skills {
    overflow: inherit;
@@ -111,7 +138,12 @@ $secondaryFont : 'Mukta', sans-serif;
     text-align: center;
     box-shadow: 0px 10px 15px 4px #0B0C10;
     margin-right: -1em;
-
+     transition: .5s;   
+    &:hover{
+     transition: .5s;
+      top: -61em;
+      // transition-delay: 1s;
+    }
 
   }
   .skills-wrapper {
@@ -119,7 +151,21 @@ $secondaryFont : 'Mukta', sans-serif;
     @include flexCenter(); 
     // top: ;
     position: relative;
-    width: 100%
+    width: 100%;
+    right:  .5em;
 
   }
+}
+
+@media only screen and (min-width: 1024px) {
+  .lrg-skills-holder {
+    margin: .5em;
+  }
+  .skills-wrapper {
+    top: -.6em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  
 }

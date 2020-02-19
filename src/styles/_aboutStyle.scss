@@ -12,14 +12,21 @@ $primaryColour: #6EFAF1;
 
 
 }
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 .about {
 @include position(11em, 0em);
-  margin: 1em;
+  // margin: 1em;
   margin-top: 5em;
   color: $primaryColour;
   font-family: $secondaryFont;
-  color: lightgrey  
+  color: lightgrey ;
+  width: 100%;
 }
 
 .job-titles {
@@ -46,9 +53,9 @@ $primaryColour: #6EFAF1;
 
 
 @media only screen and (min-width: 768px) {
-  .about {
+  // .about {
     top: 13em;
-  }
+  // }
 }
 // #paragraph-1{
   
