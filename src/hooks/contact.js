@@ -37,14 +37,12 @@ function Contact() {
      <div class='contact-form'>
         <div class='input-wrapper'>
           <input class='input' placeholder='Email' onChange={(e) => setFrom(e.target.value)} />
-        </div>
-        <div class='input-wrapper'> 
           <input class='input' placeholder='Subject' onChange={(e) => setSubject(e.target.value)}/>
         </div>
         <textarea id="message-body"class='input' placeholder='Message' onChange={(e) => setMessage(e.target.value)}/>
         <button class='submit-button' onClick={handleEmail}>Submit</button> 
       </div>
-      <a id='github'>resume</a>
+      <a id='github'>Resume</a>
       <a id='resume'onClick={() => {window.open('https://github.com/kylemcloughlin')}}>Github</a>
     </div>
   );

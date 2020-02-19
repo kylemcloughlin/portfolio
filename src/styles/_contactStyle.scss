@@ -1,8 +1,9 @@
 $color : #333;
-$primaryFont : 'Varela Round',
-sans-serif;
-$logoFont : 'Faster One',
-cursive;
+$primaryFont : 'Varela Round', sans-serif;
+$logoFont : 'Faster One', cursive;
+
+$b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
+// @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @mixin postion {
   position: relative;
   left: 2em;
@@ -57,7 +58,7 @@ cursive;
   position: absolute;
   width: 10em;
   height: 1px;
-  top: -5em
+  top: -5.5em;
   // margin-bottom: -1em;
   // position: a;
   // left: 24%;
@@ -78,7 +79,7 @@ cursive;
 .contact-ul {
   background-color: #45A29E;
   position: absolute;
-  top: -1.3em;
+  top: -.8em;
   width: 10em;
   height: 1px;
   margin-top: -1em;
@@ -110,6 +111,7 @@ cursive;
   padding-left: 1em;
   border-radius: 2em;
   width: 76%;
+  max-width: 33em
 }
 
 
@@ -120,6 +122,7 @@ cursive;
   border-radius: 1em;
   position: absolute;
   top: 3em;
+  max-width: 60em;
 
 }
 
@@ -138,15 +141,18 @@ cursive;
   transition: 0.8s;
   overflow: hidden;
   color: #45A29E;
-  width: 12em;
+  width: 7em;
+  height: 1.4em;
   bottom: -9em;
 
   &:hover {
     color: #fff;
+    // background: #45A29E;
+     transition: 0.7s;
+
   }
 
   &::before {
-    content: "";
      content: "";
      position: absolute;
      left: 0;
@@ -156,7 +162,7 @@ cursive;
      z-index: -1;
      transition: 0.8s;
      top: 0;
-     border-radius: 0 0 50% 50%;
+     border-radius: 0% 0% 50% 50%;
 
   }
 
@@ -167,8 +173,9 @@ cursive;
 
 }
 
-#resume {
-  position: absolute;
+
+  #resume {
+    position: absolute;
   color: #45A29E;
   left: 1em;
   bottom: 1em;
@@ -245,17 +252,33 @@ cursive;
   transform: skewY(6deg);
   }
 }
-  // .input {
-  //   width: 11em;
-  // }
-  // #message-body {
-  //   width: 43em;
-  // }
+  
 // .submit-button{
-//     left: 12.5em;
+//   transition: 1s; 
+//   &::before {
+//    content: "";
+//    visibility: hidden;
+
+//  }
+//   &:hover{
+//     transition: 1s;
+//     background-color: #45A29E;
 //   }
-//   .contact-form {
-//     width: 81%;
-//     left: 8.5em;
-//   }
+// } 
+
+}
+
+@media only screen and (min-width: 1425px) {
+  .submit-button{
+  transition: 1s; 
+  &::before {
+   content: "";
+   visibility: hidden;
+
+ }
+  &:hover{
+    transition: 1s;
+    background-color: #45A29E;
+  }
+} 
 }

@@ -91,7 +91,7 @@
   position: absolute;
   width: 10em;
   height: 1px;
-  top: -5em;
+  top: -5.5em;
 }
 
 .contact-title {
@@ -107,7 +107,7 @@
 .contact-ul {
   background-color: #45A29E;
   position: absolute;
-  top: -1.3em;
+  top: -.8em;
   width: 10em;
   height: 1px;
   margin-top: -1em;
@@ -151,6 +151,7 @@
   padding-left: 1em;
   border-radius: 2em;
   width: 76%;
+  max-width: 33em;
 }
 
 #message-body {
@@ -159,6 +160,7 @@
   border-radius: 1em;
   position: absolute;
   top: 3em;
+  max-width: 60em;
 }
 
 .submit-button {
@@ -172,16 +174,18 @@
   transition: 0.8s;
   overflow: hidden;
   color: #45A29E;
-  width: 12em;
+  width: 7em;
+  height: 1.4em;
   bottom: -9em;
 }
 
 .submit-button:hover {
   color: #fff;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .submit-button::before {
-  content: "";
   content: "";
   position: absolute;
   left: 0;
@@ -192,7 +196,7 @@
   -webkit-transition: 0.8s;
   transition: 0.8s;
   top: 0;
-  border-radius: 0 0 50% 50%;
+  border-radius: 0% 0% 50% 50%;
 }
 
 .submit-button:hover::before {
@@ -246,6 +250,22 @@
     bottom: 12em;
     -webkit-transform: skewY(6deg);
             transform: skewY(6deg);
+  }
+}
+
+@media only screen and (min-width: 1425px) {
+  .submit-button {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .submit-button::before {
+    content: "";
+    visibility: hidden;
+  }
+  .submit-button:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    background-color: #45A29E;
   }
 }
 
