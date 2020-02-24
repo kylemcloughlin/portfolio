@@ -430,7 +430,8 @@
   background-color: #888888;
   width: 22%;
   height: 1px;
-  margin: 5px;
+  margin-top: 3px;
+  margin-bottom: 5px;
   position: relative;
   left: 39%;
 }
