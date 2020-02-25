@@ -10,7 +10,9 @@ const customStyles = {
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)',
     width                 : '88%',
-    height                : '40%',
+    maxWidth              : '750px',
+    height                : '60%',
+    maxHeight             : '500px',
     background            : '#0B0C10'
   }
 };
@@ -41,8 +43,8 @@ function DemoModal({ gif }){
           contentLabel="Demo-Modal"
           // id='modal'
         >
+          <button class='close-but' onClick={closeModal}>close</button>  
           <img class='demo-gif' src={require(`${gif}`)}/>
-          <button onClick={closeModal}>close</button>  
         </Modal>
       </div>
     );
