@@ -1,8 +1,16 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .demo-gif {
   width: 100%;
    position: relative;
    top: 2em;
    max-width: 750px;
+   margin-top: 0em;
   
 }
 
@@ -25,22 +33,10 @@
   // border-radius: .5em;
 }
 
+.modal-title {
+  color: #fff;
+  @include flexCenter();
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
 
-
-// #modal {
-// position: absolute;
-// top: 50%;
-// left: 50%;
-// right: auto;
-// bottom: auto;
-// border: 1px solid rgb(204, 204, 204);
-// background: rgb(255, 255, 255);
-// overflow: auto;
-// border-radius: 4px;
-// outline: none;
-// padding: 20px;
-// margin-right: -50%;
-// transform: translate(-50%, -50%);
-// width: 88%;
-// height: 79%;
-// }

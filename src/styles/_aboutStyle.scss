@@ -50,16 +50,96 @@ $primaryColour: #6EFAF1;
 .about-body-t {
   color: $secondaryColour;
 }
-
+.img-holder {
+  visibility: hidden;
+ 
+}
 
 @media only screen and (min-width: 768px) {
-  // .about {
-    top: 13em;
-  // }
-}
-// #paragraph-1{
+  .img-holder {
+   visibility: visible;
+  //  position: absolute;
+  }
+ #ruby {
   
-// }
-// #paragraph-2 {
+  width: 7em;
+ position: absolute;
+ top: 8em;
+ right: 2em;
+ transition: 250ms;
 
-// }
+ &:hover {
+   width: 7.4em;
+   transition: 250ms;
+  //  margin-left: 1em;
+
+ }
+}
+#react {
+  
+  width: 12.8em;
+  position: absolute;
+  top: 14.6em;
+  right: 3em;
+  transition: 250ms;
+
+  &:hover {
+    width: 13.2em;
+    transition: 250ms;
+
+  }
+}
+#js {
+  
+  width: 6em;
+  position: absolute;
+  top: 7.8em;
+  right: 11.4em;
+  transition: 250ms;
+  
+
+  &:hover {
+    width: 6.4em;
+    transition: 250ms;
+
+  }
+}
+#paragraph-1 {
+  width: 48%;
+  padding-left: 1em;
+}
+#paragraph-2 {
+  width: 48%;
+  padding-left: 1em;
+}
+.about-body-t {
+  padding-left: 2em;
+}
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  .img-holder {
+    // position: relative;
+    // top: -15em;
+    position: absolute;
+    transition: 250ms;
+
+    right: 10em;
+    top: 0em;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .img-holder {
+    // position: relative;
+    // top: -15em;
+    position: absolute;
+    transition: 250ms;
+
+    right: 15em;
+    top: 0em;
+  }
+}

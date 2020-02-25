@@ -31,8 +31,84 @@
   color: #45A29E;
 }
 
+.img-holder {
+  visibility: hidden;
+}
+
 @media only screen and (min-width: 768px) {
-  top: 13em;
+  .img-holder {
+    visibility: visible;
+  }
+  #ruby {
+    width: 7em;
+    position: absolute;
+    top: 8em;
+    right: 2em;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  #ruby:hover {
+    width: 7.4em;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  #react {
+    width: 12.8em;
+    position: absolute;
+    top: 14.6em;
+    right: 3em;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  #react:hover {
+    width: 13.2em;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  #js {
+    width: 6em;
+    position: absolute;
+    top: 7.8em;
+    right: 11.4em;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  #js:hover {
+    width: 6.4em;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  #paragraph-1 {
+    width: 48%;
+    padding-left: 1em;
+  }
+  #paragraph-2 {
+    width: 48%;
+    padding-left: 1em;
+  }
+  .about-body-t {
+    padding-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .img-holder {
+    position: absolute;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+    right: 10em;
+    top: 0em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .img-holder {
+    position: absolute;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+    right: 15em;
+    top: 0em;
+  }
 }
 
 .contact {
@@ -706,6 +782,7 @@
   position: relative;
   top: 2em;
   max-width: 750px;
+  margin-top: 0em;
 }
 
 .close-but {
@@ -726,6 +803,21 @@
   background-color: #6EFAF1;
   -webkit-transition: .3;
   transition: .3;
+}
+
+.modal-title {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 .App-header {

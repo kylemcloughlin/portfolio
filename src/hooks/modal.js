@@ -19,7 +19,7 @@ const customStyles = {
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 
-function DemoModal({ gif }){
+function DemoModal({ gif, title }){
   var subtitle;
   const [modalIsOpen,setIsOpen] = useState(false);
   function openModal() {
@@ -44,6 +44,7 @@ function DemoModal({ gif }){
           // id='modal'
         >
           <button class='close-but' onClick={closeModal}>close</button>  
+          <h2 class='modal-title'>{title}</h2>
           <img class='demo-gif' src={require(`${gif}`)}/>
         </Modal>
       </div>

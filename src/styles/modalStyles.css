@@ -3,6 +3,7 @@
   position: relative;
   top: 2em;
   max-width: 750px;
+  margin-top: 0em;
 }
 
 .close-but {
@@ -23,5 +24,20 @@
   background-color: #6EFAF1;
   -webkit-transition: .3;
   transition: .3;
+}
+
+.modal-title {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 /*# sourceMappingURL=modalStyles.css.map */
