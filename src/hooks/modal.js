@@ -10,16 +10,15 @@ const customStyles = {
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)',
     width                 : '88%',
-    maxWidth              : '750px',
-    height                : '60%',
-    maxHeight             : '500px',
+    // maxWidth              : '750px',
+    height                : '80%',
     background            : '#0B0C10'
   }
 };
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 
-function DemoModal({ gif, title }){
+function DemoModal({ gif, title, dis, features}){
   var subtitle;
   const [modalIsOpen,setIsOpen] = useState(false);
   function openModal() {
@@ -41,11 +40,22 @@ function DemoModal({ gif, title }){
           onRequestClose={closeModal}
           style={customStyles}
           contentLabel="Demo-Modal"
-          // id='modal'
+          id='modal'
         >
           <button class='close-but' onClick={closeModal}>close</button>  
           <h2 class='modal-title'>{title}</h2>
           <img class='demo-gif' src={require(`${gif}`)}/>
+          <p class='modal-dis'>{dis}</p>
+          <div class='key-feature-div'>
+             {features.map((x)=> {
+                      return (
+                        <div>
+                          <h6 class='modal-kf'>{x}</h6>
+                          {/* <div class='list-point-ul'/> */}
+                        </div>
+                      )  
+                    })}
+          </div>
         </Modal>
       </div>
     );

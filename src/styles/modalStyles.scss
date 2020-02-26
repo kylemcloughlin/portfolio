@@ -5,12 +5,19 @@
 
 }
 
+// #modal {
+//   // color: aqua !important;
+//   background-color: #6EFAF1 !important;
+//   height: 8;
+// }
+
 .demo-gif {
   width: 100%;
    position: relative;
    top: 2em;
    max-width: 750px;
    margin-top: 0em;
+   margin-bottom: 1.5em; 
   
 }
 
@@ -40,3 +47,89 @@
   margin-bottom: 0em;
 }
 
+.modal-dis {
+  color: white;
+}
+
+.modal-kf {
+  color: white;
+  margin-bottom: 0em;
+}
+
+@media only screen and (min-width: 768px) {
+#modal {
+ 
+  // background-color: #6EFAF1 !important;
+  height: 90% !important;
+}
+}
+
+
+
+@media only screen and (min-width: 650px) {
+  #modal {
+
+    
+    height: 95% !important;
+  }
+
+ 
+}
+@media only screen and (min-width: 1000px) {
+  #modal {
+
+    // background-color: #6EFAF1 !important;
+    width: 75% !important;
+   max-width: 1100px !important;
+  //  max-height: 700px !important;
+  }
+ 
+  // .modal-dis {
+  //   color: white;
+  //   position: absolute;
+  //   top: 5em;
+  //   right: 2em;
+  //   width: 23%;
+  // }
+
+  // .modal-kf {
+  //   color: white;
+  //   margin-bottom: 0em;
+  // }
+  // .key-feature-div {
+  //   position: absolute; 
+  //   top: 13em;
+  //   right:  11em;
+  // }
+
+}
+
+
+@media only screen and (min-width: 1350px) {
+ #modal {
+
+   // background-color: #6EFAF1 !important;
+  //  width: 75% !important;
+  //  max-width: 1100px !important;
+    max-height: 600px !important;
+ }
+  .modal-dis {
+    color: white;
+    position: absolute;
+    top: 5em;
+    right: 2em;
+    width: 23%;
+  }
+
+  .modal-kf {
+    color: white;
+    margin-bottom: 0em;
+  }
+
+  .key-feature-div {
+    position: absolute;
+    top: 13em;
+    right: 11em;
+  }
+
+}

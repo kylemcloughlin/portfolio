@@ -35,7 +35,7 @@ function Projects() {
                <div class='flip-card-back'>
                  <p class='p-discription'>{website.discription}</p>
                  <button class='code-but' onClick={() => {window.open(website.linkToProjectsCode)}}>Code</button>
-                 <DemoModal gif={website.gif} title={website.name} keyFeatures={website.keyFeatures}/>
+                 <DemoModal gif={website.gif} title={website.name} features={website.keyFeatures} dis={website.discription}/>
                  {/* <button>live</button> */}
                </div> 
              </div>

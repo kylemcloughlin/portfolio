@@ -52,9 +52,18 @@ $primaryColour: #6EFAF1;
 }
 .img-holder {
   visibility: hidden;
+  width: 0%;
  
 }
-
+#ruby {
+width: 0%;
+}
+#js{
+width: 0%;
+}
+#react{
+  width: 0%;
+}
 @media only screen and (min-width: 768px) {
   .img-holder {
    visibility: visible;
@@ -123,8 +132,6 @@ $primaryColour: #6EFAF1;
 
 @media only screen and (min-width: 1200px) {
   .img-holder {
-    // position: relative;
-    // top: -15em;
     position: absolute;
     transition: 250ms;
 
@@ -134,8 +141,6 @@ $primaryColour: #6EFAF1;
 }
 @media only screen and (min-width: 1500px) {
   .img-holder {
-    // position: relative;
-    // top: -15em;
     position: absolute;
     transition: 250ms;
 
