@@ -4,7 +4,6 @@
   top: 2em;
   max-width: 750px;
   margin-top: 0em;
-  margin-bottom: 1.5em;
 }
 
 .close-but {
@@ -39,27 +38,32 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0em;
-  margin-bottom: 0em;
+  margin-bottom: -1.5em;
+  font-family: "Mukta", sans-serif;
 }
 
 .modal-dis {
   color: white;
+  position: relative;
+  top: 1.5em;
+}
+
+.key-feature-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal-kf {
   color: white;
   margin-bottom: 0em;
+  padding: 1em;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   #modal {
-    height: 90% !important;
-  }
-}
-
-@media only screen and (min-width: 650px) {
-  #modal {
-    height: 95% !important;
+    height: 60% !important;
   }
 }
 
@@ -72,7 +76,7 @@
 
 @media only screen and (min-width: 1350px) {
   #modal {
-    max-height: 600px !important;
+    max-height: 650px !important;
   }
   .modal-dis {
     color: white;
@@ -84,8 +88,10 @@
   .modal-kf {
     color: white;
     margin-bottom: 0em;
+    padding: 0em;
   }
   .key-feature-div {
+    display: block;
     position: absolute;
     top: 13em;
     right: 11em;

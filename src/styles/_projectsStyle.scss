@@ -39,7 +39,8 @@ $secondaryColour : #555555;
   font-weight: 350;
   font-family: $primaryFont;
   position: absolute;
-  top: 1.5em;
+  // text-align: center;
+  top: 1em;
   
 }
 
@@ -49,7 +50,7 @@ $secondaryColour : #555555;
   height: 1px;
   // margin: -1em;
   position: absolute;
-  top: 8em;
+  top: 6em;
   margin-bottom: 1em;
 }
 
@@ -290,16 +291,16 @@ $secondaryColour : #555555;
   
 }
 
-// @media only screen and (min-width: 414px) {
-//   .project-title {
-//     padding-left: .8em;
-//   }
-//   .card-holder {
-//     // @include flexCenter();
-//     position: relative;
-//     left: 1.2em;
-//   }
-// }
+@media only screen and (min-width: 414px) {
+  .project-title {
+    padding-left: .8em;
+  }
+  .card-holder {
+    // @include flexCenter();
+    position: relative;
+    left: 1.2em;
+  }
+}
 
 // @media only screen and (min-width: 768px) { 
 //   .projects {

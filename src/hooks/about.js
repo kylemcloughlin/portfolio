@@ -1,9 +1,9 @@
-import React, { useState} from 'react';
+import React from 'react';
 import ruby from './photos/ruby.png';
 import js from './photos/js.png';
 import react from './photos/react.png';
-let about = "As a tenacious self taught programmer, i use continuous iteratio to produce results quickly and continuously improve products.";
-let about2 = 'i have contributed to open source projects, worked on engineering teams, and always stay attuned to the newest frameworks';
+let about = "A driven goal oriented programmer with passions for SCSS, byebug and version control. Hardworking and motivated to produce the best product possible through continuous iteration and calculated problem solving strategies.";
+let about2 = 'i have contributed to open source projects, experience with pair-programming and working in teams. ';
 function About() {
   return ( 
  <div class="about">
@@ -16,9 +16,9 @@ function About() {
      <p id='paragraph-2'>{about2}</p> 
    </div>
    <div class='img-holder'>
-     <img id='ruby' src={ruby}/>
-     <img id='js' src={js}/>
-     <img id='react' src={react}/>
+     <img id='ruby' src={ruby} alt='ruby'/>
+     <img id='js' src={js} alt='javascript'/>
+     <img id='react' src={react} alt='react'/>
    </div>
  </div>
   );

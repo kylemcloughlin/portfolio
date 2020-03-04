@@ -1,4 +1,4 @@
-import React,  { useState }from 'react';
+import React from 'react';
 import About from './hooks/about.js';
 import Contact from './hooks/contact.js';
 import Projects from './hooks/projects.js';
@@ -10,14 +10,14 @@ import Skills from './hooks/skills.js';
 
 
 function App() {
-  const [page, setPage] = useState(Projects);
+  
   
   return (
-    <div className="App">
-      <header className="App-header"/>
+    <div class="App">
+      <header class="App-header"/>
       <BrowserRouter>
       <ScrollHandler/>
-         {/* <div className="App-header"> */}
+         
       <div class='overlay'></div>
           <h1 id='logo'>K</h1>
         <div class='title-div'>

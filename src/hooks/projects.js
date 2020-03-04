@@ -1,4 +1,4 @@
-import React,  { useState }from 'react';
+import React from 'react';
 import seed from '../exports';
 import DemoModal from './modal.js';
 
@@ -14,16 +14,16 @@ function Projects() {
     <div class='card-holder'>
       {websites.map(website => {     
         return (
-          <div class='flip-card-container'>
+          <div class='flip-card-container' key={website.name}>
             <div class='flip-card'> 
               <div class='flip-card-front'>
-                <img class='p-img' src={require(`${website.photos}`)}/>
+                <img class='p-img' src={require(`${website.photos}`)} alt='project-img'/>
                 <div class='card-footer' > 
                   <h1 class='p-name'>{website.name}</h1>
                   <div class='p-features'>
                     {website.keyFeatures.map((x)=> {
                       return (
-                        <div>
+                        <div key={x}>
                           <h6 class='list-point'>{x}</h6>
                           <div class='list-point-ul'/>
                         </div>
@@ -36,7 +36,7 @@ function Projects() {
                  <p class='p-discription'>{website.discription}</p>
                  <button class='code-but' onClick={() => {window.open(website.linkToProjectsCode)}}>Code</button>
                  <DemoModal gif={website.gif} title={website.name} features={website.keyFeatures} dis={website.discription}/>
-                 {/* <button>live</button> */}
+                 
                </div> 
              </div>
           </div>

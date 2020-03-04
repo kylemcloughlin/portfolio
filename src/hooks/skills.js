@@ -46,12 +46,12 @@ function Skills () {
    <div class='skills'>
      <div id='arrow-left' style={leftArrowStyle} onClick={() =>  setCount(count - 1)}></div>
      <div class='skills-holder'>
-       <img class='skill-list-img' id={`${currentSkill.id}`}src={currentSkill.img}/>
+       <img class='skill-list-img' id={`${currentSkill.id}`}src={currentSkill.img} alt='current-skill-img'/>
        <div class='skill-list'>
          <h2 class='skill-title'>{currentSkill.title}</h2>
          {currentSkill.skills.map((skill)=> {
            return (
-              <div class='skill-list-item'>
+              <div class='skill-list-item' key={skill}>
                 <h5>{skill}</h5>
                 <div class='underline'/>
               </div>
@@ -62,13 +62,13 @@ function Skills () {
          <div class='skills-wrapper'>
            {skillList.map((list)=> {
              return (
-               <div class='lrg-skills-holder'>
-                 <img class='skill-list-img' id={list.id} src={list.img}/>
+               <div class='lrg-skills-holder' key={list.id}>
+                 <img class='skill-list-img' id={list.id} src={list.img} alt='skill-img'/>
                  <div class='skill-list'>
                  <h2 class='skill-title'>{list.title}</h2>  
                  {list.skills.map((skill) =>{
                    return (
-                     <div class='skill-list-item'>
+                     <div class='skill-list-item' key={skill}>
                        <h5>{skill}</h5>
                        <div class='underline'/>
                      </div>

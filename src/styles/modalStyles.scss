@@ -1,3 +1,5 @@
+$primaryFont : 'Varela Round' , sans-serif;
+$secondaryFont : 'Mukta',sans-serif;
 @mixin flexCenter {
   display: flex;
   justify-content: center;
@@ -17,7 +19,7 @@
    top: 2em;
    max-width: 750px;
    margin-top: 0em;
-   margin-bottom: 1.5em; 
+  //  margin-bottom: 1.5em; 
   
 }
 
@@ -44,23 +46,32 @@
   color: #fff;
   @include flexCenter();
   margin-top: 0em;
-  margin-bottom: 0em;
+  margin-bottom: -1.5em;
+  font-family: $secondaryFont;
 }
 
 .modal-dis {
   color: white;
+  position: relative;
+  top: 1.5em;
 }
+.key-feature-div {
+  display: flex;
+  // text-align: center;
 
+}
 .modal-kf {
   color: white;
   margin-bottom: 0em;
+  padding: 1em;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
 #modal {
  
   // background-color: #6EFAF1 !important;
-  height: 90% !important;
+  height: 60% !important;
 }
 }
 
@@ -70,7 +81,7 @@
   #modal {
 
     
-    height: 95% !important;
+    // height: 95% !important;
   }
 
  
@@ -111,7 +122,7 @@
    // background-color: #6EFAF1 !important;
   //  width: 75% !important;
   //  max-width: 1100px !important;
-    max-height: 600px !important;
+    max-height: 650px !important;
  }
   .modal-dis {
     color: white;
@@ -124,9 +135,11 @@
   .modal-kf {
     color: white;
     margin-bottom: 0em;
+    padding: 0em;
   }
 
   .key-feature-div {
+   display: block;
     position: absolute;
     top: 13em;
     right: 11em;

@@ -129,7 +129,7 @@ cursive;
 }
 
 .seperator {
-  @include position(3em, 0%);
+  @include position(9em, 0%);
    width: 100%;
   background-image: url('.././hooks/photos/banner2.jpg');
   height: 31em;
@@ -139,7 +139,7 @@ cursive;
 }
 
 .seperatorOverlay {
-  @include position(-31em, 0%);
+  @include position(-25em, 0%);
   width: 100%;
   background: $primaryColour;
   height: 31em;
@@ -189,9 +189,12 @@ cursive;
 //    top: -22em;
 
 //  }
+.seperator{
+  top: 3em;
+}
  .seperatorOverlay {
    margin-top: 3em;
-  //  @include position(-31em, 0%);
+   @include position(-31em, 0%);
 
  }
  #job-title {

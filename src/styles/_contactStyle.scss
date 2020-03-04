@@ -58,7 +58,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   position: absolute;
   width: 10em;
   height: 1px;
-  top: -5.5em;
+  top: -5em;
   // margin-bottom: -1em;
   // position: a;
   // left: 24%;
@@ -79,7 +79,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 .contact-ul {
   background-color: #45A29E;
   position: absolute;
-  top: -.8em;
+  top: -1em;
   width: 10em;
   height: 1px;
   margin-top: -1em;
@@ -179,6 +179,9 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   color: #45A29E;
   left: 1em;
   bottom: 1em;
+  font-size: large;
+  border: 0;
+  background: none;
   &:hover {
     color: #66FCF1;
 
@@ -189,6 +192,9 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   color: #45A29E;
   bottom: 1em;
   left: 6em;
+    font-size: large;
+    border: 0;
+    background: none;
   transition: .2s;
   &:hover {
     color: #66FCF1;
