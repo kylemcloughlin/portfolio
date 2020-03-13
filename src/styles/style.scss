@@ -6,8 +6,8 @@
 @import './modalStyles.scss';
 //variables
 $primaryColour : #202833;
-$bground : url('.././hooks/photos/toronto.gif');
-$secondaryColour : #6EFAF1;
+$bground : linear-gradient(to left, rgba(36, 123, 160, 1), rgba(112, 193, 179, 1));
+$secondaryColour : #361F42;
 $primaryFont : 'Varela Round',
 sans-serif;
 $secondaryFont : 'Mukta',
@@ -36,31 +36,33 @@ cursive;
 
 .App-header {
   position: relative;
-  background-color: $primaryColour;
-  background-image: $bground;
+  // background-color: $primaryColour;
+    background: $bground;
+
+  // background-image: $bground;
   // background-repeat: no-repeat;
   width: 100%;
-  height: 12em;
+  height: 14em;
   top: -21px;
   // z-index: ;
 
 
-  &:after {
-    position: absolute;
-    width: 100%;
-    height: 130%;
-    content: '';
-   background: inherit;
-    background-image: $bground;
-    z-index: -1;
-    top: -1px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: top left;
-    transform: skewY(6deg);
+  // &:after {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 130%;
+  //   content: '';
+  //  background: inherit;
+  //   background-image: $bground;
+  //   z-index: -1;
+  //   top: -1px;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   transform-origin: top left;
+  //   transform: skewY(6deg);
 
-  }
+  // }
 
   // ;
 }
@@ -88,19 +90,97 @@ cursive;
     transform: skewY(6deg);
   }
 }
+ .animation-area {
+   // background: linear-gradient(to left, #8942a8, #ba382f);
+   width: 100%;
+   height: 23vh;
+ }
 
+ .box-area {
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin: 0px;
+   width: 88%;
+   height: 100%;
+   overflow: hidden;
+
+ }
+
+ .box-area li {
+   position: absolute;
+   display: block;
+   list-style: none;
+   width: 25px;
+   height: 25px;
+   background: rgba(255, 255, 255, 0.2);
+   animation: animate 20s linear infinite;
+   bottom: -150px;
+ }
+
+ .box-area li:nth-child(1) {
+   left: 86%;
+   width: 80px;
+   height: 80px;
+   animation-delay: 0s;
+ }
+
+ .box-area li:nth-child(2) {
+   left: 12%;
+   width: 30px;
+   height: 30px;
+   animation-delay: 1.2s;
+ }
+
+ .box-area li:nth-child(3) {
+   left: 70%;
+   width: 100px;
+   height: 100px;
+   animation-delay: 5.5s;
+ }
+
+ .box-area li:nth-child(4) {
+   left: 70%;
+   width: 150px;
+   height: 150px;
+   animation-delay: 10s;
+ }
+
+ .box-area li:nth-child(5) {
+   left: 65%;
+   width: 40px;
+   height: 40px;
+   animation-delay: 0s;
+ }
+
+ .box-area li:nth-child(6) {
+   left: 65%;
+   width: 110px;
+   height: 110px;
+   animation-delay: 3.5s;
+  }
+  
+  @keyframes animate{ 
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;;
+    }
+    100% {
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 0;
+    }
+  }
 #title {
-  @include position(-6em, 0%); 
+  @include position(1em, 0%); 
   @include flexCenter();
   font-family: $secondaryFont;
-  color: #66FCF1;
+  color: $secondaryColour;
 
 }
-
 #job-title {
-  @include position(-12em, 0);
+  @include position(0em, 0);
   @include flexCenter();
-  color: #45A29E;
+  color: #4B2C8E;
   font-weight: 200;
   font-family: $secondaryFont;
 
@@ -108,13 +188,13 @@ cursive;
 }
 
 #logo {
-  @include position(-6.5em, .5em);
+  @include position(0em, .5em);
   // float: left;
   font-family: $logoFont;
   // background: red;
   width: 10%;
   font-size: 2em;
-  color: #45A29E;
+  color: #4B2C8E;
 
 }
 
@@ -129,13 +209,15 @@ cursive;
 }
 
 .seperator {
-  @include position(9em, 0%);
+  @include position(25em, 0%);
    width: 100%;
-  background-image: url('.././hooks/photos/banner2.jpg');
+  // background-image: url('.././hooks/photos/banner2.jpg');
   height: 31em;
-  margin-top: 9em;
+  // margin-top: 9em;
   // margin-bottom: 3em;
   transform: skewY(7deg);
+    background: $bground;
+
 }
 
 .seperatorOverlay {
@@ -161,14 +243,15 @@ cursive;
    width: 9em;
    font-size: .9em;
    color: aliceblue;
-   background: #45A29E;
+   background: #4B2C8E;
+   z-index: 1;
    
   
 }
 
 @media only screen and (min-width: 768px) {
  .App-header {
-   background-image: url('.././hooks/photos/header.gif');
+  //  background-image: url('.././hooks/photos/header.gif');
    background-size: cover;
    background-position: center;
    height: 17em;
@@ -190,7 +273,7 @@ cursive;
 
 //  }
 .seperator{
-  top: 3em;
+  top: 20em;
 }
  .seperatorOverlay {
    margin-top: 3em;
@@ -198,13 +281,13 @@ cursive;
 
  }
  #job-title {
-   top: -15em;
+   top: -.2em;
  }
  #title {
-   top: -8em;
+   top: 1em;
  }
  #logo {
-   top: -9em;
+   top: 0em;
    left: .8em;
  }
 }
@@ -222,8 +305,83 @@ cursive;
 
 
 @media only screen and (min-width: 1250px) {
+  .animation-area{
+    // background: linear-gradient(to left, #8942a8, #ba382f);
+    width: 100%;
+    height: 100vh;
+  }
+  .box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    width: 97%;
+    height: 100%;
+    overflow: hidden;
+
+  }
+  .box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+  }
+  .box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+  .box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.2s;
+  }
+
+  .box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+  }
+
+  .box-area li:nth-child(4) {
+    left: 70%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 10s;
+  }
+
+  .box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+  }
+  .box-area li:nth-child(6) {
+    left: 65%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+  }
+  @keyframes animate{ 
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;;
+    }
+    100% {
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 0;
+    }
+    
+  }
   #job-title {
-    top: -15.5em;
+    top: -.2em;
   }
 
   .projects-button {
@@ -236,7 +394,7 @@ cursive;
 
 @media only screen and (min-width: 1500px) {
   #job-title {
-    top: -15.5em;
+    // top: -15.5em;
   }
   // .projects-button {
   //   left: 81em;

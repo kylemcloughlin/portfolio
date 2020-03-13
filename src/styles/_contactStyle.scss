@@ -1,9 +1,11 @@
-$color : #333;
+$color : linear-gradient(to left, rgba(36, 123, 160, 1), rgba(112, 193, 179, 1));
 $primaryFont : 'Varela Round', sans-serif;
+$primaryColor : #4B2C8E;
+$secondaryColor : #361F42;
 $logoFont : 'Faster One', cursive;
 
 $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
-// @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 @mixin postion {
   position: relative;
   left: 2em;
@@ -16,17 +18,106 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   // background: $primaryColour;
 }
 
-.contact {
+.con-animation-area {
+ position: relative;
+ top: -8em;
+  width: 100%;
+  height: 20.5em;
+  overflow: hidden;
+    transform: skewY(13deg);
+}
+
+.con-box-area {
+  position: absolute;
+  top: 0em;
+  left: 0;
+  margin: 0px;
+  width: 92%;
+  height: 29em;
+  // transform: skewY(7deg);
+  overflow: hidden;
+
+
+}
+ .con-box-area li {
+   position: absolute;
+   display: block;
+   list-style: none;
+   width: 25px;
+   height: 25px;
+   background: rgba(255, 255, 255, 0.2);
+   animation: con-animate 20s linear infinite;
+   bottom: -150px;
+ }
+
+ .con-box-area li:nth-child(1) {
+   left: 86%;
+   width: 80px;
+   height: 80px;
+   animation-delay: 0s;
+ }
+
+ .con-box-area li:nth-child(2) {
+   left: 12%;
+   width: 30px;
+   height: 30px;
+   animation-delay: 1.2s;
+ }
+
+ .con-box-area li:nth-child(3) {
+   left: 70%;
+   width: 100px;
+   height: 100px;
+   animation-delay: 5.5s;
+ }
+
+ .con-box-area li:nth-child(4) {
+   left: 70%;
+   width: 150px;
+   height: 150px;
+   animation-delay: 10s;
+ }
+
+ .con-box-area li:nth-child(5) {
+   left: 65%;
+   width: 40px;
+   height: 40px;
+   animation-delay: 0s;
+ }
+
+ .con-box-area li:nth-child(6) {
+   left: 65%;
+   width: 110px;
+   height: 110px;
+   animation-delay: 3.5s;
+ }
+@keyframes con-animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+    ;
+  }
+
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 1;
+  }
+
+}
+
+
+
+ .contact {
  @include flexCenter();
   position: absolute;
   background: $color;
   width: 100%;
   height: 20em;
-  margin-top: 22em;
+  margin-top: 0em;
   bottom: 0em;
-  top: 210em;
+  top: 236em;
   opacity: .9;
-  
+   border-style: none !important;
   &::before {
     position: absolute;
     width: 100%;
@@ -34,13 +125,15 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
     content: '';
     background: $color;
     z-index: 0;
-    // float: ;
+   border-style: none !important;
     right: 0;
     bottom: 16em;
     left: 0;
     // margin-top: 1em;
     transform-origin: top left;
     transform: skewY(12deg);
+  overflow: hidden;
+
   }
   
   ;
@@ -54,7 +147,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 }
 
 .contact-tl {
-  background-color: #45A29E;
+  background-color: $secondaryColor;
   position: absolute;
   width: 10em;
   height: 1px;
@@ -70,14 +163,14 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   position: absolute;
   top: -3em;
   width: 100%;
-  color: #66FCF1;
+  color: $primaryColor;
   // padding-right: 1em;
   font-weight: 350;
   font-family: $primaryFont
 }
 
 .contact-ul {
-  background-color: #45A29E;
+  background-color: $secondaryColor;
   position: absolute;
   top: -1em;
   width: 10em;
@@ -133,14 +226,14 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   position: absolute;
   // @include flexCenter();
   // left: 2.8em;
-  border: 1px solid #45A29E;
+  border: 1px solid $secondaryColor;
   background: none;
   padding: s10px 20px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
-  color: #45A29E;
+  color: $secondaryColor;
   width: 7em;
   height: 1.4em;
   bottom: -9em;
@@ -158,7 +251,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
      left: 0;
      width: 100%;
      height: 0%;
-     background: #45A29E;
+     background: $secondaryColor;
      z-index: -1;
      transition: 0.8s;
      top: 0;
@@ -176,20 +269,20 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
   #resume {
     position: absolute;
-  color: #45A29E;
+  color: $primaryColor;
   left: 1em;
   bottom: 1em;
   font-size: large;
   border: 0;
   background: none;
   &:hover {
-    color: #66FCF1;
+    color: $secondaryColor;
 
   }
 }
 #github {
   position: absolute;
-  color: #45A29E;
+  color: $primaryColor;
   bottom: 1em;
   left: 6em;
     font-size: large;
@@ -197,7 +290,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
     background: none;
   transition: .2s;
   &:hover {
-    color: #66FCF1;
+    color: $secondaryColor;
     transition: .2s;
 
   }
@@ -238,7 +331,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 @media only screen and (min-width: 768px) {
    .contact {
-     margin-top: 23em;
+  
 
      &:before {
        height: 100%;
@@ -246,16 +339,27 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
        transform: skewY(6deg);
      }
    }
-}
+  .con-animation-area {
+    top: -6.8em;
+    height: 23.5em;
+       transform: skewY(6deg);
+
+  }
+  }
 
 @media only screen and (min-width: 1024px) {
  .contact{
-  margin-top: 25em; 
+  top: 152em;
   &:before {
 
   height: 122%;
   bottom: 12em;
   transform: skewY(6deg);
+  }
+
+  .con-animation-area {
+    top: -8.3em;
+    height: 24.5em;
   }
 }
   
@@ -274,17 +378,29 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 }
 
-@media only screen and (min-width: 1425px) {
-  .submit-button{
-  transition: 1s; 
-  &::before {
-   content: "";
-   visibility: hidden;
+@media only screen and (min-width: 1325px) {
+//   .submit-button{
+//   transition: 1s; 
+//   &::before {
+//    content: "";
+//    visibility: hidden;
 
- }
-  &:hover{
-    transition: 1s;
-    background-color: #45A29E;
+//  }
+//    &:hover{
+//     transition: 1s;
+//     background-color: $secondaryColor;
+//    }
+// }
+ .con-animation-area {
+    top: -9.3em;
   }
-} 
+  .contact {
+      top: 155em;
+
+     &:before {
+
+       bottom: 14em;
+      
+     }
+   }
 }

@@ -15,7 +15,7 @@ $secondaryFont : 'Mukta', sans-serif;
 }
 .skills-holder {
   position: absolute;
-  top: 46.5em;
+  top: 48em;
   // left: 7em;
   height: 23em;
   width: 12em;
@@ -81,7 +81,7 @@ $secondaryFont : 'Mukta', sans-serif;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   position: absolute;
-  top: 57em;
+  top: 60em;
   left: 2em;
   border-right:10px solid $primaryColor;    
   box-shadow: 7px 1px 3px -2px #0B0C10
@@ -95,7 +95,7 @@ $secondaryFont : 'Mukta', sans-serif;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   position: absolute;
-  top: 57em;
+  top: 60em;
   right: 2em;
   border-left: 10px solid $primaryColor;
   box-shadow: -7px 1px 3px -2px #0B0C10;
@@ -130,7 +130,7 @@ $secondaryFont : 'Mukta', sans-serif;
   .lrg-skills-holder {
     visibility: visible;
     position: relative;
-    top: -58em;
+    top: -7em;
     // left: 5.5em;
     height: 23em;
     width: 12em;
@@ -141,7 +141,8 @@ $secondaryFont : 'Mukta', sans-serif;
      transition: .5s;   
     &:hover{
      transition: .5s;
-      top: -61em;
+      top: -9em;
+      // opacity: 0;
       // transition-delay: 1s;
     }
 

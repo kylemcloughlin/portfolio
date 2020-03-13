@@ -1,20 +1,21 @@
 import React from 'react';
-import seed from '../exports';
+import { fullList } from '../exports';
 import DemoModal from './modal.js';
 
 
 function Projects() {
-  let websites = seed.seed;
- 
+
+  console.log(fullList);
   return (
     <div class="projects" id={`#projects`}>
       <div class='title-tl'/>    
       <h1 class='project-title'>PROJECTS PORTFOLIO</h1>
       <div class='title-ul'/>
     <div class='card-holder'>
-      {websites.map(website => {     
+     <div class='full-list'>
+      {fullList.map(website => {     
         return (
-          <div class='flip-card-container' key={website.name}>
+          <div class={`flip-card-container`} key={website.name}>
             <div class='flip-card'> 
               <div class='flip-card-front'>
                 <img class='p-img' src={require(`${website.photos}`)} alt='project-img'/>
@@ -42,6 +43,7 @@ function Projects() {
           </div>
         )
       })}
+     </div>
       </div>
     </div>
   );

@@ -43,7 +43,8 @@ function Skills () {
   let leftArrowStyle = count <= 0 ? (hidden) : (visable);
 
   return (
-   <div class='skills'>
+
+  <div class='skills'>
      <div id='arrow-left' style={leftArrowStyle} onClick={() =>  setCount(count - 1)}></div>
      <div class='skills-holder'>
        <img class='skill-list-img' id={`${currentSkill.id}`}src={currentSkill.img} alt='current-skill-img'/>
@@ -51,12 +52,12 @@ function Skills () {
          <h2 class='skill-title'>{currentSkill.title}</h2>
          {currentSkill.skills.map((skill)=> {
            return (
-              <div class='skill-list-item' key={skill}>
+             <div class='skill-list-item' key={skill}>
                 <h5>{skill}</h5>
                 <div class='underline'/>
               </div>
            )
-         })}
+          })}
       </div>
      </div>
          <div class='skills-wrapper'>
@@ -73,14 +74,14 @@ function Skills () {
                        <div class='underline'/>
                      </div>
                    )  
-                 })}
+                  })}
                 </div>
               </div>
               )
             })}
           </div>
      <div id='arrow-right' style={rightArrowStyle} onClick={ () => setCount(count + 1)}></div>
-   </div>
+            </div>
   )
 }
 

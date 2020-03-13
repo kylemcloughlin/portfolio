@@ -17,13 +17,13 @@ $secondaryColour : #555555;
 .projects {
   @include flexCenter();
   position: absolute;
-  top: 74em;
+  top: 78em;
   width: 100%
 
 }
 
 .title-tl {
-  background-color: #45A29E;
+  background-color: #4B2C8E;
   width: 14em;
   height: 1px;
   // margin: -1em;
@@ -34,7 +34,7 @@ $secondaryColour : #555555;
 }
 
 .project-title {
-  color: #66FCF1;
+  color: #361F42;
   // padding-left: .2em;
   font-weight: 350;
   font-family: $primaryFont;
@@ -45,7 +45,7 @@ $secondaryColour : #555555;
 }
 
 .title-ul {
-  background-color: #45A29E; 
+  background-color: #4B2C8E;
   width: 14em;
   height: 1px;
   // margin: -1em;
@@ -55,14 +55,32 @@ $secondaryColour : #555555;
 }
 
 .card-holder {
-  position: absolute;
+  // position: absolute;
+  // @include flexCenter();
   top: 9em;
   // left: 23px;
+  // display: flex;
+  // height: auto;
+  width: 100%;
+  // justify-content: flex-start;
 }
+.full-list {
+  visibility: visible;
+  position: relative;
+  top: 7em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+
+}
+
+
 .flip-card-container {
   // position: absolute;
   // top: 9em;
   font-family: $secondaryFont;
+
   width: 300px;
   height: 400px;
   perspective: 1000px;
@@ -295,11 +313,7 @@ $secondaryColour : #555555;
   .project-title {
     padding-left: .8em;
   }
-  .card-holder {
-    // @include flexCenter();
-    position: relative;
-    left: 1.2em;
-  }
+
 }
 
 // @media only screen and (min-width: 768px) { 
@@ -313,9 +327,25 @@ $secondaryColour : #555555;
 
 // }
 
-// @media only screen and (min-width: 1024px) {
-//   .projects {
-//     left: 18.7em;
-//     top: 75em;
-//   }
-// }
+@media only screen and (min-width: 1024px) {
+.title-tl {
+  top: 0em;
+}
+  .project-title{
+    top: 0em
+  }
+.title-ul {
+  top: 5em;
+}
+
+  .full-list {
+ display: grid;
+ grid-template-columns: repeat(3, 6fr);
+  grid-gap: 10px;
+justify-items: center;
+  }
+  
+.flip-card-container {
+  margin-bottom: 0em;
+}
+}

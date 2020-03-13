@@ -14,30 +14,53 @@ function App() {
   
   return (
     <div class="App">
-      <header class="App-header"/>
       <BrowserRouter>
       <ScrollHandler/>
+      <div class="App-header">
          
-      <div class='overlay'></div>
+      {/* <div class='overlay'></div> */}
           <h1 id='logo'>K</h1>
         <div class='title-div'>
           <h1 id='title'>Kyle McLoughlin</h1>
-         <h3 id = 'job-title'> Full Stack Web Developer </h3> */}
+         <h3 id = 'job-title'> Full Stack Web Developer </h3> 
         {/* </div> */}
         <Link to={`/#projects`}>
           <button class='projects-button'>See Projects</button> 
-        </Link>   */}
+        </Link>   
         </div>
-      <body>
+        <div class='animation-area'> 
+        <ul class='box-area'>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        </div>
+        </div> 
         <div class='wrapper'>
         <About/>
-        <div class='seperator'></div>
-          <div class ='seperatorOverlay'></div>
+          <div class='seperator'>
+          <div class='animation-area'> 
+        <ul class='box-area'>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        </div>
+        </div>
+
           <Skills/>
           <Projects key='projects'/>
           <Contact/>
         </div>
-      </body>
+      
      </BrowserRouter>
           {/* <div class='footer'>
            <h1 class='foot-logo'>K</h1>

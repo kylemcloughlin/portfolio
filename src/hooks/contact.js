@@ -41,7 +41,17 @@ function Contact() {
   }
   return (
     <div class='contact'>
-    {/* <div class='title-wrapper'> */}
+   <div class='con-animation-area'> 
+        <ul class='con-box-area'>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        </div>
      <div class='contact-tl'/>
      <h1 class='contact-title'>CONTACT</h1>
      <div class='contact-ul'/>
