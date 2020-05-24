@@ -1,7 +1,7 @@
-$color : linear-gradient(to left, rgba(36, 123, 160, 1), rgba(112, 193, 179, 1));
+$color : #120136;
 $primaryFont : 'Varela Round', sans-serif;
-$primaryColor : #4B2C8E;
-$secondaryColor : #361F42;
+$primaryColor : #fcbf1e;
+$secondaryColor : #035aa6;
 $logoFont : 'Faster One', cursive;
 
 $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
@@ -163,9 +163,9 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   position: absolute;
   top: -3em;
   width: 100%;
-  color: $primaryColor;
+  color: #40bad5;
   // padding-right: 1em;
-  font-weight: 350;
+  // font-weight: 350;
   font-family: $primaryFont
 }
 
@@ -226,20 +226,20 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   position: absolute;
   // @include flexCenter();
   // left: 2.8em;
-  border: 1px solid $secondaryColor;
+  border: 1px solid $primaryColor;
   background: none;
   padding: s10px 20px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
-  color: $secondaryColor;
+  color: $primaryColor;
   width: 7em;
   height: 1.4em;
   bottom: -9em;
 
   &:hover {
-    color: #fff;
+    color: #361F42;
     // background: #45A29E;
      transition: 0.7s;
 
@@ -251,7 +251,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
      left: 0;
      width: 100%;
      height: 0%;
-     background: $secondaryColor;
+     background: $primaryColor;
      z-index: -1;
      transition: 0.8s;
      top: 0;

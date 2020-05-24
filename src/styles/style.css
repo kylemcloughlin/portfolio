@@ -279,8 +279,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  background: -webkit-gradient(linear, right top, left top, from(#247ba0), to(#70c1b3));
-  background: linear-gradient(to left, #247ba0, #70c1b3);
+  background: #120136;
   width: 100%;
   height: 20em;
   margin-top: 0em;
@@ -295,8 +294,7 @@
   width: 100%;
   height: 85%;
   content: '';
-  background: -webkit-gradient(linear, right top, left top, from(#247ba0), to(#70c1b3));
-  background: linear-gradient(to left, #247ba0, #70c1b3);
+  background: #120136;
   z-index: 0;
   border-style: none !important;
   right: 0;
@@ -325,7 +323,7 @@
 }
 
 .contact-tl {
-  background-color: #361F42;
+  background-color: #035aa6;
   position: absolute;
   width: 10em;
   height: 1px;
@@ -337,13 +335,12 @@
   position: absolute;
   top: -3em;
   width: 100%;
-  color: #4B2C8E;
-  font-weight: 350;
+  color: #40bad5;
   font-family: "Varela Round", sans-serif;
 }
 
 .contact-ul {
-  background-color: #361F42;
+  background-color: #035aa6;
   position: absolute;
   top: -1em;
   width: 10em;
@@ -403,7 +400,7 @@
 
 .submit-button {
   position: absolute;
-  border: 1px solid #361F42;
+  border: 1px solid #fcbf1e;
   background: none;
   padding: s10px 20px;
   font-size: 20px;
@@ -411,14 +408,14 @@
   -webkit-transition: 0.8s;
   transition: 0.8s;
   overflow: hidden;
-  color: #361F42;
+  color: #fcbf1e;
   width: 7em;
   height: 1.4em;
   bottom: -9em;
 }
 
 .submit-button:hover {
-  color: #fff;
+  color: #361F42;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -429,7 +426,7 @@
   left: 0;
   width: 100%;
   height: 0%;
-  background: #361F42;
+  background: #fcbf1e;
   z-index: -1;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -448,7 +445,7 @@
 
 #resume {
   position: absolute;
-  color: #4B2C8E;
+  color: #fcbf1e;
   left: 1em;
   bottom: 1em;
   font-size: large;
@@ -457,12 +454,12 @@
 }
 
 #resume:hover {
-  color: #361F42;
+  color: #035aa6;
 }
 
 #github {
   position: absolute;
-  color: #4B2C8E;
+  color: #fcbf1e;
   bottom: 1em;
   left: 6em;
   font-size: large;
@@ -473,7 +470,7 @@
 }
 
 #github:hover {
-  color: #361F42;
+  color: #035aa6;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -546,7 +543,6 @@
 
 .project-title {
   color: #361F42;
-  font-weight: 350;
   font-family: "Varela Round", sans-serif;
   position: absolute;
   top: 1em;
@@ -1108,8 +1104,7 @@
 
 .App-header {
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, from(#247ba0), to(#70c1b3));
-  background: linear-gradient(to left, #247ba0, #70c1b3);
+  background: #120136;
   width: 100%;
   height: 14em;
   top: -21px;
@@ -1256,7 +1251,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-family: "Mukta", sans-serif;
-  color: #361F42;
+  color: #40bad5;
 }
 
 #job-title {
@@ -1272,7 +1267,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #4B2C8E;
+  color: #fcbf1e;
   font-weight: 200;
   font-family: "Mukta", sans-serif;
 }
@@ -1304,8 +1299,7 @@
   height: 31em;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
-  background: -webkit-gradient(linear, right top, left top, from(#247ba0), to(#70c1b3));
-  background: linear-gradient(to left, #247ba0, #70c1b3);
+  background: #120136;
 }
 
 .seperatorOverlay {
@@ -1330,8 +1324,8 @@
   height: 3em;
   width: 9em;
   font-size: .9em;
-  color: aliceblue;
-  background: #4B2C8E;
+  color: #4B2C8E;
+  background: #fcbf1e;
   z-index: 1;
 }
 
@@ -1369,6 +1363,7 @@
   #logo {
     top: 0em;
     left: .8em;
+    color: #fcbf1e;
   }
 }
 

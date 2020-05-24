@@ -6,7 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right, rgba(243, 255, 189, 1), rgba(178, 219, 191, 1));
+  background: linear-gradient(to left, #40bad5, rgba(178, 219, 191, 1));
+  /* background: #40bad5; */
   max-width: 100%;
   /* overflow-x: hidden; */
 

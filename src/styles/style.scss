@@ -6,8 +6,8 @@
 @import './modalStyles.scss';
 //variables
 $primaryColour : #202833;
-$bground : linear-gradient(to left, rgba(36, 123, 160, 1), rgba(112, 193, 179, 1));
-$secondaryColour : #361F42;
+$bground : #120136;
+$secondaryColour : #40bad5;
 $primaryFont : 'Varela Round',
 sans-serif;
 $secondaryFont : 'Mukta',
@@ -180,7 +180,7 @@ cursive;
 #job-title {
   @include position(0em, 0);
   @include flexCenter();
-  color: #4B2C8E;
+  color: #fcbf1e;
   font-weight: 200;
   font-family: $secondaryFont;
 
@@ -242,8 +242,8 @@ cursive;
    height: 3em;
    width: 9em;
    font-size: .9em;
-   color: aliceblue;
-   background: #4B2C8E;
+   color: #4B2C8E;
+   background: #fcbf1e;
    z-index: 1;
    
   
@@ -289,6 +289,7 @@ cursive;
  #logo {
    top: 0em;
    left: .8em;
+   color: #fcbf1e;
  }
 }
 
