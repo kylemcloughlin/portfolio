@@ -441,6 +441,11 @@
   height: 180em;
 }
 
+.message-response {
+  position: absolute;
+  bottom: -9em;
+}
+
 #resume {
   position: absolute;
   color: #4B2C8E;
