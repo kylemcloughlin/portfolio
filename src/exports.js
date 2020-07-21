@@ -30,7 +30,7 @@ export const fullList = [{
       name: 'Polland',
       photos: './photos/polland.png',
       gif: './photos/gifs/pollandPhotoshopped.gif',
-      discription: 'An Interactive opinion polling web app but built with ..... ',
+      discription: 'An Interactive opinion polling web app but built with Node.js and Postgres',
       keyFeatures: ['Node.js', 'jQuery', 'Postgres', 'Chart.js'],
       linkToProject: 'test4',
       linkToProjectsCode: 'https://github.com/kylemcloughlin/Polland',
