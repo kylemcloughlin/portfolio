@@ -10,9 +10,9 @@ const customStyles = {
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)',
     width                 : '88%',
-    // maxWidth              : '750px',
+    maxWidth              : '750px',
     height                : '65%',
-    background            : '#0B0C10'
+    background            : '#361F42'
   }
 };
 

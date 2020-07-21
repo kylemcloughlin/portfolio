@@ -4,6 +4,9 @@
   top: 2em;
   max-width: 750px;
   margin-top: 0em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .close-but {
@@ -12,22 +15,26 @@
   right: 1em;
   width: 4em;
   height: 2em;
-  background-color: #45A29E;
-  color: #fff;
-  border: 0px;
+  background-color: #fcbf1e;
+  color: #4B2C8E;
+  border-radius: 2em;
+  border: none;
+  height: 3em;
+  width: 9em;
+  font-size: .9em;
   font-family: 'Roboto', sans-serif;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .close-but:hover {
-  background-color: #6EFAF1;
+  background-color: #fcbf1e;
   -webkit-transition: .3;
   transition: .3;
 }
 
 .modal-title {
-  color: #fff;
+  color: #fcbf1e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,13 +45,14 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0em;
-  margin-bottom: -1.5em;
+  margin-bottom: -.5em;
   font-family: "Mukta", sans-serif;
 }
 
 .modal-dis {
-  color: white;
+  color: #fcbf1e;
   position: relative;
+  text-align: center;
   top: 1.5em;
 }
 
@@ -55,7 +63,7 @@
 }
 
 .modal-kf {
-  color: white;
+  color: #fcbf1e;
   margin-bottom: 0em;
   padding: 1em;
   text-align: center;
@@ -78,6 +86,12 @@
     width: 75% !important;
     max-width: 1100px !important;
   }
+  .close-but {
+    opacity: .6;
+  }
+  .close-but:hover {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 1350px) {
@@ -86,15 +100,21 @@
     max-height: 650px !important;
     max-width: 1100px !important;
   }
+  .demo-gif {
+    width: 100%;
+    position: relative;
+    float: left;
+    top: 2em;
+    max-width: 750px;
+    margin-top: 0em;
+  }
   .modal-dis {
-    color: white;
     position: absolute;
     top: 5em;
     right: 2em;
     width: 23%;
   }
   .modal-kf {
-    color: white;
     margin-bottom: 0em;
     padding: 0em;
     text-align: left;

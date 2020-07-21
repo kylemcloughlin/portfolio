@@ -8,7 +8,7 @@ $secondaryFont : 'Mukta',sans-serif;
   
 }
 $primaryColour : #1f2833;
-$secondaryColour : #555555;
+$secondaryColour : #120136;
 
 
 
@@ -23,7 +23,7 @@ $secondaryColour : #555555;
 }
 
 .title-tl {
-  background-color: #4B2C8E;
+  background-color: #40bad5;
   width: 14em;
   height: 1px;
   // margin: -1em;
@@ -34,7 +34,7 @@ $secondaryColour : #555555;
 }
 
 .project-title {
-  color: #361F42;
+  color: #fcbf1e;
   // padding-left: .2em;
   // font-weight: 350;
   font-family: $primaryFont;
@@ -45,7 +45,7 @@ $secondaryColour : #555555;
 }
 
 .title-ul {
-  background-color: #4B2C8E;
+  background-color: #40bad5;;
   width: 14em;
   height: 1px;
   // margin: -1em;
@@ -168,7 +168,7 @@ $secondaryColour : #555555;
 }
 
 .p-name {
-  color: #222222;
+  color: #40bad5;
   position: absolute;
   top: -10%;
   left: 4%;
@@ -187,7 +187,7 @@ $secondaryColour : #555555;
 .list-point {
   font-size: larger;
   font-weight: 100;
-  color: #dddddd;
+  color: #fcbf1e;
   text-align: center; 
   margin: 0;
   font-family: 'Roboto',
@@ -196,7 +196,7 @@ $secondaryColour : #555555;
 }
 
 .list-point-ul {
-  background-color: #888888;
+  background-color: #444;
   width: 22%;
   height: 1px;
   margin-top: 3px;
@@ -214,8 +214,8 @@ $secondaryColour : #555555;
   justify-content: center;
   align-items: center;
   // border-radius: 0.5rem;
-  background-color: $primaryColour;
-  color: #fff;
+  background-color: #361F42;
+  color: #40bad5;
   transform: rotateY(180deg);
   box-shadow: 0px 13px 35px 14px #333;
 }
@@ -233,19 +233,20 @@ $secondaryColour : #555555;
   position: absolute;
   top: 17em;
   left: 1.2em;
-  border: 1px solid #45A29E;
+  border: 1px solid #fcbf1e;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
   font-family: 'Roboto',
   sans-serif;
   cursor: pointer;
-  transition: 0.8s;
+  transition: 0.5s;
   overflow: hidden;
-  color: #45A29E;
+  color: #fcbf1e;
   
   &:hover {
-    color: #fff;
+    color: #361F42;
+    ;
   }
   
   &::before {
@@ -254,9 +255,9 @@ $secondaryColour : #555555;
     left: 0;
     width: 100%;
     height: 0%;
-    background: #45A29E;
+    background: #fcbf1e;
     z-index: -1;
-    transition: 0.8s;
+    transition: 0.5s;
     bottom: 0;
     border-radius: 50% 50% 0 0;
     
@@ -273,7 +274,7 @@ $secondaryColour : #555555;
   position: absolute;
   top: 17em;
   right: 1.2em;
-  border: 1px solid #45A29E;
+  border: 1px solid #fcbf1e;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
@@ -282,10 +283,10 @@ $secondaryColour : #555555;
   cursor: pointer;
   transition: 0.8s;
   overflow: hidden;
-  color: #45A29E;
+  color: #fcbf1e;
   
   &:hover {
-    color: #fff;
+    color: #361F42;
   }
   
   &::before {
@@ -294,7 +295,7 @@ $secondaryColour : #555555;
     left: 0;
     width: 100%;
     height: 0%;
-    background: #45A29E;
+    background: #fcbf1e;
     z-index: -1;
     transition: 0.8s;
     top: 0;
@@ -329,13 +330,13 @@ $secondaryColour : #555555;
 
 @media only screen and (min-width: 1024px) {
 .title-tl {
-  top: 0em;
+  top: 1em;
 }
   .project-title{
     top: 0em
   }
 .title-ul {
-  top: 5em;
+  top: 4em;
 }
 
   .full-list {

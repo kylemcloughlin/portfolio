@@ -1,7 +1,7 @@
 $color : #120136;
 $primaryFont : 'Varela Round', sans-serif;
 $primaryColor : #fcbf1e;
-$secondaryColor : #035aa6;
+$secondaryColor : #40bad5;
 $logoFont : 'Faster One', cursive;
 
 $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
@@ -163,7 +163,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   position: absolute;
   top: -3em;
   width: 100%;
-  color: #40bad5;
+  color: $primaryColor;
   // padding-right: 1em;
   // font-weight: 350;
   font-family: $primaryFont
