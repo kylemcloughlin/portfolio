@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+        src/hooks/photos/Toronto's Street Trees.htm
+        src/hooks/photos/client.htm
+        src/hooks/photos/trees-app.htm
+        test.js
