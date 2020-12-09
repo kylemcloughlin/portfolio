@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="./Toronto&#39;s Street Trees_files/vue"></script>
+    <script src="./Toronto&#39;s Street Trees_files/vue-scrollto"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./Toronto&#39;s Street Trees_files/css2" rel="stylesheet">
+    <link href="./Toronto&#39;s Street Trees_files/css2(1)" rel="stylesheet">
+    <!-- <link rel="icon" href="/favicon.ico"> -->
+    <title>Toronto's Street Trees</title>
+  <link href="./Toronto&#39;s Street Trees_files/app.js" rel="preload" as="script"><link href="./Toronto&#39;s Street Trees_files/chunk-vendors.js" rel="preload" as="script"><style type="text/css">
+.header[data-v-29e8c3c6]{
+    background: #292f36;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 5em;
+}
+.header a[data-v-29e8c3c6] {
+    color: #fff;
+    padding-right: 5px;
+}
+.header h2[data-v-29e8c3c6] {
+  position: absolute;
+  top: 29px;
+  font-family: 'PT Sans', sans-serif;
+  left: 1.7em;
+}
+.back-btn[data-v-29e8c3c6] {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    left: 44%;
+    top: 1.5em;
+    color: white;
+    background-color: transparent;
+    border: white solid 1px;
+    border-radius: 4em;
+    opacity: .7;
+    transition: 3ms;
+    box-shadow: 0px 0.5px 2px 0px;
+}
+.back-btn[data-v-29e8c3c6]:hover{
+    opacity: 1;
+    background-color: white;
+    color: #292f36;
+    /* box-shadow: 0px 0.5px 2px 0px; */
+}
+.img[data-v-29e8c3c6] {
+    position: absolute;
+    left: .3em;
+    top: 3em;
+    /* width: 3em; */
+}
+</style><style type="text/css">
+.selected[data-v-1a8b8945] {
+  transition: .2s;
+  background-color: #157a6e;
+  color: white;
+  opacity: 1;
+}
+
+</style><style type="text/css">
+.selected[data-v-edc15bc6] {
+  transition: .2s;
+  background-color: #157a6e;
+  color: white;
+  opacity: 1;
+}
+
+</style><style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 414px) {} */
+#search-holder[data-v-0eca37cb] {
+  display: flex;
+  width: 96%;
+  position: absolute;
+  text-align:center;
+  top: 3em;
+  left: 0em;
+  /* overflow: hidden; */
+}
+.diameter-input[data-v-0eca37cb] {
+  position: absolute;
+  left: 1.5em;
+  top: 0.05em;
+}
+.plus[data-v-0eca37cb] {
+  position: absolute;
+  top: 2.8em;
+  right: 11.5em;
+}
+.minus[data-v-0eca37cb] {
+  position: absolute;
+  right: 9.9em;
+  top: 2.8em;
+}
+.type-select-holder[data-v-0eca37cb] {
+  max-width: 100%;
+}
+.type-select[data-v-0eca37cb] {
+  /* width: 96%; */
+  position: relative;
+  top: 3.5em;
+}
+#submit[data-v-0eca37cb] {
+  position: absolute;
+  right: 2em;
+  top: 8.4em;
+  height: 2.3em;
+  width: 6em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: #157A6E;
+  /* background-color: #243119; */
+}
+.location-input[data-v-0eca37cb] {
+  position: absolute;
+  top: 1.5em;
+  width: 84%;
+  max-width: 19em;
+  background: #222;
+  border: 0;
+  font-size: 25px;
+  color: #fff;
+}
+.selected-location[data-v-0eca37cb] {
+  width: 80%;
+  max-width: 26em;
+  text-align: center;
+  margin: none;
+  background-color: #888;
+  position: absolute;
+  left: 4em;
+  top: 2em;
+  border-radius: 1em;
+}
+.x[data-v-0eca37cb] {
+  float: right;
+  margin-right: 0.5em;
+  margin-top: 0.25em;
+}
+.suggestion-div[data-v-0eca37cb] {
+  background: #222;
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: #fff;
+  border-top: 1px solid #666;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: 0.25s;
+  /* width:  */
+  /* width: 84%; */
+}
+.suggestion-div[data-v-0eca37cb]:hover {
+  opacity: 1;
+}
+.in-focus[data-v-0eca37cb] {
+  opacity: 1;
+}
+.suggestion-container[data-v-0eca37cb] {
+  position: absolute;
+  left: 2em;
+  top: 8em;
+  width: 80%;
+  max-width: 29.99em;
+}
+</style><style type="text/css">
+.selected[data-v-05a9cd5c] {
+  transition: .2s;
+  background-color: #157a6e;
+  color: white;
+  opacity: 1;
+}
+
+</style><style type="text/css">
+.map-div {
+  /* width: 100%; */
+  width: 53%;
+height: 26em;
+  margin: auto;
+  border: 1.5px solid #292f36;
+  border-top: #44cf6c 3px solid;
+}
+
+</style><style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* @media only screen and (max-width: 414px) {} */
+.tree-div[data-v-24dbbcae] {
+  /* width: 99%; */
+  align-content: unset;
+  border: 1.5px solid #292f36;
+  border-top: 3px solid #44cf6c;
+}
+.tree-h3[data-v-24dbbcae] {
+ position: relative;
+ padding-left: 1em;
+}
+.tree-h4[data-v-24dbbcae] {
+position: relative;
+ padding-left: 1em;
+}
+.tree-span[data-v-24dbbcae] {
+position: relative;
+ padding-left: 1em;
+}
+.tree-diam[data-v-24dbbcae] {
+position: relative;
+ padding-left: 1em;
+}
+.top[data-v-24dbbcae]{
+   margin-top: -1.5em;
+}
+</style><style type="text/css">
+.info-panel-div[data-v-24bb4f16] { 
+  overflow: scroll;
+  width: 75%;
+  max-width: 40em;
+  height: 34em;
+  margin: auto;
+  /* border: 1.5px solid #292f36; */
+  border-top: #44cf6c 4px solid;
+  z-index: 9999;
+  /* margin-top: 8em; */
+}
+.title-holder[data-v-24bb4f16] {
+  width: 100%;
+  max-width: 40em;
+  position: relative;
+  background-color: #292f36;
+  color: white;
+  z-index: 9999;
+  height: 11.4em;
+  max-height: 11.4em;
+  text-align: center;
+  top: -1.5em;
+  font-family: 'PT sans', sans-serif;
+  padding-top: 3em;
+}
+.info-panel-btn[data-v-24bb4f16] {
+ margin-top: 1em;
+ margin-bottom: 1em;
+ padding: 0.9em;
+ border-radius: 0.6em;
+ font-weight: 800;
+ font-size: x-large;
+  width: 100%;
+  position: relative;
+  border: #157A6E solid 3px;
+  background: transparent;
+  color: #157A6E;
+    transition: .5s;
+    opacity: .7;
+}
+.info-panel-btn[data-v-24bb4f16]:hover{
+    opacity: 1;
+    color: white;
+    background-color: #292f36;
+    border: #292f36 solid 3px;
+    /* box-shadow: 0px 0.5px 2px 0px; */
+  transition: .5s;
+}
+.info-panel-btn[data-v-24bb4f16]:focus {
+  outline: none;
+}
+</style><style type="text/css">
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1ffe7;
+  font-family: 'Roboto', sans-serif;
+}
+#app {
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #292F36;
+  margin: 0;
+  padding: 0;
+}
+.form-holder {
+  width: 100%;
+  max-width: 40em;
+  position: relative;
+  top: 3em;
+  display: flex;
+  margin: auto;
+  width: 65%;
+  height: 12em;
+
+  border: 1.5px solid #292f36;
+  border-top: 3px solid #44cf6c;
+  padding-bottom: 10px;
+}
+.button-bar {
+  width: 100%;
+  display: flex;
+height: 2.5em;
+background-color:#292f36;
+}
+.btn {
+  border: none;
+  background-color: #999;
+  border-radius: 2em;
+  margin-left: 2em;
+  height: 3em;
+  opacity: 0.6;
+  transition: 0.2s;
+  width: 100%
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  /* background-color: #157a6e; */
+  /* transition: 0.3s; */
+}
+.btn:hover {
+  /* background-color: black; */
+  opacity: 1;
+}
+.btn-helper {
+  border-top: 1.5px solid grey;
+  width: 47%;
+  height: 0px;
+  position: absolute;
+  top: 2.45em;
+  left: 12.25em;
+}
+.output-holder {
+    width: 100%;
+  position: relative;
+  top: 3em;
+  display: flex;
+  margin: auto;
+}
+@media only screen and (max-width: 1250px) {
+.btn-helper {
+  width: 70%;
+}
+.output-holder{
+  display: flex;
+  flex-direction: column;
+}
+.type-select {
+  top: 3.2em !important;
+  /* left: 0.5em; */
+}
+.map-div {
+  width: 93%;
+  overflow: hidden;
+  height: 41em;
+}
+.info-panel-div {
+  margin-top: 1em !important;
+ max-height: 82em !important;
+  max-width: 70em !important;
+  width: 94% !important;
+}
+.title-holder {
+  width: 100% !important;
+  max-width: 70em !important;
+}
+.vue-map-container {
+  width: 880px !important;
+  height: 600px !important;
+}
+}
+@media only screen and (max-width: 950px) {
+.vue-map-container {
+  width: 780px !important;
+  /* height: 600px !important; */
+}
+}
+@media only screen and (max-width: 850px) {
+.vue-map-container {
+  width: 680px !important;
+  /* height: 600px !important; */
+}
+}
+@media only screen and (max-width: 850px) {
+.vue-map-container {
+  width: 680px !important;
+  /* height: 600px !important; */
+}
+}
+@media only screen and (max-width: 750px) {
+.btn-helper {
+    width: 61%;
+}
+.type-select {
+    /* left: 0em; */
+  top: 2em;
+  right: 1.5em;
+}
+.vue-map-container {
+  width: 580px !important;
+}
+}
+@media only screen and (max-width: 650px) {
+.vue-map-container {
+  width: 480px !important;
+}
+}
+@media only screen and (max-width: 550px) {
+.btn {
+    margin-left: 1em !important;
+}
+.form-holder {
+  width: 80% !important;
+}
+.vue-map-container {
+  width: 380px !important;
+}
+}
+@media only screen and (max-width: 414px) {
+.vue-map-container {
+    width: 334px !important;
+  /* width: 50% */
+}
+.type-select {
+  top: 2em !important;
+  right: 1.5em !important;
+}
+/* #search-holder {
+
+} */
+}
+@media only screen and (max-width: 375px) {
+.btn-helper {
+    width: 42%;
+}
+.vue-map-container {
+  width: 350px !important;
+}
+}
+</style><style type="text/css">
+.vue-map-container {
+  position: relative;
+}
+.vue-map-container .vue-map {
+  left: 0; right: 0; top: 0; bottom: 0;
+  position: absolute;
+}
+.vue-map-hidden {
+  display: none;
+}
+</style><style type="text/css">
+.vue-street-view-pano-container {
+  position: relative;
+}
+.vue-street-view-pano-container .vue-street-view-pano {
+  left: 0; right: 0; top: 0; bottom: 0;
+  position: absolute;
+}
+</style><script src="./Toronto&#39;s Street Trees_files/js" async="" defer=""></script><script type="text/javascript" charset="UTF-8" src="./Toronto&#39;s Street Trees_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./Toronto&#39;s Street Trees_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./Toronto&#39;s Street Trees_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="./Toronto&#39;s Street Trees_files/infowindow.js"></script><script type="text/javascript" charset="UTF-8" src="./Toronto&#39;s Street Trees_files/onion.js"></script><script charset="utf-8" src="./Toronto&#39;s Street Trees_files/app.a3291b77d7730759d24d.hot-update.js"></script><script charset="utf-8" src="./Toronto&#39;s Street Trees_files/app.954fc5eb149005439c07.hot-update.js"></script><script charset="utf-8" src="./Toronto&#39;s Street Trees_files/app.64883f9613da6577cfab.hot-update.js"></script><script charset="utf-8" src="./Toronto&#39;s Street Trees_files/app.9701076bcd6433ef5250.hot-update.js"></script><script charset="utf-8" src="./Toronto&#39;s Street Trees_files/app.7fc94b5050fac14670aa.hot-update.js"></script></head>
+  <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="" data-gr-ext-disabled="forever" cz-shortcut-listen="true">
+    <noscript>
+      <strong>We're sorry but client doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"><div data-v-29e8c3c6="" class="header" msg="trees App"><img data-v-29e8c3c6="" src="data:image/png;base64,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" class="img"><h2 data-v-29e8c3c6="">Toronto's Street Trees</h2><!----></div><div class="form-holder"><div class="button-bar"><div data-v-05a9cd5c=""><form data-v-05a9cd5c=""><input data-v-05a9cd5c="" type="submit" value="Species" class="btn selected"></form></div><div data-v-1a8b8945=""><form data-v-1a8b8945=""><input data-v-1a8b8945="" type="submit" value="Location" class="btn"></form></div><div data-v-edc15bc6=""><form data-v-edc15bc6=""><input data-v-edc15bc6="" type="submit" value="Diameter" class="btn"></form></div></div><div data-v-0eca37cb="" msg="location"><form data-v-0eca37cb=""><div data-v-0eca37cb="" id="search-holder"><div data-v-0eca37cb="" class="type-select-holder"><select data-v-0eca37cb="" class="type-select"><option data-v-0eca37cb="" value="11">'AUTUMN BLAZE' NORWAY MAPLE Acer platanoides 'Autumn Blaze'</option><option data-v-0eca37cb="" value="85">ACCOLADE ELM Ulnus 'Accolade'</option><option data-v-0eca37cb="" value="141">ALDER Alnus sp.</option><option data-v-0eca37cb="" value="93">AMERICAN BEECH Fagus grandifolia</option><option data-v-0eca37cb="" value="96">AMERICAN MOUNTAINASH Sorbus americana</option><option data-v-0eca37cb="" value="63">AMERICAN SWEETGUM Liquidambar styraciflua</option><option data-v-0eca37cb="" value="86">AMUR CORK Phellodendron amurense</option><option data-v-0eca37cb="" value="5">AMUR MAPLE Acer ginnala</option><option data-v-0eca37cb="" value="28">APPLE Malus sp.</option><option data-v-0eca37cb="" value="152">ARMSTRONG COLUMNAR RED MAPLE Acer rubrum 'Armstrong'</option><option data-v-0eca37cb="" value="79">ASH Fraxinus sp.</option><option data-v-0eca37cb="" value="25">AUSTRIAN PINE Pinus nigra</option><option data-v-0eca37cb="" value="125">BALSAM FIR Abies balsamea</option><option data-v-0eca37cb="" value="65">BASSWOOD Tilia americana</option><option data-v-0eca37cb="" value="157">BEECH Fagus sp.</option><option data-v-0eca37cb="" value="31">BIRCH Betula sp.</option><option data-v-0eca37cb="" value="172">BLACK ASH Fraxinus nigra</option><option data-v-0eca37cb="" value="168">BLACK CHERRY Prunus serotina</option><option data-v-0eca37cb="" value="45">BLACK LOCUST Robinia pseudoacacia</option><option data-v-0eca37cb="" value="123">BLACK LOCUST PURPLE ROBE Robinia pseudoacacia 'Purple Robe'</option><option data-v-0eca37cb="" value="115">BLACK MAPLE Acer nigrum</option><option data-v-0eca37cb="" value="136">BLACK MAPLE 'GREEN COLUMN' Acer nigrum 'Green Column'</option><option data-v-0eca37cb="" value="163">BLACK OAK Quercus velutina</option><option data-v-0eca37cb="" value="108">BLACK WALNUT Juglans nigra</option><option data-v-0eca37cb="" value="124">BLOODGOOD LONDON PLANE Platanus x acerifolia 'Bloodgood'</option><option data-v-0eca37cb="" value="146">BOLEANA WHITE POPLAR Populus alba ' Pyramidalis'</option><option data-v-0eca37cb="" value="106">BRADFORD PEAR Pyrus calleryana 'Bradford'</option><option data-v-0eca37cb="" value="76">BUR OAK Quercus macrocarpa</option><option data-v-0eca37cb="" value="149">BUTTERNUT (WHITE WALNUT) Juglans cinerea</option><option data-v-0eca37cb="" value="159">BUTTERNUT HYBRID (WHITE WALNUT) Juglans cinerea</option><option data-v-0eca37cb="" value="2">CALLERY PEAR 'CHANTICLEER' Pyrus calleryana 'Chanticleer'</option><option data-v-0eca37cb="" value="122">CAROLINA POPLAR Populus x canadensis</option><option data-v-0eca37cb="" value="69">CEDAR Thuja sp.</option><option data-v-0eca37cb="" value="15">CHERRY Prunus sp.</option><option data-v-0eca37cb="" value="60">CHINESE ELM Ulmus parvifolia</option><option data-v-0eca37cb="" value="68">CHOKE CHERRY Prunus virginiana</option><option data-v-0eca37cb="" value="58">COLORADO BLUE SPRUCE Picea pungens</option><option data-v-0eca37cb="" value="20">COLUMNAR NORWAY MAPLE Acer platanoides 'Columnare'</option><option data-v-0eca37cb="" value="72">COTTONWOOD POPLAR Populus deltoides</option><option data-v-0eca37cb="" value="13">CRAB APPLE Malus sargentii</option><option data-v-0eca37cb="" value="120">CRIMEAN LINDEN Tilia x euchlora</option><option data-v-0eca37cb="" value="46">CRIMSON KING NORWAY MAPLE Acer platanoides 'Crimson King'</option><option data-v-0eca37cb="" value="84">Cucumber-Tree, Cucumber magnolia Magnolia acuminata</option><option data-v-0eca37cb="" value="156">DEBORAH NORWAY MAPLE Acer platanoides 'Deborah'</option><option data-v-0eca37cb="" value="16">DOUGLAS FIR Pseudotsuga menziesii</option><option data-v-0eca37cb="" value="53">EASTERN HEMLOCK Tsuga canadensis</option><option data-v-0eca37cb="" value="42">EASTERN RED CEDAR Juniperus virginiana</option><option data-v-0eca37cb="" value="38">EASTERN WHITE CEDAR Thuja occidentalis</option><option data-v-0eca37cb="" value="40">ELM Ulmus sp.</option><option data-v-0eca37cb="" value="32">EMERALD QUEEN NORWAY MAPLE Acer platanoides 'Emerald Queen'</option><option data-v-0eca37cb="" value="103">ENGLISH ELM Ulmus procera</option><option data-v-0eca37cb="" value="97">ENGLISH OAK Quercus robur</option><option data-v-0eca37cb="" value="154">ENGLISH WALNUT Juglans regia</option><option data-v-0eca37cb="" value="111">EUROPEAN ALDER Alnus glutinosa</option><option data-v-0eca37cb="" value="151">EUROPEAN ASH Fraxinus excelsior</option><option data-v-0eca37cb="" value="114">EUROPEAN BEECH Fagus sylvatica</option><option data-v-0eca37cb="" value="128">EUROPEAN BIRCH Betula pendula</option><option data-v-0eca37cb="" value="164">EUROPEAN BUCKTHORN Rhamnus davurica</option><option data-v-0eca37cb="" value="170">EUROPEAN COPPER BEECH Fagus sylvatica 'Cupria'</option><option data-v-0eca37cb="" value="166">EUROPEAN CUTLEAF BIRCH Betula pendula 'Gracilis'</option><option data-v-0eca37cb="" value="160">EUROPEAN HORNBEAM Carpinus betulus</option><option data-v-0eca37cb="" value="71">EUROPEAN MOUNTAINASH Sorbus aucuparia</option><option data-v-0eca37cb="" value="148">EUROPEAN PURPLELEAF BEECH Fagus sylvatica 'Purpurea'</option><option data-v-0eca37cb="" value="140">FALSE CYPRESS Chamaecyparis sp.</option><option data-v-0eca37cb="" value="95">FIR Abies sp.</option><option data-v-0eca37cb="" value="62">FREEMAN MAPLE 'ARMSTRONG' Acer X Freemanii 'Armstrong'</option><option data-v-0eca37cb="" value="8">FREEMAN MAPLE 'AUTUMN BLAZE' Acer X Freemanii 'Autumn Flame'</option><option data-v-0eca37cb="" value="145">FREEMAN MAPLE 'CELEBRATION' Acer X Freemanii 'Celebration'</option><option data-v-0eca37cb="" value="117">FREEMAN MAPLE 'JEFFERSRED' Acer X Freemanii 'Jeffersred'</option><option data-v-0eca37cb="" value="142">FREEMAN MAPLE 'MARMO' ACER X FREEMANII 'MARMO'</option><option data-v-0eca37cb="" value="116">FREEMAN MAPLE 'SIENNA GLEN' Acer X Freemanii 'Sienna Glen'</option><option data-v-0eca37cb="" value="34">GINKGO Ginkgo biloba</option><option data-v-0eca37cb="" value="10">GINKGO "COLUMNAR" Ginkgo biloba "columnar"</option><option data-v-0eca37cb="" value="133">GINKGO 'AUTUMN GOLD' Ginkgo biloba 'Autumn Gold</option><option data-v-0eca37cb="" value="21">GLOBE NORWAY MAPLE Acer platanoides 'Globosum'</option><option data-v-0eca37cb="" value="129">GREEN MOUNTAIN SUGAR MAPLE Acer saccharum 'Green Mountain'</option><option data-v-0eca37cb="" value="51">HACK-BERRY Celtis occidentalis</option><option data-v-0eca37cb="" value="78">HAWTHORN Crataegus sp.</option><option data-v-0eca37cb="" value="162">HAZEL Corylus sp.</option><option data-v-0eca37cb="" value="70">HEDGE MAPLE Acer campestre</option><option data-v-0eca37cb="" value="29">HONEY LOCUST Gleditsia tricanthos</option><option data-v-0eca37cb="" value="91">HORSECHESTNUT Aesculus hippocastanum</option><option data-v-0eca37cb="" value="130">HORSECHESTNUT (RUBY RED) Aesculus x carnea</option><option data-v-0eca37cb="" value="57">IRON-WOOD (HOP-HORNBEAM) Ostrya virginiana</option><option data-v-0eca37cb="" value="143">JAPANESE CHERRY Prunus serrulata</option><option data-v-0eca37cb="" value="102">JAPANESE KATSURA Cercidiphyllum japonicum</option><option data-v-0eca37cb="" value="107">JAPANESE MAPLE Acer palmatum</option><option data-v-0eca37cb="" value="18">JAPANESE TREE LILAC Syringa reticulata</option><option data-v-0eca37cb="" value="44">JUNIPER Juniperus sp.</option><option data-v-0eca37cb="" value="30">KENTUCKY-COFFEE TREE Gymnocladus dioicus</option><option data-v-0eca37cb="" value="75">LARCH (TAMARACK) Larix laricina</option><option data-v-0eca37cb="" value="110">LEGACY SUGAR MAPLE Acer saccharum 'Legacy'</option><option data-v-0eca37cb="" value="17">LILAC Syringa sp.</option><option data-v-0eca37cb="" value="19">LINDEN Tilia sp.</option><option data-v-0eca37cb="" value="139">LITTLELEAF GLENLEVEN LINDEN Tilia cordata 'Glenleven'</option><option data-v-0eca37cb="" value="54">LITTLELEAF GREENSPIRE LINDEN Tilia cordata 'Greenspire'</option><option data-v-0eca37cb="" value="7">LITTLELEAF LINDEN Tilia cordata</option><option data-v-0eca37cb="" value="173">LOMBARDY POPLAR Populus nigra 'Italica'</option><option data-v-0eca37cb="" value="41">LONDON PLANE Platanus x acerifolia</option><option data-v-0eca37cb="" value="27">MANITOBA MAPLE Acer negundo</option><option data-v-0eca37cb="" value="100">MAPLE Acer sp.</option><option data-v-0eca37cb="" value="135">MARSHALL RED ASH Fraxinus pennsylvanica 'Marshall's Seedless'</option><option data-v-0eca37cb="" value="9">MOUNTAIN ASH Sorbus sp.</option><option data-v-0eca37cb="" value="83">MULBERRY Morus sp.</option><option data-v-0eca37cb="" value="14">NORTHERN CATALPA Catalpa speciosa</option><option data-v-0eca37cb="" value="1">NORWAY MAPLE Acer platanoides</option><option data-v-0eca37cb="" value="73">NORWAY SPRUCE Picea abies</option><option data-v-0eca37cb="" value="23">OAK Quercus sp.</option><option data-v-0eca37cb="" value="165">OAKLEAF MOUNTAINASH Sorbus thuringiaca 'Fastigiata'</option><option data-v-0eca37cb="" value="92">OHIO BUCKEYE Aesculus glabra</option><option data-v-0eca37cb="" value="90">PEACH Prunus persica</option><option data-v-0eca37cb="" value="82">PEAR Pyrus sp.</option><option data-v-0eca37cb="" value="24">PIN OAK Quercus palustris</option><option data-v-0eca37cb="" value="104">PINE Pinus sp.</option><option data-v-0eca37cb="" value="74">PIONEER ELM Ulmus americana 'Pioneer'</option><option data-v-0eca37cb="" value="101">PLUM Prunus sp.</option><option data-v-0eca37cb="" value="158">POPLAR Populus sp.</option><option data-v-0eca37cb="" value="161">PUSSY WILLOW Salix caprea</option><option data-v-0eca37cb="" value="121">PYRAMIDAL ENGLISH OAK Quercus robur  'Fastigiata'</option><option data-v-0eca37cb="" value="174">Pink Flowering Dogwood Cornus florida 'Rubra'</option><option data-v-0eca37cb="" value="59">RED (GREEN) ASH Fraxinus pennsylvanica</option><option data-v-0eca37cb="" value="4">RED MAPLE Acer rubrum</option><option data-v-0eca37cb="" value="6">RED OAK Quercus rubra</option><option data-v-0eca37cb="" value="150">RED PINE Pinus resinosa</option><option data-v-0eca37cb="" value="87">RED-BUD Cercis canadensis</option><option data-v-0eca37cb="" value="3">REDMOND LINDEN Tilia americana 'Redmond'</option><option data-v-0eca37cb="" value="169">REDMOND LINDEN 'CONTINENTAL Tilia americana 'Continental Appeal'</option><option data-v-0eca37cb="" value="113">ROYAL RED NORWAY MAPLE Acer platanoides 'Royal Red'</option><option data-v-0eca37cb="" value="147">RUBY LACE HONEY LOCUST GLEDITSIA TRIACANTHOS VAR. INERMIS 'RUBY LACE'</option><option data-v-0eca37cb="" value="99">RUSSIAN-OLIVE Elaeagnus angustifolia</option><option data-v-0eca37cb="" value="81">SAUCER MAGNOLIA Magnolia soulangiana</option><option data-v-0eca37cb="" value="47">SCHWEDLER NORWAY MAPLE Acer platanoides 'Schwedleri'</option><option data-v-0eca37cb="" value="119">SCOTCH ELM Ulmus glabra</option><option data-v-0eca37cb="" value="67">SCOTS PINE Pinus sylvestris</option><option data-v-0eca37cb="" value="138">SERBIAN SPRUCE Picea omorica</option><option data-v-0eca37cb="" value="50">SERVICE-BERRY Amelanchier canadensis</option><option data-v-0eca37cb="" value="39">SHADEMASTER HONEY LOCUST Gleditsia tricanthos var. inermis 'Shademaster'</option><option data-v-0eca37cb="" value="52">SHUBERT CHOKE CHERRY Prunus virginiana 'Shubert'</option><option data-v-0eca37cb="" value="43">SIBERIAN ELM Ulmus pumila</option><option data-v-0eca37cb="" value="153">SIBERIAN PEASHRUB Carigana arboresense 'Siberian'</option><option data-v-0eca37cb="" value="55">SILVER MAPLE Acer saccharinum</option><option data-v-0eca37cb="" value="175">SILVER QUEEN SILVER MAPLE Acer saccharinum 'Silver Queen'</option><option data-v-0eca37cb="" value="48">SKYLINE HONEY LOCUST Gleditsia tricanthos var. inermis 'Skyline'</option><option data-v-0eca37cb="" value="127">SLIPPERY (RED) ELM Ulmus rubra</option><option data-v-0eca37cb="" value="37">SPRUCE Picea sp.</option><option data-v-0eca37cb="" value="26">SUGAR MAPLE Acer saccharum</option><option data-v-0eca37cb="" value="167">SUMMER SPRITE LINDEN Tilia cordata "Halka"</option><option data-v-0eca37cb="" value="105">SUMMIT RED ASH Fraxinus pennsylvanica 'Summit'</option><option data-v-0eca37cb="" value="66">SUNBURST HONEY LOCUST Gleditsia tricanthos var. inermis 'Sunburst'</option><option data-v-0eca37cb="" value="22">SUPERFORM NORWAY MAPLE Acer platanoides 'Superform'</option><option data-v-0eca37cb="" value="35">SWAMP WHITE OAK Quercus bicolor</option><option data-v-0eca37cb="" value="144">SYCAMORE MAPLE Acer pseudoplatanus</option><option data-v-0eca37cb="" value="118">SYCAMORE PLANE Platanus occidentalis</option><option data-v-0eca37cb="" value="134">TATARIAN MAPLE Acer tataricum</option><option data-v-0eca37cb="" value="112">TREE-OF-HEAVEN Ailanthus altissima</option><option data-v-0eca37cb="" value="137">TREMBLING ASPEN (POPLAR) Populus tremuloides</option><option data-v-0eca37cb="" value="56">TULIP-TREE Liriodendron tulipifera</option><option data-v-0eca37cb="" value="98">TURKISH HAZEL Corylus colurna</option><option data-v-0eca37cb="" value="94">VALLEY FORGE ELM ULMUS AMERICANA 'VALLEY FORGE'</option><option data-v-0eca37cb="" value="155">WALNUT Juglans sp.</option><option data-v-0eca37cb="" value="132">WEEPING WHITE MULBERRY Morus alba 'Pendula'</option><option data-v-0eca37cb="" value="109">WEEPING WILLOW Salix x chrysocoma</option><option data-v-0eca37cb="" value="12">WHITE ASH Fraxinus americana</option><option data-v-0eca37cb="" value="61">WHITE BIRCH Betula papyrifera</option><option data-v-0eca37cb="" value="89">WHITE ELM Ulmus americana</option><option data-v-0eca37cb="" value="171">WHITE ELM 'PRINCETON' Ulmus americana 'Princeton'</option><option data-v-0eca37cb="" value="131">WHITE MULBERRY Morus alba</option><option data-v-0eca37cb="" value="49">WHITE OAK Quercus alba</option><option data-v-0eca37cb="" value="126">WHITE PINE Pinus strobus</option><option data-v-0eca37cb="" value="36">WHITE SPRUCE Picea glauca</option><option data-v-0eca37cb="" value="80">WILLOW Salix sp.</option><option data-v-0eca37cb="" value="77">YELLOW BUCKEYE Aesculus octandra</option><option data-v-0eca37cb="" value="64">YELLOW-WOOD Cladrastis lutea</option><option data-v-0eca37cb="" value="33">YEW Taxus sp.</option><option data-v-0eca37cb="" value="88">ZELKOVA Zelkova sp.</option></select></div><input data-v-0eca37cb="" type="submit" value="submit" id="submit" class="btn"></div></form><!----></div></div><div class="output-holder" style="display: none;"><div class="map-div" style="display: none;"><div class="vue-map-container" style="width: 640px; height: 360px; margin: 32px auto;"><div class="vue-map" style="overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div style="overflow: hidden;"></div><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" aria-label="Map" aria-roledescription="map" role="img" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 988; transform: matrix(1, 0, 0, 1, -204, -98);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="./Toronto&#39;s Street Trees_files/saved_resource.html"></iframe></div></div></div><div class="vue-map-hidden"><div></div></div></div></div><!----></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="./Toronto&#39;s Street Trees_files/chunk-vendors.js"></script><script type="text/javascript" src="./Toronto&#39;s Street Trees_files/app.js"></script>
+
+</body></html>

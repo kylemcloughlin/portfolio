@@ -1,5 +1,24 @@
 
-export const fullList = [{
+export const fullList = [
+ {
+   name: 'torontoStreetTrees',
+   photos: './photos/torontoStreetTrees.png',
+   gif: './photos/gifs/ffgPhotoshopped.gif',
+   discription: "A Fullstack Web App, built to access and interact with the City of Toronto's database of over half a million street trees",
+   keyFeatures: ['Ruby on Rails API', 'vuejs', 'Postgres', 'Google Maps API', 'heroku'],
+   linkToProject: 'https://blooming-basin-75721.herokuapp.com/',
+   linkToProjectsCode: 'https://github.com/kylemcloughlin/treesApp',
+   class: '01',
+ }, {
+    name: 'cssGenerator',
+    photos: './photos/cssGenerator.png',
+    gif: './photos/gifs/ffgPhotoshopped.gif',
+    discription: 'A Front Web App that generates custom and copyable CSS Octagons.',
+    keyFeatures: [ 'React.js', 'scss', 'aws Amplify'],
+    linkToProject: 'https://master.dljlz0zsl0fvf.amplifyapp.com/',
+    linkToProjectsCode: 'https://github.com/kylemcloughlin/css-shape-gen',
+    class: '01',
+  }, {
       name: 'fastFoodGuru',
       photos: './photos/fastFoodGuru.png',
       gif: './photos/gifs/ffgPhotoshopped.gif',
