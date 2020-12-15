@@ -2,8 +2,8 @@ $primaryFont : 'Varela Round', sans-serif;
 $secondaryFont : 'Mukta', sans-serif;
 // $secondaryColour: #45A29E;
 // $primaryColour:  #6EFAF1;
-$secondaryColour: #fcbf1e;
-$primaryColour: #120136;
+$secondaryColour: #12130F;
+$primaryColour: #EAE6E5;
 @mixin position($top, $left) {
   position: absolute;
   top: $top;
@@ -20,20 +20,37 @@ $primaryColour: #120136;
 }
 
 .about {
-@include position(14em, 0em);
+// @include position(14em, 0em);
+
   // margin: 1em;
   // margin-top: 5em;
-  color: $primaryColour;
+  // color: $primaryColour;
   font-family: $secondaryFont;
-  color: $primaryColour;
+  background:$secondaryColour;
+  color:  $primaryColour;
+//  margin: auto;
+  position: absolute;
   width: 100%;
+  height: 14em;
+  z-index: 1;
+      top: -243px;
 }
+
 
 .job-titles {
   font-family: $secondaryFont;
-  text-align: center;
+  // text-align: center; 
+  padding-left: 1em;
+  padding-bottom: 0;
+  color: #fcbf1e;
 }
+.job-titles-2 {
+  font-family: $secondaryFont;
+  // text-align: center; 
+  margin-top: -1.5em;
+  padding-left: 1.2em;
 
+}
 #abt-title-2 {
   font-family: $primaryFont;
   text-align: center;
@@ -58,11 +75,23 @@ $primaryColour: #120136;
 }
 
 #paragraph-1 {
-  padding-left: 1em;
-  padding-right: 1em;
-   font-weight: bold;
-   font-size: larger;
+
+  padding: 1em;
+  // padding-right: 1em;
+  //  font-weight: bold;
+   font-size: large;
+   opacity: 1 !important;
   
+}
+.para-holder {
+  background-color: #1b1b1b;
+  width: 80%;
+  margin: auto;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: 13px 10px 0px 0px #4e4e4e;  
+
 }
 #paragraph-2 {
   padding-left: 1em;
@@ -79,107 +108,18 @@ width: 0%;
 #react{
   width: 0%;
 }
-@media only screen and (min-width: 768px) {
-.about {
-  top: 17em;
-} 
-
-#paragraph-1 {
- @include flexCenter();
-  width: 95%;
-  padding-right: 1em;
-}
-// #paragraph-2 {
-//   @include flexCenter();
-//   // width: 100%;
-//   width: 50%;
-//   // padding-left: 1em;
-// }
-.about-body-t {
-  padding-left: 2em;
-}
-}
-
-
-
-
-
-@media only screen and (min-width: 1200px) {
-  .img-holder {
-    visibility: visible;
-    position: absolute;
-    transition: 250ms;
-
-    right: 10em;
-    top: 0em;
+@media only screen and (max-width: 1119px) {
+  .about {
+  
+   
+    height: 17em;
+    top: -273px;
   }
-   #ruby {
-
-     width: 5em;
-     position: absolute;
-     top: 11.5em;
-     right: 6em;
-     transition: 250ms;
-
-     &:hover {
-       width: 5.4em;
-       transition: 250ms;
-       //  margin-left: 1em;
-
-     }
-   }
-
-   #react {
-
-     width: 10.8em;
-     position: absolute;
-     top: 16.6em;
-     right: 7em;
-     transition: 250ms;
-
-     &:hover {
-       width: 11.2em;
-       transition: 250ms;
-
-     }
-   }
-
-   #js {
-
-     width: 5em;
-     position: absolute;
-     top: 10.8em;
-     right: 14.4em;
-     transition: 250ms;
-  // box-shadow: 5px 5px 7px 1px #1f2830;
-
-
-     &:hover {
-       width: 5.4em;
-       transition: 250ms;
-
-     }
-   }
 }
-@media only screen and (min-width: 1500px) {
-  .img-holder {
-    position: absolute;
-    transition: 250ms;
-
-    right: 15em;
-    top: 0em;
-  }
-  #paragraph-1 {
-    font-size: larger;
-    font-weight: bold;
-  }
-  #paragraph-2 {
-    @include flexCenter();
-    // width: 100%;
-    width: 50%;
-    padding-left: 2em;
-    font-weight: bold;
-    font-size: larger;
+@media only screen and (max-width: 699px) {
+  .about {
+    top: -368px;
+    height: 23em;
 
   }
 }

@@ -1,16 +1,19 @@
-$color : #120136;
-$primaryFont : 'Varela Round', sans-serif;
-$primaryColor : #fcbf1e;
-$secondaryColor : #40bad5;
-$logoFont : 'Faster One', cursive;
+$color : #12130F;
+$primaryColor : #5E4AE3;
+$primaryFont : 'Varela Round',
+sans-serif;
+$secondaryColor : #fcbf1e;
+$logoFont : 'Faster One',
+cursive;
 
 $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 @mixin postion {
   position: relative;
   left: 2em;
-  
+
 }
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
@@ -19,12 +22,12 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 }
 
 .con-animation-area {
- position: relative;
- top: -8em;
+  position: relative;
+  top: -8em;
   width: 100%;
   height: 20.5em;
   overflow: hidden;
-    transform: skewY(13deg);
+  transform: skewY(13deg);
 }
 
 .con-box-area {
@@ -39,58 +42,60 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 
 }
- .con-box-area li {
-   position: absolute;
-   display: block;
-   list-style: none;
-   width: 25px;
-   height: 25px;
-   background: rgba(255, 255, 255, 0.2);
-   animation: con-animate 20s linear infinite;
-   bottom: -150px;
- }
 
- .con-box-area li:nth-child(1) {
-   left: 86%;
-   width: 80px;
-   height: 80px;
-   animation-delay: 0s;
- }
+.con-box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: con-animate 20s linear infinite;
+  bottom: -150px;
+}
 
- .con-box-area li:nth-child(2) {
-   left: 12%;
-   width: 30px;
-   height: 30px;
-   animation-delay: 1.2s;
- }
+.con-box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
 
- .con-box-area li:nth-child(3) {
-   left: 70%;
-   width: 100px;
-   height: 100px;
-   animation-delay: 5.5s;
- }
+.con-box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.2s;
+}
 
- .con-box-area li:nth-child(4) {
-   left: 70%;
-   width: 150px;
-   height: 150px;
-   animation-delay: 10s;
- }
+.con-box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
 
- .con-box-area li:nth-child(5) {
-   left: 65%;
-   width: 40px;
-   height: 40px;
-   animation-delay: 0s;
- }
+.con-box-area li:nth-child(4) {
+  left: 70%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 10s;
+}
 
- .con-box-area li:nth-child(6) {
-   left: 65%;
-   width: 110px;
-   height: 110px;
-   animation-delay: 3.5s;
- }
+.con-box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+
+.con-box-area li:nth-child(6) {
+  left: 65%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+
 @keyframes con-animate {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -107,68 +112,94 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 
 
- .contact {
- @include flexCenter();
+.contact {
+  @include flexCenter();
   position: absolute;
   background: $color;
   width: 100%;
-  height: 20em;
+  height: fit-content;
   margin-top: 0em;
   bottom: 0em;
-  top: 236em;
-  opacity: .9;
-   border-style: none !important;
-  &::before {
-    position: absolute;
-    width: 100%;
-    height: 85%;
-    content: '';
-    background: $color;
-    z-index: 0;
-   border-style: none !important;
-    right: 0;
-    bottom: 16em;
-    left: 0;
-    // margin-top: 1em;
-    transform-origin: top left;
-    transform: skewY(12deg);
-  overflow: hidden;
+  top: 60em;
+  opacity: 1;
+  border-style: none !important;
+  // &::before {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 85%;
+  //   content: '';
+  //   background: $color;
+  //   z-index: 0;
+  //  border-style: none !important;
+  //   right: 0;
+  //   bottom: 16em;
+  //   left: 0;
+  //   // margin-top: 1em;
+  //   transform-origin: top left;
+  //   transform: skewY(12deg);
+  // overflow: hidden;
 
-  }
-  
-  ;
+  // }
+
+  // ;
+}
+
+.footer {
+  position: absolute;
+  bottom: -37em;
+  width: 100%;
+  height: 9em;
+  // padding-left: 2em;
+  // padding-right: 2em;
+
+  padding-bottom: 3em;
+  background-color: $color;
+  color: #EAE6E5;
 }
 
 .title-wrapper {
-  position: absolute;
- @include flexCenter();  
- width: 100%;
+  // position: absolute;
+  @include flexCenter();
+  width: 100%;
   top: -12%;
 }
 
-.contact-tl {
-  background-color: $secondaryColor;
-  position: absolute;
-  width: 10em;
-  height: 1px;
-  top: -5em;
-  // margin-bottom: -1em;
-  // position: a;
-  // left: 24%;
-  // margin-top: 1em;
+.contact-holder {
+  background-color: #1b1b1b;
+  width: 80%;
+  margin: auto;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: 13px 10px 0px 0px #4e4e4e;
+  // opacity: .8;
 }
 
 .contact-title {
- text-align: center;
-  position: absolute;
-  top: -3em;
-  width: 100%;
-  color: $primaryColor;
-  // padding-right: 1em;
-  // font-weight: 350;
-  font-family: $primaryFont
+  padding-left: 1.5em;
+    color: #fcbf1e;
+
+  // text-align: center;
+  // position: absolute;
+  // top: -3em;
+  // width: 100%;
+  // color: $primaryColor;
+  // // padding-right: 1em;
+  // // font-weight: 350;
+  // font-family: $primaryFont
 }
 
+.contact-para {
+  padding: .5em;
+  // text-align: center;
+  // position: absolute;
+  // top: -3em;
+  // width: 100%;
+  // color: $primaryColor;
+  // // padding-right: 1em;
+  // // font-weight: 350;
+  // font-family: $primaryFont
+}
 .contact-ul {
   background-color: $secondaryColor;
   position: absolute;
@@ -184,13 +215,14 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 .contact-form {
   position: absolute;
-  @include flexCenter()
+  @include flexCenter() ;
   width: 100%;
   height: auto;
   top: 4%;
 
 
 }
+
 .input-wrapper {
   padding-bottom: 1em;
   width: 100%;
@@ -241,21 +273,21 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
   &:hover {
     color: #361F42;
     // background: #45A29E;
-     transition: 0.7s;
+    transition: 0.7s;
 
   }
 
   &::before {
-     content: "";
-     position: absolute;
-     left: 0;
-     width: 100%;
-     height: 0%;
-     background: $primaryColor;
-     z-index: -1;
-     transition: 0.8s;
-     top: 0;
-     border-radius: 0% 0% 50% 50%;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: $primaryColor;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0% 0% 50% 50%;
 
   }
 
@@ -267,144 +299,72 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 }
 
 .message-response {
-  position : absolute;
-  bottom : -9em;
+  position: absolute;
+  bottom: -9em;
 }
 
-  #resume {
-    position: absolute;
+#resume {
+  // position: absolute;
   color: $primaryColor;
-  left: 1em;
-  bottom: 1em;
+  // left: 1em;
+  // bottom: 1em;
   font-size: large;
   border: 0;
   background: none;
+
   &:hover {
     color: $secondaryColor;
 
   }
+&:focus {
+  outline: none;
+
+
 }
+
+}
+
 #github {
-  position: absolute;
+  // position: absolute;
   color: $primaryColor;
-  bottom: 1em;
-  left: 6em;
-    font-size: large;
-    border: 0;
-    background: none;
+  // bottom: 1em;
+  // left: 6em;
+  font-size: large;
+  border: 0;
+  background: none;
   transition: .2s;
+
   &:hover {
     color: $secondaryColor;
     transition: .2s;
 
   }
-}
+&:focus {
+  outline: none;
 
-// @media only screen and (min-width: 768px) { 
-//   .title-tl {
-//     margin-top: 2em;
-//   }
-//   .footer {
-//     position: relative;
-//     right: 4em;
-//     top: 1em;
-//   }
-//   .foot-logo {
-//     left: 12.2em;
-//     margin-bottom: .1em;
-//   }
-//   .contact {
-//     top: 215em;
-//     &::before{
-//       top: -63%;
-//       transform: skewY(7deg);
-//     }
-//   }
-//   .submit-button {
-//     left: 10.7em;
-//     top: .2em;
-//   }
-//   .contact-form {
-//     left: 6%;
-//     width: 94%
-//   }
-//   .input {
-//     width: 81%;
-//   }
-// }
-
-@media only screen and (min-width: 768px) {
-   .contact {
-  
-
-     &:before {
-       height: 100%;
-       bottom: 12em;
-       transform: skewY(6deg);
-     }
-   }
-  .con-animation-area {
-    top: -6.8em;
-    height: 23.5em;
-       transform: skewY(6deg);
-
-  }
-  }
-
-@media only screen and (min-width: 1024px) {
- .contact{
-  top: 152em;
-  &:before {
-
-  height: 122%;
-  bottom: 12em;
-  transform: skewY(6deg);
-  }
-
-  .con-animation-area {
-    top: -8.3em;
-    height: 24.5em;
-  }
-}
-  
-// .submit-button{
-//   transition: 1s; 
-//   &::before {
-//    content: "";
-//    visibility: hidden;
-
-//  }
-//   &:hover{
-//     transition: 1s;
-//     background-color: #45A29E;
-//   }
-// } 
 
 }
 
-@media only screen and (min-width: 1325px) {
-//   .submit-button{
-//   transition: 1s; 
-//   &::before {
-//    content: "";
-//    visibility: hidden;
 
-//  }
-//    &:hover{
-//     transition: 1s;
-//     background-color: $secondaryColor;
-//    }
-// }
- .con-animation-area {
-    top: -9.3em;
+}
+
+.project-holder {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .footer {
+    bottom: -61.9em;
+    // width: 95%;
+    
   }
-  .contact {
-      top: 155em;
+}
 
-     &:before {
-
-       bottom: 14em;
-      
-     }
-   }
+@media only screen and (max-width: 699px) {
+  .footer {
+    bottom: -113em;
+    height: 11em;
+    // width: 93%;
+  }
 }

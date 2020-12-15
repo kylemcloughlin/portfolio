@@ -1,4 +1,4 @@
-$primaryColor : #999999;
+$primaryColor : #EAE6E5;
 $secondaryColor : #333333;
 $primaryFont : 'Varela Round', sans-serif;
 $secondaryFont : 'Mukta', sans-serif;
@@ -11,30 +11,14 @@ $secondaryFont : 'Mukta', sans-serif;
 
 .skills {
   overflow: hidden;
-  @include flexCenter;
 }
-.skills-holder {
-  position: absolute;
-  top: 48em;
-  // left: 7em;
-  height: 23em;
-  width: 12em;
-  background-color: $primaryColor;
-  text-align: center;
-  box-shadow: 0px 10px 15px 4px #0B0C10;
-//   font-family: $secondaryFont;
-}
-.lrg-skills-holder {
-  visibility: hidden;
-}
+
 .skill-list-img {
  position: relative;
  top: 1.5em;
  width: 30%;
 }
-// #frontend{
 
-// }
 
 #backend{
   opacity: 0.7;
@@ -43,18 +27,20 @@ $secondaryFont : 'Mukta', sans-serif;
   width: 20%;
 }
 
-#database{
+#database {
   opacity: 0.7;
   padding-top: 1em;
   padding-bottom: .2em;
   width: 20%;
 }
-// #deployment {
 
-// }
+
+.skills-holder {
+  width: 100%;
+}
 .skill-list {
   position: relative;
-  top: 4.8em; 
+ 
   color: $secondaryColor; 
 }
 
@@ -65,108 +51,65 @@ $secondaryFont : 'Mukta', sans-serif;
   background-color: #888888;
   width: 2em;
   height: 1px;
-  margin: -1em;
-  position: relative;
-  left: 6em;
+  margin: auto;
+  margin-top: -1em;
+
 }
 
 .skill-title {
   font-family: $primaryFont;
+  // margin-bottom: -0.5em;
+  position: relative;
+  top: 1em;
 }
 
 
-#arrow-left {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: 60em;
-  left: 2em;
-  border-right:10px solid $primaryColor;    
-  box-shadow: 7px 1px 3px -2px #0B0C10
-
-}
-
-
-#arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: 60em;
-  right: 2em;
-  border-left: 10px solid $primaryColor;
-  box-shadow: -7px 1px 3px -2px #0B0C10;
-
-}
-.skills-wrapper {
-  visibility: hidden;
-  width: 0%;
-
-}
-
-
-@media only screen and (min-width: 375px) {
-  // .skills-holder {
-  //   left: 5.8em;
-  // }
-}
-
-@media only screen and (min-width: 768px) {
- .skills {
-   overflow: inherit;
- }
-  #arrow-right {
-    visibility: hidden !important;
-  }
-  #arrow-left{
-    visibility: hidden !important;
-  }
-  .skills-holder {
-    visibility: hidden;
-  }
   .lrg-skills-holder {
-    visibility: visible;
-    position: relative;
-    top: -7em;
-    // left: 5.5em;
+
     height: 23em;
-    width: 12em;
+    width: 25%;
     background-color: $primaryColor;
     text-align: center;
-    box-shadow: 0px 10px 15px 4px #0B0C10;
-    margin-right: -1em;
-     transition: .5s;   
+     transition: .5s;  
+
     &:hover{
-     transition: .5s;
-      top: -9em;
-      // opacity: 0;
-      // transition-delay: 1s;
+ 
     }
 
   }
   .skills-wrapper {
-    visibility: visible !important;   
+ 
     @include flexCenter(); 
     // top: ;
     position: relative;
+    bottom: 19px;
     width: 100%;
-    right:  .5em;
+
 
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .lrg-skills-holder {
-    margin: .5em;
-  }
+// @media only screen and (max-width: 699px) {
+//   .skills-wrapper {
+//     display: block !important;
+//     top: -20.2px;
+
+//   }
+
+
+// }
+
+@media only screen and (max-width: 699px) {
   .skills-wrapper {
-    top: -.6em;
+    display: block !important;
+    top: -20.2px;
+        
   }
+.lrg-skills-holder {
+  width: 100%;
+  height: 26em;
+  margin-top: -24px;
+ 
 }
 
-@media only screen and (min-width: 1500px) {
-  
 }
+

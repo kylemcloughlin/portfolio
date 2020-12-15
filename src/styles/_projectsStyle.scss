@@ -8,7 +8,7 @@ $secondaryFont : 'Mukta',sans-serif;
   
 }
 $primaryColour : #1f2833;
-$secondaryColour : #120136;
+$secondaryColour : #38509a;
 
 
 
@@ -16,9 +16,23 @@ $secondaryColour : #120136;
 
 .projects {
   @include flexCenter();
-  position: absolute;
-  top: 78em;
+  // position: absolute;
+  // top: 78em;
   width: 100%
+
+}
+
+.project-holder {
+    @include flexCenter();
+  width: 100%;
+  height: 25em;
+  top: 23em;
+  background:#12130F;
+  position: absolute;
+  display: grid;
+  // grid-template-columns: repeat(3, 6fr);
+  grid-gap: 10px;
+  justify-items: center;
 
 }
 
@@ -57,12 +71,29 @@ $secondaryColour : #120136;
 .card-holder {
   // position: absolute;
   // @include flexCenter();
-  top: 9em;
+  // top: 9em;
+  // top: 9em;
+  width: 100%;
+  // display: flex;
+  grid-gap: 1px;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(4, 1fr);
+  /* margin: auto; */
+   grid-template-areas:
+    "a a b b c c d d"
+    "a a b b c c d d"
+    "a a b b c c d d"
+    "a a b b c c d d";
+  justify-content: center;
+    align-items: start;
+
+  
   // left: 23px;
   // display: flex;
   // height: auto;
   width: 100%;
-  // justify-content: flex-start;
+  justify-content: flex-start;
 }
 .full-list {
   visibility: visible;
@@ -85,7 +116,7 @@ $secondaryColour : #120136;
   height: 400px;
   perspective: 1000px;
   // margin-left: 1.3em; i just comminted out
-  margin-bottom: 2.5em;
+  // margin-bottom: 2.5em;
   // box-shadow: 5px 5px 7px 1px #1f2830;
   
   
@@ -121,7 +152,7 @@ $secondaryColour : #120136;
   background-color: $secondaryColour;
   color: #fff;
   // box-shadow: 5px 5px 7px 1px #1f2830;
-  box-shadow: 0px 13px 35px 14px #333;
+  // box-shadow: 0px 13px 35px 14px #333;
   
 }
 
@@ -168,7 +199,7 @@ $secondaryColour : #120136;
 }
 
 .p-name {
-  color: #40bad5;
+  color: #EAE6E5;
   position: absolute;
   top: -10%;
   left: 4%;
@@ -214,10 +245,10 @@ $secondaryColour : #120136;
   justify-content: center;
   align-items: center;
   // border-radius: 0.5rem;
-  background-color: #361F42;
-  color: #40bad5;
+  background-color: #5E4AE3;
+  color: #fcbf1e;
   transform: rotateY(180deg);
-  box-shadow: 0px 13px 35px 14px #333;
+  // box-shadow: 0px 13px 35px 14px #333;
 }
 
 
@@ -248,7 +279,11 @@ $secondaryColour : #120136;
     color: #361F42;
     ;
   }
-  
+  &:focus {
+    outline: none;
+
+
+  }
   &::before {
     content: "";
     position: absolute;
@@ -288,7 +323,11 @@ $secondaryColour : #120136;
   &:hover {
     color: #361F42;
   }
-  
+  &:focus {
+    outline: none;
+
+
+  }
   &::before {
     content: "";
     position: absolute;
@@ -310,10 +349,74 @@ $secondaryColour : #120136;
   
 }
 
-@media only screen and (min-width: 414px) {
+.more-projects {
+  position: relative;
+  // top: 17em;
+  // right: 1.2em;
+  border: 1px solid #fcbf1e;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Roboto',
+    sans-serif;
+  cursor: pointer;
+  transition: 0.8s;
+  overflow: hidden;
+  color: #fcbf1e;
+
+  &:hover {
+    color: #361F42;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #fcbf1e;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+
+  }
+
+  &:hover::before {
+    height: 180em;
+    // transition: 0.8s;
+  }
+
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .project-holder {
+   top: 23em;
+    height: 50em;
+  }
+  .card-holder {
+        grid-template-areas:
+         "a a b b"
+        "a a b b"
+        "c c d d"
+        "c c d d";
+  }
+}
+
+ @media only screen and (max-width: 699px) {
   .project-title {
     padding-left: .8em;
   }
+.project-holder {
+
+     top: 102em;
+  height: 100em;;
+
+}
+.card-holder{
+   display: block;
+}
 
 }
 
@@ -328,25 +431,25 @@ $secondaryColour : #120136;
 
 // }
 
-@media only screen and (min-width: 1024px) {
-.title-tl {
-  top: 1em;
-}
-  .project-title{
-    top: 0em
-  }
-.title-ul {
-  top: 4em;
-}
+// @media only screen and (min-width: 1024px) {
+// .title-tl {
+//   top: 1em;
+// }
+//   .project-title{
+//     top: 0em
+//   }
+// .title-ul {
+//   top: 4em;
+// }
 
-  .full-list {
- display: grid;
- grid-template-columns: repeat(3, 6fr);
-  grid-gap: 10px;
-justify-items: center;
-  }
+//   .full-list {
+//  display: grid;
+//  grid-template-columns: repeat(3, 6fr);
+//   grid-gap: 10px;
+// justify-items: center;
+//   }
   
-.flip-card-container {
-  margin-bottom: 0em;
-}
-}
+// .flip-card-container {
+//   margin-bottom: 0em;
+// }
+// }

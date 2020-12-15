@@ -6,23 +6,23 @@ import img4 from './photos/cloud.png';
 
 const skillList = [{
   id: 'frontend',
-  title: 'FRONTEND',
-  skills:  ['HTML5', 'CSS3 | SCSS | SASS', 'JavaScript', 'React | Redux', 'jQuery'],
+  title: 'Modern Frontend ',
+  skills: ['React | Redux','vueJs', 'Angular','SCSS | SASS'],
   img: img1
 }, {
   id: 'backend',
-  title: 'BACKEND',
-  skills: ['NodeJS', 'Express', 'Ruby'],
+  title: 'Higher Lanuages',
+  skills: ['JavaScript', 'Ruby', 'Python'],
   img: img2
 }, {
   id: 'database',
   title: 'DATABASE',
-  skills: ['mongoDB', 'PostgreSQL', 'mySql'],
+  skills: ['PostgreSQL','mongoDB', 'Sql'],
     img: img3
 }, {
   id: 'deployment',
-  title: 'DEPLOYMENT',
-  skills: ['Heroku', 'Git', 'Docker'],
+  title: 'DEPLOYMENT & VERSION CONTROL',
+  skills: ['Heroku', 'aws amplifiy','Git'],
     img: img4
 }]
 
@@ -44,9 +44,9 @@ function Skills () {
 
   return (
 
-  <div class='skills'>
-     <div id='arrow-left' style={leftArrowStyle} onClick={() =>  setCount(count - 1)}></div>
-     <div class='skills-holder'>
+  < div class = 'skills-holder' >
+     {/* <div id='arrow-left' style={leftArrowStyle} onClick={() =>  setCount(count - 1)}></div> */}
+     {/* <div class='skills-holder'>
        <img class='skill-list-img' id={`${currentSkill.id}`}src={currentSkill.img} alt='current-skill-img'/>
        <div class='skill-list'>
          <h2 class='skill-title'>{currentSkill.title}</h2>
@@ -59,14 +59,16 @@ function Skills () {
            )
           })}
       </div>
-     </div>
+     </div> */}
          <div class='skills-wrapper'>
-           {skillList.map((list)=> {
+           {skillList.map((list, ind)=> {    
+             let ary = ['a', 'b', 'c', 'd']
+             let style = { gridArea: `${ary[ind]}`}
              return (
-               <div class='lrg-skills-holder' key={list.id}>
+               <div class='lrg-skills-holder' key={list.id} style={style}>
+                 <h2 class='skill-title'>{list.title}</h2>  
                  <img class='skill-list-img' id={list.id} src={list.img} alt='skill-img'/>
                  <div class='skill-list'>
-                 <h2 class='skill-title'>{list.title}</h2>  
                  {list.skills.map((skill) =>{
                    return (
                      <div class='skill-list-item' key={skill}>
@@ -80,7 +82,7 @@ function Skills () {
               )
             })}
           </div>
-     <div id='arrow-right' style={rightArrowStyle} onClick={ () => setCount(count + 1)}></div>
+     {/* <div id='arrow-right' style={rightArrowStyle} onClick={ () => setCount(count + 1)}></div> */}
             </div>
   )
 }

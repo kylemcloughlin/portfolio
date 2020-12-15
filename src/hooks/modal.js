@@ -33,7 +33,7 @@ function DemoModal({ gif, title, dis, features}){
   },[])
     return (
       <div>
-        <button class='demo-but' onClick={openModal}>Demo</button>
+        {/* <button class='demo-but' onClick={openModal}>Demo</button> */}
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}

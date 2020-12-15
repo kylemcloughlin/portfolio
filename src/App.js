@@ -2,20 +2,24 @@ import React from 'react';
 import About from './hooks/about.js';
 import Contact from './hooks/contact.js';
 import Projects from './hooks/projects.js';
-import { Link } from "react-router-dom";
-import './styles/style.css';
-import { BrowserRouter } from "react-router-dom";
-import ScrollHandler from './hooks/scrollHandler.js';
 import Skills from './hooks/skills.js';
+import './styles/style.css';
 
 
 function App() {
-  
+let  handleScroll= () => {
+      const element = document.getElementById('#projects');
+           window.scrollTo({
+       behavior: element ? "smooth" : "auto",
+       top: element.clientHeight > 850 ? 2500 : 1250,
+      });
+
+  }
   
   return (
     <div class="App">
-      <BrowserRouter>
-      <ScrollHandler/>
+      {/* <BrowserRouter> */}
+      {/* <ScrollHandler/> */}
       <div class="App-header">
          
       {/* <div class='overlay'></div> */}
@@ -24,9 +28,9 @@ function App() {
           <h1 id='title'>Kyle McLoughlin</h1>
          <h3 id = 'job-title'> Full Stack Web Developer </h3> 
         {/* </div> */}
-        <Link to={`/#projects`}>
-          <button class='projects-button'>See Projects</button> 
-        </Link>   
+        {/* <Link to={`/#projects`}> */}
+          <button class='projects-button' onClick={() => {handleScroll();}} >See Projects</button> 
+        {/* </Link>    */}
         </div>
         <div class='animation-area'> 
         <ul class='box-area'>
@@ -40,28 +44,19 @@ function App() {
 
         </div>
         </div> 
-        <div class='wrapper'>
+
+        <div class='contact'>
         <About/>
-          <div class='seperator'>
-          <div class='animation-area'> 
-        <ul class='box-area'>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <Skills/>
+        <div class='project-holder'>
 
+        <Projects key='#projects'/>
         </div>
-        </div>
-
-          <Skills/>
-          <Projects key='projects'/>
-          <Contact/>
+        
+        <Contact/>
         </div>
       
-     </BrowserRouter>
+     {/* </BrowserRouter> */}
           {/* <div class='footer'>
            <h1 class='foot-logo'>K</h1>
           </div> */}

@@ -1,6 +1,7 @@
 import React,  { useState }from 'react';
 import * as emailjs from 'emailjs-com';
-
+import Skills from './skills.js';
+import Projects from './projects.js';
 
 
 function Contact() {
@@ -46,33 +47,12 @@ function Contact() {
     });
   }
   return (
-    <div class='contact'>
-   <div class='con-animation-area'> 
-        <ul class='con-box-area'>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        </div>
-     <div class='contact-tl'/>
-     <h1 class='contact-title'>CONTACT</h1>
-     <div class='contact-ul'/>
-     <div class='contact-form'>
-        <div class='input-wrapper'>
-          <input id='email' class ='input' placeholder = 'Email' onChange = {(e) => setFrom(e.target.value)}/>
-         <input id='subject' class='input' placeholder='Subject' onChange={(e) => setSubject(e.target.value)}/>
-        </div>
-        <textarea id="message-body"class='input' placeholder='Message' onChange={(e) => setMessage(e.target.value)} />
-        {clicked ? (<div class='message-response'>{messRes}</div>) : (
-         <button class='submit-button' onClick={handleEmail}>Submit</button> 
-
-       )  }
-      </div>
-      <button id = 'resume' onClick = {() => {window.open('https://resume.creddle.io/resume/7ofsw6jo663')}}>Resume</button>
-      <button id='github'onClick={() => {window.open('https://github.com/kylemcloughlin')}}>Github</button>
+    <div class='footer'>
+    <h3 class='contact-title'>CONTACT</h3>
+    <div class='contact-holder'>
+      <p class='contact-para'>Please send email me at <a id='github'onClick={() => {window.open('mailto:kylemcloughlindev@gmail.com?subject=Mail from Our Site')}}>kylemcloughlindev@gmail.com</a>.</p>
+      <p class='contact-para'>You can also find me on <a id='github'onClick={() => {window.open('https://github.com/kylemcloughlin')}}>Github</a> or checkout my <a id = 'resume' onClick = {() => {window.open('https://resume.creddle.io/resume/7ofsw6jo663')}}>Resume</a>.</p>
+    </div>
     </div>
   );
 }
