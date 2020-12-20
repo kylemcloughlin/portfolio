@@ -7,12 +7,12 @@ function Projects() {
 let [list, setList] = useState(partialList);
 let [showButton, setShowButton] = useState(true);
 
-  console.log(list);
+
   return (
     <div class="projects" id={`#projects`}>
-      {/* <div class='title-tl'/>    
-      <h1 class='project-title'>PROJECTS PORTFOLIO</h1>
-      <div class='title-ul'/> */}
+      {/* <div class='title-tl'/>     */}
+      {/* <h1 class='project-title'>PAST PROJECTS</h1> */}
+      {/* <div class='title-ul'/> */}
     <div class='card-holder'>
      {/* <div class='full-list'> */}
       {list.map((website, ind) => { 
@@ -41,8 +41,7 @@ let [showButton, setShowButton] = useState(true);
                <div class='flip-card-back'>
                  <p class='p-discription'>{website.discription}</p>
                  <button class='code-but' visablitiy="hidden" onClick={() => {window.open(website.linkToProjectsCode)}}>Code</button>
-                 {/* <DemoModal gif={website.gif} title={website.name} features={website.keyFeatures} dis={website.discription}/> */}
-                 <button class='demo-but' visablitiy="hidden" onClick={() => {window.open(website.linkToProject)}}>Live</button>                 
+               { website.linkToProject ? ( <button class='demo-but' visablitiy="hidden" onClick={() => {window.open(website.linkToProject)}}>Live</button> ) : ( <div></div>)  }
                </div> 
              </div>
           </div>

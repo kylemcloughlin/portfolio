@@ -24,7 +24,7 @@ export const fullList = [
       gif: './photos/gifs/ffgPhotoshopped.gif',
       discription: 'A Fullstack Web App built with ReactJS, Ruby on Rails api, psql and Nodejs. user can write or read reviews on restaurants in a region Persistent database is involved.',
       keyFeatures: ['Ruby on Rails API', 'React.js', 'Postgres', 'Google Maps API'],
-      linkToProject: 'test4',
+      linkToProject: false,
       linkToProjectsCode: 'https://github.com/kylemcloughlin/fastFoodGuru',
       class: '01',
     }, {
@@ -33,7 +33,7 @@ export const fullList = [
       gif: './photos/gifs/charleyPhotoshopped.gif',
       discription: 'a React on Rails Road trip planning Web Application centered around public lands in North America.',
       keyFeatures: ['Ruby on Rails API', 'React.js', 'Postgres', 'Google Maps API', 'Darksky API'],
-      linkToProject: 'test4',
+      linkToProject: false,
       linkToProjectsCode: 'https://github.com/ryaaanandrew/Charley',
       class: '01',
     }, {

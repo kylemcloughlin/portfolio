@@ -51,7 +51,7 @@ function Contact() {
     <h3 class='contact-title'>CONTACT</h3>
     <div class='contact-holder'>
       <p class='contact-para'>Please send email me at <a id='github'onClick={() => {window.open('mailto:kylemcloughlindev@gmail.com?subject=Mail from Our Site')}}>kylemcloughlindev@gmail.com</a>.</p>
-      <p class='contact-para'>You can also find me on <a id='github'onClick={() => {window.open('https://github.com/kylemcloughlin')}}>Github</a> or checkout my <a id = 'resume' onClick = {() => {window.open('https://resume.creddle.io/resume/7ofsw6jo663')}}>Resume</a>.</p>
+      <p class='contact-para'>You can also find me on <a id='github'onClick={() => {window.open('https://github.com/kylemcloughlin')}}>Github</a> or checkout my <a id = 'resume' onClick = {() => {window.open("https://resume.creddle.io/resume/cbxn0k8f0oy")}}>Resume</a>.</p>
     </div>
     </div>
   );
