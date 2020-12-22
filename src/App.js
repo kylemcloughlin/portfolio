@@ -9,7 +9,7 @@ import './styles/style.css';
 function App() {
   let [loaded, setLoaded] = useState(false);
     useEffect(() => {
-      setLoaded(true)
+       setLoaded(true)
    
   });
 let  handleScroll= () => {
