@@ -225,7 +225,7 @@
 
 .footer {
   position: absolute;
-  bottom: -37em;
+  bottom: -42em;
   width: 100%;
   height: 9em;
   padding-bottom: 3em;
@@ -411,13 +411,13 @@
 
 @media only screen and (max-width: 1199px) {
   .footer {
-    bottom: -61.9em;
+    bottom: -66.9em;
   }
 }
 
 @media only screen and (max-width: 699px) {
   .footer {
-    bottom: -113em;
+    bottom: -118em;
     height: 11em;
   }
 }
@@ -446,7 +446,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 25em;
+  height: 30em;
   top: 23em;
   background: #12130F;
   position: absolute;
@@ -466,9 +466,10 @@
 
 .project-title {
   color: #fcbf1e;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Mukta", sans-serif;
   position: absolute;
-  top: 1em;
+  top: 0em;
+  left: 1em;
 }
 
 .title-ul {
@@ -497,6 +498,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  padding-top: 4em;
   width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -787,7 +789,7 @@
 @media only screen and (max-width: 1199px) {
   .project-holder {
     top: 23em;
-    height: 50em;
+    height: 55em;
   }
   .card-holder {
         grid-template-areas: "a a b b" "a a b b" "c c d d" "c c d d";
@@ -795,12 +797,9 @@
 }
 
 @media only screen and (max-width: 699px) {
-  .project-title {
-    padding-left: .8em;
-  }
   .project-holder {
     top: 102em;
-    height: 100em;
+    height: 105em;
   }
   .card-holder {
     display: block;

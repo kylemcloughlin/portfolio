@@ -11,7 +11,7 @@ let [showButton, setShowButton] = useState(true);
   return (
     <div class="projects" id={`#projects`}>
       {/* <div class='title-tl'/>     */}
-      {/* <h1 class='project-title'>PAST PROJECTS</h1> */}
+      <h3 class='project-title'>PAST PROJECTS</h3>
       {/* <div class='title-ul'/> */}
     <div class='card-holder'>
      {/* <div class='full-list'> */}

@@ -25,7 +25,7 @@ $secondaryColour : #38509a;
 .project-holder {
     @include flexCenter();
   width: 100%;
-  height: 25em;
+  height: 30em;
   top: 23em;
   background:#12130F;
   position: absolute;
@@ -51,10 +51,11 @@ $secondaryColour : #38509a;
   color: #fcbf1e;
   // padding-left: .2em;
   // font-weight: 350;
-  font-family: $primaryFont;
+  font-family: $secondaryFont;
   position: absolute;
   // text-align: center;
-  top: 1em;
+  top: 0em;
+  left: 1em
   
 }
 
@@ -87,7 +88,7 @@ $secondaryColour : #38509a;
     "a a b b c c d d";
   justify-content: center;
     align-items: start;
-
+padding-top: 4em;
   
   // left: 23px;
   // display: flex;
@@ -393,7 +394,7 @@ $secondaryColour : #38509a;
 @media only screen and (max-width: 1199px) {
   .project-holder {
    top: 23em;
-    height: 50em;
+    height: 55em;
   }
   .card-holder {
         grid-template-areas:
@@ -405,13 +406,13 @@ $secondaryColour : #38509a;
 }
 
  @media only screen and (max-width: 699px) {
-  .project-title {
-    padding-left: .8em;
-  }
+  // .project-title {
+  //   padding-left: .8em;
+  // }
 .project-holder {
 
      top: 102em;
-  height: 100em;;
+  height: 105em;;
 
 }
 .card-holder{
