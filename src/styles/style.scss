@@ -12,8 +12,8 @@ $primaryFont : 'Varela Round',
 sans-serif;
 $secondaryFont : 'Mukta',
 sans-serif;
-$logoFont : 'Faster One',
-cursive;
+// $logoFont : 'Faster One',
+// cursive;
 //mixins
 
 @font-face {
@@ -212,7 +212,8 @@ body {
 #logo {
   @include position(0em, .5em);
   // float: left;
-  font-family: $logoFont;
+  font-family: 'Faster One',
+  cursive;
   // background: red;
   width: 10%;
   font-size: 2em;
