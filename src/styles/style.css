@@ -1042,7 +1042,7 @@
   font-family: 'Mukta';
   src: url(fonts/Mukta/Mukta-Regular.ttf), url(fonts/Mukta/Mukta-Regular.ttf) format("truetype");
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 @font-face {
@@ -1234,7 +1234,7 @@ body {
   position: relative;
   top: 0em;
   left: 0.5em;
-  font-family: "Faster One", cursive;
+  font-family: 'Faster One', cursive;
   width: 10%;
   font-size: 2em;
   color: #fcbf1e;
