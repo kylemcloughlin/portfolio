@@ -6,22 +6,22 @@ import img4 from './photos/cloud.png';
 
 const skillList = [{
   id: 'frontend',
-  title: 'Modern Frontend ',
-  skills: ['React | Redux','vueJs', 'Angular','SCSS | SASS'],
+  title: 'MODERN  FRONTEND',
+  skills: ['React | Redux','Vue.js', 'Angular','SCSS | SASS'],
   img: img1
 }, {
   id: 'backend',
-  title: 'Higher Lanuages',
+  title: 'HIGHER LANGUAGES',
   skills: ['JavaScript', 'Ruby', 'Python'],
   img: img2
 }, {
   id: 'database',
   title: 'DATABASE',
-  skills: ['PostgreSQL','mongoDB', 'Sql'],
+  skills: ['Postgres','mongodb', 'Sql'],
     img: img3
 }, {
   id: 'deployment',
-  title: 'DEPLOYMENT & VERSION CONTROL',
+  title: 'DEPLOYMENT',
   skills: ['Heroku', 'aws amplifiy','Git'],
     img: img4
 }]
