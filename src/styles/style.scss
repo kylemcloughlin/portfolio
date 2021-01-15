@@ -8,10 +8,6 @@
 $primaryColour : #202833;
 $bground : #05299E;
 $secondaryColour : #EAE6E5;
-$primaryFont : 'Varela Round',
-sans-serif;
-$secondaryFont : 'Mukta',
-sans-serif;
 // $logoFont : 'Faster One',
 // cursive;
 //mixins
@@ -19,7 +15,7 @@ sans-serif;
 @font-face {
   font-family: 'Faster One';
   src: url(fonts/Faster_One/FasterOne-Regular.ttf),
-    url(fonts/Faster_One/FasterOne-Regular.ttf) format('truetype');
+  url(fonts/Faster_One/FasterOne-Regular.ttf) format('truetype');
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 100
@@ -28,7 +24,7 @@ sans-serif;
 @font-face {
   font-family: 'roboto';
   src: url(/fonts/Roboto/Roboto-Medium.ttf),
-    url(fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+  url(fonts/Roboto/Roboto-Medium.ttf) format('truetype');
   font-style: normal;
   font-weight: 100
 }
@@ -36,18 +32,22 @@ sans-serif;
 @font-face {
   font-family: 'Mukta';
   src: url(fonts/Mukta/Mukta-Regular.ttf),
-    url(fonts/Mukta/Mukta-Regular.ttf) format('truetype');
+  url(fonts/Mukta/Mukta-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: 200
 }
+$secondaryFont : 'Mukta',
+sans-serif;
 
 @font-face {
   font-family: 'Varela Round';
   src: url(fonts/Varela_Round/VarelaRound-Regular.ttf),
-    url(fonts/Varela_Round/VarelaRound-Regular.ttf) format('truetype');
+  url(fonts/Varela_Round/VarelaRound-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: 300
 }
+$primaryFont : 'Varela Round',
+sans-serif;
 
 @mixin flexCenter {
   display: flex;
@@ -200,7 +200,7 @@ body {
 }
 
 #job-title {
-  @include position(0em, 0);
+  // @include position(0em, 0);
   @include flexCenter();
   color: #fcbf1e;
   font-weight: 200;
@@ -210,14 +210,8 @@ body {
 }
 
 #logo {
-  @include position(0em, .5em);
-  // float: left;
-  font-family: 'Faster One',
-  cursive;
-  // background: red;
-  width: 10%;
-  font-size: 2em;
-  color: #fcbf1e;
+  @include position(.5em, .5em);
+  opacity: .8;
 
 }
 
@@ -249,14 +243,13 @@ body {
   background: $primaryColour;
   height: 31em;
   margin-top: 3em;
-  // margin-bottom: 3em;
+
   opacity: 0.8;
   transform: skewY(7deg);
 }
 
 .projects-button {
-  // @include position(-18em, 28%);
-  // @include flexCenter();
+
   position: absolute;
   top: 1em;
   right: 1em;
@@ -280,168 +273,3 @@ body {
 }
 
 }
-
-// .project-holder {
-//   width: 100%;
-//     height: 25em;
-//     top: 8em;
-//     background: pink;
-//   position: absolute;
-//   display: grid;
-//   grid-template-columns: repeat(3, 6fr);
-//   grid-gap: 10px;
-//   justify-items: center;
-
-// }
-
-// @media only screen and (min-width: 768px) {
-//  .App-header {
-//   //  background-image: url('.././hooks/photos/header.gif');
-//    background-size: cover;
-//    background-position: center;
-//    height: 17em;
-//    &::after {
-//       visibility: hidden;
-//   }
-// }
-//   .overlay {
-//     color: #6EFAF1;
-//     height: 15.9em;
-//     &::after {
-//       visibility: hidden;
-//     }
-//   }
-
-// //   .projects-button {
-// //    left: 41%;
-// //    top: -22em;
-
-// //  }
-// .seperator{
-//   top: 20em;
-// }
-//  .seperatorOverlay {
-//    margin-top: 3em;
-//    @include position(-31em, 0%);
-
-//  }
-//  #job-title {
-//    top: -.2em;
-//  }
-//  #title {
-//    top: 1em;
-//  }
-//  #logo {
-//    top: 0em;
-//    left: .8em;
-//    color: #fcbf1e;
-//  }
-// }
-
-
-
-
-
-// @media only screen and (min-width: 1024px) {
-//   .projects-button {
-//     left: 42%;
-//     top: -21.5em;
-//   }
-// }
-
-
-// @media only screen and (min-width: 1250px) {
-//   .animation-area{
-//     // background: linear-gradient(to left, #8942a8, #ba382f);
-//     width: 100%;
-//     height: 100vh;
-//   }
-//   .box-area {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     margin: 0px;
-//     width: 97%;
-//     height: 100%;
-//     overflow: hidden;
-
-//   }
-//   .box-area li{
-//     position: absolute;
-//     display: block;
-//     list-style: none;
-//     width: 25px;
-//     height: 25px;
-//     background: rgba(255, 255, 255, 0.2);
-//     animation: animate 20s linear infinite;
-//     bottom: -150px;
-//   }
-//   .box-area li:nth-child(1) {
-//     left: 86%;
-//     width: 80px;
-//     height: 80px;
-//     animation-delay: 0s;
-//   }
-//   .box-area li:nth-child(2) {
-//     left: 12%;
-//     width: 30px;
-//     height: 30px;
-//     animation-delay: 1.2s;
-//   }
-
-//   .box-area li:nth-child(3) {
-//     left: 70%;
-//     width: 100px;
-//     height: 100px;
-//     animation-delay: 5.5s;
-//   }
-
-//   .box-area li:nth-child(4) {
-//     left: 70%;
-//     width: 150px;
-//     height: 150px;
-//     animation-delay: 10s;
-//   }
-
-//   .box-area li:nth-child(5) {
-//     left: 65%;
-//     width: 40px;
-//     height: 40px;
-//     animation-delay: 0s;
-//   }
-//   .box-area li:nth-child(6) {
-//     left: 65%;
-//     width: 110px;
-//     height: 110px;
-//     animation-delay: 3.5s;
-//   }
-//   @keyframes animate{ 
-//     0% {
-//       transform: translateY(0) rotate(0deg);
-//       opacity: 1;;
-//     }
-//     100% {
-//       transform: translateY(-800px) rotate(360deg);
-//       opacity: 0;
-//     }
-
-//   }
-//   #job-title {
-//     top: -.2em;
-//   }
-
-//   .projects-button {
-//     opacity: .8;
-//     &:hover {
-//       opacity: 1; 
-//     }
-//   }
-// }
-
-// @media only screen and (min-width: 1500px) {
-//   #job-title {
-
-//   }
-
-// }
-// @media only screen and (min-width: 414px) {}

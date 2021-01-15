@@ -484,7 +484,7 @@
 
 .card-holder {
   width: 100%;
-  grid-gap: 1px;
+  grid-gap: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -798,6 +798,9 @@
 }
 
 @media only screen and (max-width: 699px) {
+  .flip-card-container {
+    margin-bottom: 1em;
+  }
   .project-holder {
     top: 102em;
     height: 105em;
@@ -814,7 +817,7 @@
 .skill-list-img {
   position: relative;
   top: 1.5em;
-  width: 30%;
+  opacity: .7;
 }
 
 #backend {
@@ -1213,9 +1216,6 @@ body {
 }
 
 #job-title {
-  position: relative;
-  top: 0em;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1232,12 +1232,9 @@ body {
 
 #logo {
   position: relative;
-  top: 0em;
+  top: 0.5em;
   left: 0.5em;
-  font-family: 'Faster One', cursive;
-  width: 10%;
-  font-size: 2em;
-  color: #fcbf1e;
+  opacity: .8;
 }
 
 .nav-bar {

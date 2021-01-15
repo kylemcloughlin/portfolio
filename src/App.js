@@ -3,6 +3,7 @@ import About from './hooks/about.js';
 import Contact from './hooks/contact.js';
 import Projects from './hooks/projects.js';
 import Skills from './hooks/skills.js';
+import logo from './hooks/photos/logo-k.png';
 import './styles/style.css';
 
 
@@ -26,7 +27,7 @@ let  handleScroll= () => {
     { loaded ? ( 
       <div>
       <div class="App-header">
-      <h1 id='logo'>K</h1>
+       <img id='logo' src={logo} alt='logo-img'/>
       <div class='title-div'>
       <h1 id='title'>Kyle McLoughlin</h1>
       <h3 id = 'job-title'> Full Stack Web Developer </h3> 

@@ -76,7 +76,7 @@ $secondaryColour : #38509a;
   // top: 9em;
   width: 100%;
   // display: flex;
-  grid-gap: 1px;
+  grid-gap: 10px;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows: repeat(4, 1fr);
@@ -402,13 +402,15 @@ padding-top: 4em;
         "a a b b"
         "c c d d"
         "c c d d";
+        // grid-column-gap: 2px;
   }
+
 }
 
  @media only screen and (max-width: 699px) {
-  // .project-title {
-  //   padding-left: .8em;
-  // }
+  .flip-card-container{
+    margin-bottom: 1em;
+  }
 .project-holder {
 
      top: 102em;
