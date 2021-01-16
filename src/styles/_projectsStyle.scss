@@ -1,5 +1,25 @@
-$primaryFont : 'Varela Round' , sans-serif;
-$secondaryFont : 'Mukta',sans-serif;
+@font-face {
+  font-family: 'Mukta';
+  src: url('fonts/Mukta/Mukta-Regular.ttf'),
+  url('fonts/Mukta/Mukta-Regular.woff') format('woff'),
+    url('fonts/Mukta/Mukta-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200
+}
+
+$secondaryFont : 'Mukta',
+sans-serif;
+
+@font-face {
+  font-family: 'Varela Round';
+  src: url('fonts/Varela_Round/VarelaRound-Regular.ttf'),
+    url('fonts/Varela_Round/VarelaRound-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300
+}
+
+$primaryFont : 'Varela Round',
+sans-serif;
 
 @mixin flexCenter {
   display: flex;
@@ -26,7 +46,7 @@ $secondaryColour : #38509a;
     @include flexCenter();
   width: 100%;
   height: 30em;
-  top: 23em;
+  top: 1373px;
   background:#12130F;
   position: absolute;
   display: grid;
@@ -205,6 +225,7 @@ padding-top: 4em;
   top: -10%;
   left: 4%;
   backface-visibility: hidden;
+  font-family: $secondaryFont;
   // text-align: center;
   
 }
@@ -393,7 +414,7 @@ padding-top: 4em;
 
 @media only screen and (max-width: 1199px) {
   .project-holder {
-   top: 23em;
+  //  top: 23em;
     height: 55em;
   }
   .card-holder {
@@ -402,7 +423,7 @@ padding-top: 4em;
         "a a b b"
         "c c d d"
         "c c d d";
-        // grid-column-gap: 2px;
+    
   }
 
 }
@@ -412,9 +433,8 @@ padding-top: 4em;
     margin-bottom: 1em;
   }
 .project-holder {
-
-     top: 102em;
-  height: 105em;;
+     top: 2749px;
+  height: 108em;
 
 }
 .card-holder{

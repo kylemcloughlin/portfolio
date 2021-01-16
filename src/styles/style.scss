@@ -15,15 +15,21 @@ $secondaryColour : #EAE6E5;
 @font-face {
   font-family: 'Faster One';
   src: url(fonts/Faster_One/FasterOne-Regular.ttf),
-  url(fonts/Faster_One/FasterOne-Regular.ttf) format('truetype');
+  url('fonts/Faster_One/FasterOne-Regular.ttf') format('woff'),
+  url('fonts/Faster_One/FasterOne-Regular.ttf') format('woff2'),
+  /* Super Modern Browsers */
+  url('fonts/Faster_One/FasterOne-Regular.ttf') format('truetype');
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 100
 }
 
+     
 @font-face {
   font-family: 'roboto';
-  src: url(/fonts/Roboto/Roboto-Medium.ttf),
+  src: url(fonts/Roboto/Roboto-Medium.ttf),
+  url('fonts/Roboto/Roboto-Medium.ttf') format('woff'),
+   url('fonts/Roboto/Roboto-Medium.ttf') format('woff2'),
   url(fonts/Roboto/Roboto-Medium.ttf) format('truetype');
   font-style: normal;
   font-weight: 100
@@ -31,8 +37,10 @@ $secondaryColour : #EAE6E5;
 
 @font-face {
   font-family: 'Mukta';
-  src: url(fonts/Mukta/Mukta-Regular.ttf),
-  url(fonts/Mukta/Mukta-Regular.ttf) format('truetype');
+  src: url('fonts/Mukta/Mukta-Regular.ttf'),
+  url('fonts/Mukta/Mukta-Regular.ttf') format('woff'),
+  url('fonts/Mukta/Mukta-Regular.ttf') format('woff2'),
+  url('fonts/Mukta/Mukta-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 200
 }
@@ -42,6 +50,8 @@ sans-serif;
 @font-face {
   font-family: 'Varela Round';
   src: url(fonts/Varela_Round/VarelaRound-Regular.ttf),
+   url('fonts/Varela_Round/VarelaRound-Regular.ttf') format('woff'),
+   url('fonts/Varela_Round/VarelaRound-Regular.ttf') format('woff2'),
   url(fonts/Varela_Round/VarelaRound-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: 300

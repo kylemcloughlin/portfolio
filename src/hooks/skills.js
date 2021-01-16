@@ -33,7 +33,6 @@ function Skills () {
   return (
 
   < div class = 'skills-holder' >
-         <div class='skills-wrapper'>
            {skillList.map((list, ind)=> {    
              let ary = ['a', 'b', 'c', 'd']
              let style = { gridArea: `${ary[ind]}`}
@@ -54,7 +53,7 @@ function Skills () {
               </div>
               )
             })}
-          </div>
+
             </div>
   )
 }

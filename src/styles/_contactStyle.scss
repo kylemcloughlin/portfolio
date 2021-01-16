@@ -146,7 +146,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 .footer {
   position: absolute;
-  bottom: -42em;
+top: 1853px;
   width: 100%;
   height: 9em;
   // padding-left: 2em;
@@ -356,7 +356,8 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 @media only screen and (max-width: 1199px) {
   .footer {
-    bottom: -66.9em;
+    top: 2253px;
+    // bottom: -66.9em;
     // width: 95%;
     
   }
@@ -364,8 +365,7 @@ $b64 : "https://image.flaticon.com/icons/png/128/109/109617.png";
 
 @media only screen and (max-width: 699px) {
   .footer {
-    bottom: -118em;
     height: 11em;
-    // width: 93%;
-  }
+    top: 4477px;
+}
 }

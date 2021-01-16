@@ -46,7 +46,7 @@ let  handleScroll= () => {
       </div>
       </div> 
       
-      <div class='contact'>
+  
       <About/>
       <Skills/>
       <div class='project-holder'>
@@ -56,7 +56,7 @@ let  handleScroll= () => {
       
       <Contact/>
       </div> 
-      </div>
+
       ): (<div></div>)}
       
       </div>
