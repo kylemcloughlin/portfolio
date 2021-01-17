@@ -40,7 +40,7 @@ function Skills () {
                <div class='lrg-skills-holder' key={list.id} style={style}>
                  <h2 class='skill-title'>{list.title}</h2>  
                  <img class='skill-list-img' src={list.img} alt='skill-img'/>
-                 {/* <div class='skill-list'>
+                 <div class='skill-list'>
                  {list.skills.map((skill) =>{
                    return (
                      <div class='skill-list-item' key={skill}>
@@ -49,7 +49,7 @@ function Skills () {
                      </div>
                    )  
                   })}
-                </div> */}
+                </div>
               </div>
               )
             })}

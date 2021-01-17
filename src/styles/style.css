@@ -94,6 +94,20 @@
   }
 }
 
+@media only screen and (max-width: 599px) {
+  .about {
+    top: 715px;
+    height: 23em;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .about {
+    top: 651px;
+    height: 27em;
+  }
+}
+
 .con-animation-area {
   position: relative;
   top: -8em;
@@ -225,7 +239,7 @@
 
 .footer {
   position: absolute;
-  top: 1853px;
+  top: 1851px;
   width: 100%;
   height: 9em;
   padding-bottom: 3em;
@@ -419,7 +433,7 @@
 @media only screen and (max-width: 699px) {
   .footer {
     height: 11em;
-    top: 4477px;
+    top: 4476px;
   }
 }
 
@@ -462,7 +476,7 @@
           align-items: center;
   width: 100%;
   height: 30em;
-  top: 1373px;
+  top: 1371px;
   background: #12130F;
   position: absolute;
   display: -ms-grid;
@@ -816,7 +830,7 @@
     margin-bottom: 1em;
   }
   .project-holder {
-    top: 2749px;
+    top: 2748px;
     height: 108em;
   }
   .card-holder {
@@ -868,6 +882,7 @@
 .skill-list {
   position: relative;
   color: #333333;
+  top: 20px;
 }
 
 .skill-list-item {

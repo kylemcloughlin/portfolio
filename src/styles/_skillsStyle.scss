@@ -40,15 +40,14 @@ $secondaryFont : 'Mukta', sans-serif;
   height: auto;
   width: 100%;
      @include flexCenter();
-     // top: ;
      position: relative;
-    top: 972px;
+     top: 972px;
      width: 100%;
-}
-.skill-list {
-  position: relative;
- 
-  color: $secondaryColor; 
+    }
+    .skill-list {
+      position: relative;
+      color: $secondaryColor; 
+      top: 20px;
 }
 
 .skill-list-item {

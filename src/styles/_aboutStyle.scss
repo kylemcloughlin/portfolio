@@ -123,3 +123,19 @@ width: 0%;
 
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .about {
+    top: 715px;
+    height: 23em;
+
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .about {
+    top: 651px;
+    height: 27em;
+
+  }
+}
