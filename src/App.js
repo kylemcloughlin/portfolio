@@ -1,4 +1,4 @@
-import React , { useState, useEffect } from 'react';
+import React  from 'react';
 import About from './hooks/about.js';
 import Contact from './hooks/contact.js';
 import Projects from './hooks/projects.js';
@@ -8,11 +8,7 @@ import './styles/style.css';
 
 
 function App() {
-  let [loaded, setLoaded] = useState(false);
-    useEffect(() => {
-       setLoaded(true)
-   
-  });
+
 let  handleScroll= () => {
       const element = document.getElementById('#projects');
            window.scrollTo({
@@ -24,7 +20,6 @@ let  handleScroll= () => {
   
   return (
     <div class="App">
-    { loaded ? ( 
       <div>
       <div class="App-header">
        <img id='logo' src={logo} alt='logo-img'/>
@@ -57,7 +52,7 @@ let  handleScroll= () => {
       <Contact/>
       </div> 
 
-      ): (<div></div>)}
+      
       
       </div>
       );
