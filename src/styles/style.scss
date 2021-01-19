@@ -81,6 +81,7 @@ body {
   margin: none;
 }
 
+
 .App-header {
 
   background: $bground;
@@ -213,8 +214,8 @@ body {
   // @include position(0em, 0);
   @include flexCenter();
   color: #fcbf1e;
-  font-weight: 200;
   font-family: $secondaryFont;
+  // font-weight: 200;
 
 
 }
@@ -283,3 +284,8 @@ body {
 }
 
 }
+
+
+// .app-holder {
+//   visibility: hidden;
+// }

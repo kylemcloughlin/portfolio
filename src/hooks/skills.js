@@ -6,23 +6,23 @@ import img4 from './photos/upload.png';
 
 const skillList = [{
   id: 'frontend',
-  title: 'FRAMEWORKS & LIBRARIES',
-  skills: ['REACT','VUEJS', 'ANGULAR', 'RAILS', 'DJANGO'],
+  title: 'FRONTEND',
+  skills: ['React','Vue.js', 'CSS | SASS', 'JavaScript', 'HTML5'],
   img: img1
 }, {
   id: 'backend',
-  title: 'LANGUAGES',
-  skills: ['JAVASCRIPT', 'RUBY', 'PYTHON', 'HTML', 'CSS'],
+  title: 'BACKEND',
+  skills: ['Node.js','Express', 'Ruby', 'Python'],
   img: img2
 }, {
   id: 'database',
   title: 'DATABASE',
-  skills: ['POSTGRES','MONGODB'],
+  skills: ['PostgreSQl','MongoDB', 'mySQL'],
     img: img3
 }, {
   id: 'deployment',
   title: 'DEPLOYMENT',
-  skills: ['HEROKU', 'AWS AMPLIFIY','GIT'],
+  skills: ['Heroku', 'AWS','Git', 'Docker'],
     img: img4
 }]
 

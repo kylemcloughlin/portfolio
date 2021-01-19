@@ -20,7 +20,7 @@ let  handleScroll= () => {
   
   return (
     <div class="App">
-      <div>
+
       <div class="App-header">
        <img id='logo' src={logo} alt='logo-img'/>
       <div class='title-div'>
@@ -50,7 +50,7 @@ let  handleScroll= () => {
       </div>
       
       <Contact/>
-      </div> 
+
 
       
       

@@ -890,7 +890,8 @@
 }
 
 .underline {
-  background-color: #888888;
+  background-color: #444;
+  opacity: .7;
   width: 2em;
   height: 1px;
   margin: auto;
@@ -1280,7 +1281,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fcbf1e;
-  font-weight: 200;
   font-family: "Mukta", sans-serif;
 }
 
