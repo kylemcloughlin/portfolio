@@ -2,8 +2,7 @@ import React from 'react';
 import ruby from './photos/ruby.png';
 import js from './photos/js.png';
 import react from './photos/react.png';
-let about = "I'm driven and goal oriented fullstack web developer passionate about new technologies and web design. a creative who aproaches each project with courious excitment while enuring the overall goal is adding value to your organization.";
-
+let about = "I'm a driven and goal-oriented Full Stack Web Developer passionate about new technologies and web design. a creative who approaches each project with curious excitement while enuring the overall goal is adding value to your organization.";
 
 
 
