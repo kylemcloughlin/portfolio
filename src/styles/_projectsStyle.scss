@@ -100,10 +100,10 @@ $secondaryColour : #38509a;
  grid-template-rows: repeat(4, 1fr);
   /* margin: auto; */
    grid-template-areas:
-    "a a b b c c d d"
-    "a a b b c c d d"
-    "a a b b c c d d"
-    "a a b b c c d d";
+    "a a b b c c d d e e"
+    "a a b b c c d d e e"
+    "a a b b c c d d e e"
+    "a a b b c c d d e e";
   justify-content: center;
     align-items: start;
 padding-top: 4em;
@@ -409,18 +409,26 @@ padding-top: 4em;
 
 }
 
+@media only screen and (max-width: 1530px) {
+  .card-holder {
+  grid-gap: 0px;
+  }
+}
 
-@media only screen and (max-width: 1199px) {
+
+@media only screen and (max-width: 1530px) {
   .project-holder {
   //  top: 23em;
-    height: 55em;
+    height: 81em;
   }
   .card-holder {
         grid-template-areas:
          "a a b b"
-        "a a b b"
-        "c c d d"
-        "c c d d";
+         "a a b b"
+         "c c d d"
+         "c c d d"
+         "e e e e";
+         grid-gap: 10px
     
   }
 
@@ -432,7 +440,7 @@ padding-top: 4em;
   }
 .project-holder {
      top: 2748px;
-  height: 108em;
+  height: 134em;
 
 }
 .card-holder{

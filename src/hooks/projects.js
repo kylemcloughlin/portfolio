@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import { fullList } from '../exports';
 import DemoModal from './modal.js';
 console.log(fullList)
-let partialList = [fullList[0], fullList[1], fullList[2], fullList[3]];
+let partialList = [fullList[0], fullList[1], fullList[2], fullList[3], fullList[4]];
 function Projects() {
 let [list, setList] = useState(partialList);
 let [showButton, setShowButton] = useState(true);
@@ -17,7 +17,7 @@ let [showButton, setShowButton] = useState(true);
      {/* <div class='full-list'> */}
       {list.map((website, ind) => { 
      
-      let ary = ['a', 'b', 'c', 'd']
+      let ary = ['a', 'b', 'c', 'd', 'e']
       let style = { gridArea: `${ary[ind]}`}
       return (
           <div class={`flip-card-container`} key={website.name} style={style}>

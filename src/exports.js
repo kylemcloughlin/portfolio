@@ -1,5 +1,14 @@
 
-export const fullList = [
+export const fullList = [{
+    name: 'Wreckhouse Weekly',
+    photos: './photos/torontoStreetTrees.png',
+    gif: './photos/gifs/ffgPhotoshopped.gif',
+    discription: "A Weekly newspaper based in Newfoundland",
+    keyFeatures: ['Next.js', 'React', 'Ruby on Rails APi', 'vercel', 'postgres'],
+    linkToProject: 'https://www.wreckhousepress.com/',
+    linkToProjectsCode: 'https://github.com/kylemcloughlin/treesApp',
+    class: '01',
+  },
  {
    name: 'torontoStreetTrees',
    photos: './photos/torontoStreetTrees.png',
