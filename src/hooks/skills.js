@@ -7,7 +7,7 @@ import img4 from './photos/upload.png';
 const skillList = [{
   id: 'frontend',
   title: 'FRONTEND',
-  skills: ['React','Vue.js', 'CSS | SASS', 'JavaScript', 'HTML5'],
+  skills: ['React','Vue.js', 'CSS | SASS', 'JavaScript', 'HTML5', 'Next.js'],
   img: img1
 }, {
   id: 'backend',
@@ -21,8 +21,8 @@ const skillList = [{
     img: img3
 }, {
   id: 'deployment',
-  title: 'DEPLOYMENT',
-  skills: ['Heroku', 'AWS','Git', 'Docker'],
+  title: 'DEPLOYMENT & VC',
+  skills: ['Heroku', 'AWS','Git', 'Vercel'],
     img: img4
 }]
 

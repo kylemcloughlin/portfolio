@@ -11,9 +11,22 @@ function App() {
 
 let  handleScroll= () => {
       const element = document.getElementById('#projects');
+      console.log(element.clientHeight);
+      let fromTop;
+
+       if (element.clientHeight  < 850) {
+         fromTop = 1250;
+
+       }else if (element.clientHeight > 2000) {
+         fromTop = 2600;
+
+       } else {  fromTop = 1250;
+    console.log('hit third');
+    
+  }
            window.scrollTo({
        behavior: element ? "smooth" : "auto",
-       top: element.clientHeight > 850 ? 2500 : 1250,
+       top: fromTop,
       });
 
   }
