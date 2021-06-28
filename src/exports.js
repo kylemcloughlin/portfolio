@@ -5,7 +5,7 @@ export const fullList = [{
     gif: './photos/gifs/ffgPhotoshopped.gif',
     discription: "A Weekly newspaper based in Newfoundland",
     keyFeatures: ['Next.js', 'React', 'Ruby on Rails APi', 'vercel', 'postgres'],
-    linkToProject: 'https://www.wreckhousepress.com/',
+    linkToProject: 'https://wreck-house-press-front-alpha.vercel.app/',
     linkToProjectsCode: 'https://github.com/kylemcloughlin/wreck-house-press-front',
     class: '01',
   },
