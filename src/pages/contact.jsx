@@ -11,6 +11,8 @@ function Contact() {
     console.log(process.env.userID)
     console.log(process.env.serviceID)
     console.log(process.env.templateID)
+    console.log(process.env.REACT_APP_TEST)
+
     console.log(process.env)
 
     let templateParams = {

@@ -3,16 +3,15 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Projects from './pages/projects';
 import Skills from './pages/skills';
-import Home from './pages/home'
+import Home from './pages/home';
 import logo from './pages/photos/logo-k.png';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import email  from './pages/photos/email_white.svg';
 import './styles/style.css';
 import { motion } from 'framer-motion';
+
 require('dotenv').config();
-
-
 
 
 const appVariants = {
