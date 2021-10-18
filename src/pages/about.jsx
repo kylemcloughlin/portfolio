@@ -4,11 +4,14 @@ import js from './photos/js.png';
 import react from './photos/react.png';
 import { skillList, about } from '../exports';
 import { motion } from 'framer-motion';
+import NavBar from '../components/Nav.jsx';
+
 
 
 function About() {
   return (
     <div id="about">
+      <NavBar />
       <motion.h3
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -49,6 +52,7 @@ function About() {
             )
           })}
         {/* </div>s */}
+        
       </motion.div>
     </div>
   );

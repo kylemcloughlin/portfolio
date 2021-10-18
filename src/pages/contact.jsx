@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import * as emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
+import NavBar from '../components/Nav.jsx';
+
 function Contact() {
   const [complete, setComplete] = useState(false)
   const form = useRef();
@@ -8,10 +10,6 @@ function Contact() {
   let handleEmail = (e) => {
     e.preventDefault()
     let { email, name, message } = e.target;
-    console.log(process.env.REACT_APP_USER_ID)
-    console.log(process.env.REACT_APP_SERV_ID)
-    console.log(process.env.REACT_APP_TEMP_ID)
-
 
     let templateParams = {
       email: email.value,
@@ -50,12 +48,13 @@ function Contact() {
   }
   return (
     <div id='contact'>
+      <NavBar />
       <motion.h3 class='contact-title'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ type: 'spring', delay: 1, duration: .5 }}>CONTACT</motion.h3>
-      {/* <p class='contact-para'>Please email me at <a id='github'onClick={() => {window.open('mailto:kylemcloughlindev@gmail.com?subject=inquiry')}}>kylemcloughlindev@gmail.com</a>.</p> */}
-      {/* <p class='contact-para'>You can also find me on <a id='github'onClick={() => {window.open('https://github.com/kylemcloughlin')}}>Github</a> or checkout my <a id = 'resume' onClick = {() => {window.open("https://resume.creddle.io/resume/cbxn0k8f0oy")}}>Resume</a>.</p> */}
+      <p class='contact-para'>Thanks for taking the time to reach out.</p>
+      <p class='contact-para'>How can I help you today?</p>
       <motion.form className='request-form' ref={form} onSubmit={handleEmail}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -66,7 +65,7 @@ function Contact() {
         <input placeholder='Your Email Here' className="form-control" name='name' type='email' required='true' />
         <label>Inquiry</label>
         <textarea placeholder='Your Inquiry Here' className="form-control" name='message' required='true' />
-        <button type='submit' className="btn btn-primary">Send Request</button>
+        <button type='submit' className="btn btn-primary send-request-btn">Send Request</button>
       </motion.form>
     </div>
   );

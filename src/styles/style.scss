@@ -228,8 +228,33 @@ background: #fefefe;
  transform: skew(-18deg);
  position: absolute;
  left: -16em;
+ bottom: 0em;
 }
 
+
+.nav {
+  position: absolute;
+  top: 1em;
+  color: #141B3A;
+}
+.nav-item{
+  color: #141B3A;
+  text-decoration: inherit;
+}
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+  /* no underline */
+.nav-link {
+  color: #141B3A;
+ text-decoration: inherit;
+  /* no underline */
+  
+
+}
 .projects-wrapper {
   margin-top: 4em;
     // height: 60%;
@@ -425,13 +450,23 @@ background: url('../pages/photos/gifs/new-whp.gif') no-repeat 50%;
     }
 }
 
+.send-request-btn {
+  margin-top: 1em;
+  background-color:  #141B3A;
+  border: none;
+  color: #fefefe;
+    width: 10em;
+    height: 3em;
+
+}
+
 #contact {
   @include pageStyles();
 
 }
 
 .request-form {
-  margin-top: 6em;
+  margin-top: .5em;
   width: 60%;
   display: inline-block;
 
@@ -461,7 +496,7 @@ background: url('../pages/photos/gifs/new-whp.gif') no-repeat 50%;
 
 .contact-btn {
   position: absolute;
-  right: 1em;
+  right: 2em;
   bottom: 2em;
    width: 3em;
    border-radius: 2em;

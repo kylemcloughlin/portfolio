@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import email from './photos/email_white.svg';
 import { motion } from 'framer-motion';
 
 const homeVariants = {
@@ -82,6 +82,15 @@ const Home = () => {
             animate={{ x: 1, opacity: 1 }}
             transition={{ type: 'spring', delay: 3, duration: .7 }}>Projects</motion.button>
         </Link>
+      <Link to='Contact'>
+        <motion.button
+          initial={{ y: -300, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ type: 'spring', delay: 1.7, duration: .7 }}
+          className='btn contact-btn'
+        > < img src={email} alt='logo-img' />
+        </motion.button>
+      </Link>
     </motion.div>
   )
 }
