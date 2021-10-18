@@ -8,11 +8,14 @@
     "@testing-library/user-event": "^7.2.1",
     "aws-sdk": "^2.805.0",
     "emailjs-com": "^2.6.4",
+    "framer-motion": "^4.1.17",
+    "jquery": "^3.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-modal": "^3.12.1",
     "react-responsive-carousel": "^3.2.11",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.3.0"
   },
@@ -38,6 +41,9 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "file-loader": "^4.3.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^4.9.0"
   }
 }

@@ -1,74 +1,58 @@
-import React  from 'react';
-import About from './hooks/about.js';
-import Contact from './hooks/contact.js';
-import Projects from './hooks/projects.js';
-import Skills from './hooks/skills.js';
-import logo from './hooks/photos/logo-k.png';
+import React from 'react';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Projects from './pages/projects';
+import Skills from './pages/skills';
+import Home from './pages/home'
+import logo from './pages/photos/logo-k.png';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import email  from './pages/photos/email_white.svg';
 import './styles/style.css';
+import { motion } from 'framer-motion';
 
-
+const appVariants = {
+  start: {
+    y: 200,
+    x: -3333,
+    height: '0%',
+  },
+  finish: {
+    y: 200,
+    transition: {
+      type: 'spring',
+      delay: 1,
+      duration: 1.7,
+    }
+  }
+}
 function App() {
 
-let  handleScroll= () => {
-      const element = document.getElementById('#projects');
-      console.log(element.clientHeight);
-      let fromTop;
-
-       if (element.clientHeight  < 850) {
-         fromTop = 1250;
-
-       }else if (element.clientHeight > 2000) {
-         fromTop = 2600;
-
-       } else {  fromTop = 1250;
-    console.log('hit third');
-    
-  }
-           window.scrollTo({
-       behavior: element ? "smooth" : "auto",
-       top: fromTop,
-      });
-
-  }
   
   return (
-    <div class="App">
-
-      <div class="App-header">
-       <img id='logo' src={logo} alt='logo-img'/>
-      <div class='title-div'>
-      <h1 id='title'>Kyle McLoughlin</h1>
-      <h3 id='job-title'> Full Stack Web Developer </h3> 
-      <button class='projects-button' onClick={() => {handleScroll();}} >See Projects</button> 
-      </div>
-      <div class='animation-area'> 
-      <ul class='box-area'>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      </ul>
-      
-      </div>
-      </div> 
-      
+    <Router>
+      <div className="App">
+        {/* < img id= 'logo' src ={email} alt='logo-img' /> */}
   
-      <About/>
-      <Skills/>
-      <div class='project-holder'>
-      
-      <Projects key='#projects'/>
+         <Link to='Contact'>
+        <motion.button 
+         initial={{y:-300, opacity: 0}} 
+         animate={{y: 0, opacity: 1}}    
+         transition ={{ type: 'spring', delay: 1.7, duration: .7}}
+        className='btn contact-btn'
+        > < img src={email} alt='logo-img' />
+  </motion.button> 
+      </Link>
+        <Switch>
+          <Route path='/' exact component={Home} alt='some value'/>
+          <Route path='/about' exact component={About} alt=''/>
+          <Route path='/skills' exact component={Skills} alt=''/>
+          <Route path='/projects' exact component={Projects} alt=''/>
+          <Route path='/contact' exact component={Contact} alt=''/>
+        </Switch>
       </div>
-      
-      <Contact/>
-
-
-      
-      
-      </div>
-      );
+    </Router>
+    );
 }
 
 export default App;
