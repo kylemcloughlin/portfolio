@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 import email  from './pages/photos/email_white.svg';
 import './styles/style.css';
 import { motion } from 'framer-motion';
+require('dotenv').config();
+
+
+
 
 const appVariants = {
   start: {
