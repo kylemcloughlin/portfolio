@@ -8,10 +8,9 @@ function Contact() {
   let handleEmail = (e) => {
     e.preventDefault()
     let { email, name, message } = e.target;
-    console.log(process.env.userID)
-    console.log(process.env.serviceID)
-    console.log(process.env.templateID)
-    console.log(process.env.REACT_APP_TEST)
+    console.log(process.env.REACT_APP_USER_ID)
+    console.log(process.env.REACT_APP_SERV_ID)
+    console.log(process.env.REACT_APP_TEMP_ID)
 
     console.log(process.env)
 
@@ -20,7 +19,7 @@ function Contact() {
       name: name.value,
       message: message.value
     }
-    emailjs.sendForm(process.env.serviceID, process.env.templateID, form.current, process.env.userID).then((response) => {
+    emailjs.sendForm(process.env.REACT_APP_SERV_ID, process.env.REACT_APP_TEMP_ID, form.current, process.env.REACT_APP_USER_ID).then((response) => {
       console.log('SUCCESS!', response)
       setComplete(true)
       e.target.reset()
