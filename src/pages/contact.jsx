@@ -12,7 +12,6 @@ function Contact() {
     console.log(process.env.REACT_APP_SERV_ID)
     console.log(process.env.REACT_APP_TEMP_ID)
 
-    console.log(process.env)
 
     let templateParams = {
       email: email.value,
