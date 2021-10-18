@@ -8,7 +8,10 @@ function Contact() {
   let handleEmail = (e) => {
     e.preventDefault()
     let { email, name, message } = e.target;
-
+    console.log(process.env.userID)
+    console.log(process.env.serviceID)
+    console.log(process.env.templateID)
+    console.log(process.env)
 
     let templateParams = {
       email: email.value,
